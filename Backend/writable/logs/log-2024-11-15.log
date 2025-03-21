@@ -1,0 +1,214 @@
+ERROR - 2024-11-15 22:57:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\Funda\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Funda\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\Funda\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Funda\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Funda\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Funda\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Funda\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Funda\Backend\app\Models\UserModel.php(47): CodeIgniter\BaseModel->findAll(0, 0)
+#7 C:\xampp\htdocs\Funda\Backend\app\Controllers\TheController.php(271): App\Models\UserModel->getUsers()
+#8 C:\xampp\htdocs\Funda\Backend\system\CodeIgniter.php(933): App\Controllers\TheController->showUsers()
+#9 C:\xampp\htdocs\Funda\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheController))
+#10 C:\xampp\htdocs\Funda\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Funda\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Funda\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Funda\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\Funda\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Funda\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Funda\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Funda\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Funda\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Funda\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Funda\Backend\app\Models\UserModel.php(47): CodeIgniter\BaseModel->findAll(0, 0)
+#6 C:\xampp\htdocs\Funda\Backend\app\Controllers\TheController.php(271): App\Models\UserModel->getUsers()
+#7 C:\xampp\htdocs\Funda\Backend\system\CodeIgniter.php(933): App\Controllers\TheController->showUsers()
+#8 C:\xampp\htdocs\Funda\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheController))
+#9 C:\xampp\htdocs\Funda\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Funda\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Funda\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Funda\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-11-15 22:57:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: thecontroller/showUsers]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `table_user`
+WHERE `table_user`.`deletedate` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\UserModel.php(47): CodeIgniter\BaseModel->findAll(0, 0)
+ 6 APPPATH\Controllers\TheController.php(271): App\Models\UserModel->getUsers()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheController->showUsers()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-15 22:58:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\Funda\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Funda\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'funda', 3306, '', 0)
+#1 C:\xampp\htdocs\Funda\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Funda\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Funda\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Funda\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Funda\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Funda\Backend\app\Models\UserModel.php(47): CodeIgniter\BaseModel->findAll(0, 0)
+#7 C:\xampp\htdocs\Funda\Backend\app\Controllers\TheController.php(271): App\Models\UserModel->getUsers()
+#8 C:\xampp\htdocs\Funda\Backend\system\CodeIgniter.php(933): App\Controllers\TheController->showUsers()
+#9 C:\xampp\htdocs\Funda\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheController))
+#10 C:\xampp\htdocs\Funda\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Funda\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Funda\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Funda\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\Funda\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Funda\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Funda\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Funda\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Funda\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Funda\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Funda\Backend\app\Models\UserModel.php(47): CodeIgniter\BaseModel->findAll(0, 0)
+#6 C:\xampp\htdocs\Funda\Backend\app\Controllers\TheController.php(271): App\Models\UserModel->getUsers()
+#7 C:\xampp\htdocs\Funda\Backend\system\CodeIgniter.php(933): App\Controllers\TheController->showUsers()
+#8 C:\xampp\htdocs\Funda\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheController))
+#9 C:\xampp\htdocs\Funda\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Funda\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Funda\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Funda\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-11-15 22:58:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: thecontroller/showUsers]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `table_user`
+WHERE `table_user`.`deletedate` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\UserModel.php(47): CodeIgniter\BaseModel->findAll(0, 0)
+ 6 APPPATH\Controllers\TheController.php(271): App\Models\UserModel->getUsers()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheController->showUsers()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-15 23:04:40 --> Error: Class "App\Controllers\Controller" not found
+[Method: GET, Route: thebasecontroller]
+in APPPATH\Controllers\TheBaseController.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Funda\\Backend\\app\\Controllers\\TheBaseController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TheBaseController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TheBaseController')
+ 5 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\TheBaseController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-15 23:04:51 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thecontroller/showUsers]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:05:30 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thecontroller/showUsers]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:05:56 --> Error: Class "App\Controller\BaseController" not found
+[Method: GET, Route: thebasecontroller]
+in APPPATH\Controllers\TheBaseController.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Funda\\Backend\\app\\Controllers\\TheBaseController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TheBaseController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TheBaseController')
+ 5 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\TheBaseController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-15 23:12:13 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\TheBaseController/::showUsers"
+[Method: GET, Route: thebasecontroller/showUsers]
+in SYSTEMPATH\Router\Router.php on line 491.
+ 1 SYSTEMPATH\Router\Router.php(491): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\TheBaseController/::showUsers')
+ 2 SYSTEMPATH\Router\Router.php(209): CodeIgniter\Router\Router->checkRoutes('thebasecontroller/showUsers')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('thebasecontroller/showUsers')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-15 23:18:08 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thebasecontroller/showUsers]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:19:39 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thebasecontroller/showUsers]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:19:48 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thebasecontroller/showUsers]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:20:18 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thebasecontroller/showUsers]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:20:32 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thebasecontroller/showUsers]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:20:51 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thebasecontroller/showUsers]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:21:34 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thebasecontroller/showUsers]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:22:39 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thebasecontroller/showUsers]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:27:40 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thebasecontroller/showUsers]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:30:36 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thebasecontroller/showUsers]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:35:33 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thebasecontroller/showEvents]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:35:38 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thebasecontroller/showEvents]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:35:43 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thebasecontroller/showVideos]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:38:32 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thebasecontroller/showUsers]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:39:19 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: thebasecontroller/test]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-15 23:45:13 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: dbtestcontroller]
+in SYSTEMPATH\Debug\Exceptions.php on line 209.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-15 23:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
