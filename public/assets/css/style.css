@@ -16,8 +16,8 @@ body {
   font-size: 1rem;
   background: #fff;
   color: #023642;
-  font-family: "Nunito", sans-serif;
-  font-size: 2em;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
 }
 
 a {
@@ -45,12 +45,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nunito", sans-serif;
-  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  /* font-weight: 400; */
   margin: 0 0 20px 0;
   padding: 0;
   font-style: normal;
-  font-optical-sizing: auto;
+  /* font-optical-sizing: auto; */
 }
 /*--------------------------------------------------------------
 # Back to top button
@@ -132,8 +132,11 @@ h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  /* background:  #02313b; */
-  height: 60px;
+  background: #feffff;
+  height: 100px;
+  border: #0056b3 1px;
+  border-bottom: solid 1px #D3D3D3;
+  box-shadow: 1px 1px rgb(183, 182, 182);
 }
 
 #header.header-transparent {
@@ -141,39 +144,38 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: #0799ba;
-  height: 60px;
+  background: #feffff;
+  height: 100px;
 }
 
 #header.header-scrolled  .navbar a{
-  color: #fff;
+  color: #2952A1 ;
   /* height: 40px; */
 }
 
 
+#header .entete{
+  width: 100%;
+}
 #header .logo {
   margin: 0;
   padding-left: 1%;
-
   font-size: 2rem;
   font-weight: bold;
   /* color: #fff; */
   text-transform: uppercase;
   position: relative;
+  max-width: 20%;
+  margin-left: 40%;
 }
 
-
 #header .logo a {
-  color: #ffffff;
-  font-size: 16px;
+  font-size: 24px;
+  color: black;
 }
 
 #header .logo img {
-  border-radius: 50%; 
-  border: 2px solid white; 
-  overflow: hidden; 
-  max-height: 30px;
-  border-color: 2px solid white;
+  overflow: hidden;
 }
 
 @media (max-width: 992px) {
@@ -198,6 +200,7 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  width: 100%;
 }
 
 .navbar li {
@@ -213,9 +216,9 @@ h6 {
   /* font-family: "Montserrat", sans-serif; */
   font-size: 1rem;
   font-weight: 500;
-  color: #ffffff;
+  color: #2952A1;
   white-space: nowrap;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   transition: 0.3s;
 }
 
@@ -402,10 +405,9 @@ h6 {
 #hero {
   width: 100%;
   min-height: 100vh;
-  background: #000102;
+  background: #ffffff;
   overflow: hidden;
   position: relative;
-  background: url("../img/back.webp") center top no-repeat fixed;
   background-size: cover;
 }
 #hero p.description{
@@ -425,8 +427,8 @@ h6 {
 }
 @media (max-width: 500px) {
   #hero {
-    background: #000102;
-    background: url("../img/back_mobile.webp") center top no-repeat fixed ;
+    background: #ffffff;
+    /* background: url("../img/back_mobile.webp") center top no-repeat fixed ; */
     background-size: cover;
   }
 }
@@ -451,7 +453,7 @@ h6 {
 
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 4, 5, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 #hero .carousel-container {
@@ -471,8 +473,25 @@ h6 {
 
 #hero h2 {
   color: #ffffff;
-  font-size: 3rem; /* 40/16*/
+  font-size: 2rem; /* 40/16*/
   font-weight: 600; 
+}
+.illustration-content
+{
+  display: flex;
+}
+
+.carte-citation {
+  flex: 1 1 auto;
+  border-radius: 5px;
+  background: rgba(32, 2, 129, 0.8);
+  text-align: center;
+  max-width: 30%;
+}
+
+.img-illustration {
+  flex: 1 1 auto;
+  margin-left: -50px;
 }
 
 @media (max-width: 768px) {
@@ -705,13 +724,16 @@ section {
 #about .about-col {
   background: #fff;
   border-radius: 0 0 4px 4px;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08); */
   margin-bottom: 20px;
 }
 
+#about .about-col .description {
+}
 
 #about .about-col .img {
-  position: relative;
+  max-width: 100%;
+  /* border-radius: 50%; */
 }
 
 #about .about-col .img img {
