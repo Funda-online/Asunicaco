@@ -910,6 +910,22 @@ section {
   background-color: #2952A1 ;
 }
 
+.btn-lire {
+  font-size: 0.7rem;
+  display: inline-block;
+  padding: 6px 15px;
+  background-color: #2952A1 ;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-lire:hover {
+  background-color: #2952A1 ;
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
 
 /*--------------------------------------------------------------
 # province

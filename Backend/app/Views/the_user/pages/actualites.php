@@ -18,17 +18,16 @@
   </div>
 </section>
 
-<section class="py-5">
+<section class="*py-5">
   <div class="container">
     <!-- Fil d'Ariane -->
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.php">Accueil</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Actualités</li>
-      </ol>
-    </nav>
+    <div class="my-3">
+      <small><a href="index.php">Accueil</a> / Actualités</small>
 
-    <h2 class="mb-4">Actualités</h2>
+      <hr>
+    </div>
+
+    <h2 class="my-4">Actualités</h2>
 
     <div class="row">
       <!-- Filtres -->
@@ -56,7 +55,7 @@
             <label for="date_fin" class="form-label">Date fin</label>
             <input type="date" class="form-control" name="date_fin" id="date_fin">
           </div>
-          <button type="submit" class="btn btn-primary">Appliquer</button>
+          <button type="submit" class="btn btn-primary w-100">Appliquer</button>
         </form>
       </div>
 
@@ -64,7 +63,6 @@
       <div class="col-md-9">
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <?php
-          // Exemple de données (à remplacer par une requête DB)
           $actualites = [
             [
               "image" => "assets/img/1.jpg",
@@ -94,10 +92,10 @@
 
           foreach ($actualites as $actu) {
             echo '
-            <div class="col">
-              <div class="card h-100">
+            <div class="col g-4">
+              <div class="h-100">
                 <img src="' . $actu['image'] . '" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="pt-4">
                   <h5 class="card-title">' . $actu['titre'] . '</h5>
                   <p class="card-text"><small class="text-muted">' . $actu['date'] . '</small></p>
                   <p class="card-text">' . $actu['resume'] . '</p>

@@ -1,10 +1,19 @@
 <head>
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero-wrapper {
+      width: 100vw;
+      overflow-x: hidden;
+    }
+
     .hero-image {
       background: url('assets/img/1.jpg') center center / cover no-repeat;
       width: 100vw;
       height: 400px;
-      margin-bottom: 20px;
     }
 
     .section-title {
@@ -12,7 +21,7 @@
       margin-bottom: 40px;
     }
 
-    .apropos-p-size{
+    .apropos-p-size {
       font-size: 24px;
     }
 
@@ -27,7 +36,10 @@
 </head>
 
 <!-- Hero -->
-<div class="hero-image d-flex align-items-center w-100">
+<div class="hero-wrapper">
+  <div class="hero-image d-flex align-items-center">
+    <!-- Tu peux ajouter un titre ici si tu veux -->
+  </div>
 </div>
 
 <!-- Fil d'Ariane -->
