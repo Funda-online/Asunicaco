@@ -1,13 +1,19 @@
 <head>
   <style>
     .hero-image {
-      background: url('../../../public/assets/img/1.jpg') center center / cover no-repeat;
-      height: 300px;
+      background: url('assets/img/1.jpg') center center / cover no-repeat;
+      width: 100vw;
+      height: 400px;
+      margin-bottom: 20px;
     }
 
     .section-title {
       margin-top: 40px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+    }
+
+    .apropos-p-size{
+      font-size: 24px;
     }
 
     .footer {
@@ -21,24 +27,27 @@
 </head>
 
 <!-- Hero -->
-<div class="hero-image d-flex align-items-center">
+<div class="hero-image d-flex align-items-center w-100">
 </div>
 
 <!-- Fil d'Ariane -->
 <div class="container my-3">
   <small><a href="#">Accueil</a> / À propos</small>
+
+  <hr>
 </div>
 
-<div class="container">
+
+<div class="container mb-5">
   <h2 class="section-title">A propos</h2>
-  <div class="row align-items-start">
+  <div class="row align-items-start mb-4">
     <div class="col-md-7">
-      <p>
+      <p class="apropos-p-size">
         L'Association des Universités et Instituts Supérieurs Catholiques du Congo (ASUNICACO) rassemble les établissements d'enseignement supérieur reconnus à la fois par le Ministère de l’Enseignement Supérieur et Universitaire (ESU) et par l’Église catholique en République Démocratique du Congo. Ses statuts sont officiellement validés par la Conférence Épiscopale du Congo ainsi que par l’État congolais.
       </p>
     </div>
     <div class="col-md-5">
-      <img src="img/groupe.jpg" class="img-fluid rounded" alt="Groupe ASUNICACO">
+      <img src="assets/img/1.jpg" class="img-fluid rounded" alt="Groupe ASUNICACO">
     </div>
   </div>
 

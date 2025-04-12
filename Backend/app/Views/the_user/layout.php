@@ -52,7 +52,7 @@
 <body>
     <?= view('the_user/components/header') ?>
 
-    <main class="mt-5 pt-5 mb-5">
+    <main class="">
         <div class="">
             <?= view($content) ?>
         </div>

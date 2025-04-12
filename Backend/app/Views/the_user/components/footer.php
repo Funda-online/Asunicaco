@@ -14,11 +14,11 @@
             <div class="col-md-3 col-lg-3 mb-4">
                 <h5 class="text-uppercase fw-bold mb-3">Navigation</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><i class="bi bi-chevron-right text-black"></i> <a href="#" class="text-light text-decoration-none">Accueil</a></li>
-                    <li class="mb-2"><i class="bi bi-chevron-right text-primary"></i> <a href="#" class="text-light text-decoration-none">Actualités</a></li>
-                    <li class="mb-2"><i class="bi bi-chevron-right text-primary"></i> <a href="#" class="text-light text-decoration-none">Provinces</a></li>
-                    <li class="mb-2"><i class="bi bi-chevron-right text-primary"></i> <a href="#" class="text-light text-decoration-none">À propos</a></li>
-                    <li class="mb-2"><i class="bi bi-chevron-right text-primary"></i> <a href="#" class="text-light text-decoration-none">Contact</a></li>
+                    <li class="mb-2"><i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-light text-decoration-none">Accueil</a></li>
+                    <li class="mb-2"><i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-light text-decoration-none">Actualités</a></li>
+                    <li class="mb-2"><i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-light text-decoration-none">Provinces</a></li>
+                    <li class="mb-2"><i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-light text-decoration-none">À propos</a></li>
+                    <li class="mb-2"><i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-light text-decoration-none">Contact</a></li>
                 </ul>
             </div>
 
@@ -27,11 +27,11 @@
                 <h5 class="text-uppercase fw-bold mb-3">Nous contacter</h5>
                 <p class="text-light mb-1">
                     Centre Interdiocésain<br>
-                    Avenue Virunga, n°59<br>
-                    Kinshasa - Gombe, RDC
+                    Avenue Lumumba, n°59<br>
+                    Haut katanga - Lubumbashi, RDC
                 </p>
                 <p class="text-light mb-1"><strong>Téléphone:</strong> +243 000 000 000</p>
-                <p class="text-light"><strong>Email:</strong> asunicaco@gmail.com</p>
+                <p class="text-light"><strong>Email:</strong> contact@asunicaco.com</p>
                 <div class="mt-3">
                     <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-5"></i></a>
                     <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-5"></i></a>
@@ -43,8 +43,7 @@
         </div>
     </div>
 
-    <!-- Section tout en bas -->
-    <div class="text-center py-3 mt-4 border-top border-secondary text-secondary">
+    <div class="text-center pt-4 mt-4 border-top border-black-50 text-white-80">
         &copy; 2025 <strong>ASUNICACO</strong> — Tous droits réservés
     </div>
 </footer>

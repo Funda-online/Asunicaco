@@ -1,92 +1,126 @@
-<!-- ======= Actualités ======= -->
-<section id="portfolio">
-  <div class="container" data-aos="fade-up">
-    <header class="section-header" id="Actualités">
-      <h2 class="text-center">Toutes les actualités</h2>
-      <p class="text-center">Découvrez les dernières nouvelles et événements de l’ASUNICACO</p>
-    </header>
+<!-- ======= Hero Section Actualités ======= -->
+<section class="hero-section position-relative d-flex align-items-center justify-content-center text-white" style="background-image: url('assets/img/actualites-hero.jpg'); background-size: cover; background-position: center; height: 80vh;">
+  <!-- Overlay sombre -->
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5);"></div>
 
-    <div class="row portfolio-container g-4" data-aos="fade-up" data-aos-delay="200">
-      <!-- Actualité 1 -->
-      <div class="col-lg-4 col-md-6 portfolio-item filter-reseau">
-        <div class="portfolio-wrap">
-          <figure>
-            <img src="assets/img/1.jpg" class="img-fluid" alt="Actualité 1" width="500" height="600">
-          </figure>
-          <div class="portfolio-info">
-            <h4><a href="#">Actualité 1</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nemo tempore atque temporibus officiis!</p>
-            <span class="date">26 Mars 2025</span>
-            <a href="#" class="btn-more">Lire</a>
+  <!-- Contenu centré -->
+  <div class="container position-relative z-2 text-center">
+    <h1 class="display-4 fw-bold">Actualités</h1>
+    <p class="lead">Restez informé des dernières nouvelles de l'ASUNICACO</p>
+
+    <!-- Mini Navigation (breadcrumb) -->
+    <nav aria-label="breadcrumb" class="d-flex justify-content-center mt-3">
+      <ol class="breadcrumb bg-transparent p-0 m-0">
+        <li class="breadcrumb-item"><a href="#" class="text-white-50 text-decoration-none">Accueil</a></li>
+        <li class="breadcrumb-item active text-white" aria-current="page">Actualités</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <!-- Fil d'Ariane -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.php">Accueil</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Actualités</li>
+      </ol>
+    </nav>
+
+    <h2 class="mb-4">Actualités</h2>
+
+    <div class="row">
+      <!-- Filtres -->
+      <div class="col-md-3 mb-4">
+        <h5>Filtrer les actualités</h5>
+        <form method="GET" action="Actualites.php">
+          <div class="mb-3">
+            <label for="motcle" class="form-label">Mot-clé</label>
+            <input type="text" class="form-control" name="motcle" id="motcle">
           </div>
-        </div>
+          <div class="mb-3">
+            <label for="theme" class="form-label">Thème</label>
+            <select class="form-select" name="theme" id="theme">
+              <option value="">Tout</option>
+              <option value="enseignement">Enseignement</option>
+              <option value="échange">Échange</option>
+              <option value="visite">Visite</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="date_debut" class="form-label">Date début</label>
+            <input type="date" class="form-control" name="date_debut" id="date_debut">
+          </div>
+          <div class="mb-3">
+            <label for="date_fin" class="form-label">Date fin</label>
+            <input type="date" class="form-control" name="date_fin" id="date_fin">
+          </div>
+          <button type="submit" class="btn btn-primary">Appliquer</button>
+        </form>
       </div>
 
-      <!-- Actualité 2 -->
-      <div class="col-lg-4 col-md-6 portfolio-item filter-reseau">
-        <div class="portfolio-wrap">
-          <figure>
-            <img src="assets/img/1.jpg" class="img-fluid" alt="Actualité 2" width="500" height="600">
-          </figure>
-          <div class="portfolio-info">
-            <h4><a href="#">Actualité 2</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nemo tempore atque temporibus officiis!</p>
-            <span class="date">25 Mars 2025</span>
-            <a href="#" class="btn-more">Lire</a>
-          </div>
-        </div>
-      </div>
+      <!-- Actualités -->
+      <div class="col-md-9">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <?php
+          // Exemple de données (à remplacer par une requête DB)
+          $actualites = [
+            [
+              "image" => "assets/img/1.jpg",
+              "titre" => "Conférence sur l’enseignement catholique et les enjeux contemporains",
+              "date" => "11 Avril 2025",
+              "resume" => "Des experts se sont penchés sur les défis éthiques, sociaux et technologiques...",
+            ],
+            [
+              "image" => "assets/img/1.jpg",
+              "titre" => "Lancement d’un programme d’échange interuniversitaire",
+              "date" => "10 Avril 2025",
+              "resume" => "Un nouveau programme d’échange permet aux étudiants de circuler entre les établissements membres...",
+            ],
+            [
+              "image" => "assets/img/1.jpg",
+              "titre" => "Lancement d’un programme d’échange interuniversitaire",
+              "date" => "10 Avril 2025",
+              "resume" => "Un nouveau programme d’échange permet aux étudiants de circuler entre les établissements membres...",
+            ],
+            [
+              "image" => "assets/img/1.jpg",
+              "titre" => "Lancement d’un programme d’échange interuniversitaire",
+              "date" => "10 Avril 2025",
+              "resume" => "Un nouveau programme d’échange permet aux étudiants de circuler entre les établissements membres...",
+            ],
+          ];
 
-      <!-- Actualité 3 -->
-      <div class="col-lg-4 col-md-6 portfolio-item filter-reseau">
-        <div class="portfolio-wrap">
-          <figure>
-            <img src="assets/img/1.jpg" class="img-fluid" alt="Actualité 3" width="500" height="600">
-          </figure>
-          <div class="portfolio-info">
-            <h4><a href="#">Actualité 3</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nemo tempore atque temporibus officiis!</p>
-            <span class="date">24 Mars 2025</span>
-            <a href="#" class="btn-more">Lire</a>
-          </div>
+          foreach ($actualites as $actu) {
+            echo '
+            <div class="col">
+              <div class="card h-100">
+                <img src="' . $actu['image'] . '" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">' . $actu['titre'] . '</h5>
+                  <p class="card-text"><small class="text-muted">' . $actu['date'] . '</small></p>
+                  <p class="card-text">' . $actu['resume'] . '</p>
+                  <a href="#" class="btn btn-sm btn-primary">Lire</a>
+                </div>
+              </div>
+            </div>';
+          }
+          ?>
         </div>
-      </div>
 
-      <!-- Actualité 3 -->
-      <div class="col-lg-4 col-md-6 portfolio-item filter-reseau">
-        <div class="portfolio-wrap">
-          <figure>
-            <img src="assets/img/1.jpg" class="img-fluid" alt="Actualité 3" width="500" height="600">
-          </figure>
-          <div class="portfolio-info">
-            <h4><a href="#">Actualité 3</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nemo tempore atque temporibus officiis!</p>
-            <span class="date">24 Mars 2025</span>
-            <a href="#" class="btn-more">Lire</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Actualité 3 -->
-      <div class="col-lg-4 col-md-6 portfolio-item filter-reseau">
-        <div class="portfolio-wrap">
-          <figure>
-            <img src="assets/img/1.jpg" class="img-fluid" alt="Actualité 3" width="500" height="600">
-          </figure>
-          <div class="portfolio-info">
-            <h4><a href="#">Actualité 3</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nemo tempore atque temporibus officiis!</p>
-            <span class="date">24 Mars 2025</span>
-            <a href="#" class="btn-more">Lire</a>
-          </div>
-        </div>
+        <!-- Pagination -->
+        <nav class="mt-4">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#">«</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">10</a></li>
+            <li class="page-item"><a class="page-link" href="#">»</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
-
-    <!-- <div class="row centre">
-      <div class="col-md-12 text-center">
-        <a href="#" class="modal-btn" id="modal-btn">Voir plus d'actualités</a>
-      </div>
-    </div> -->
   </div>
 </section>
