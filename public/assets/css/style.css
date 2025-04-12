@@ -198,6 +198,42 @@ h6 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
+  .btn-custom {
+    background-color: #2952A1;
+    border-color: #2952A1;
+    color: white;
+  }
+
+  .btn-custom:hover {
+    background-color: #1f3f7d;
+    border-color: #1f3f7d;
+    color: white;
+  }
+
+  .pagination .page-link {
+    color: #2952A1; /* couleur du texte */
+    border: 1px solid #2952A1; /* bordures */
+  }
+  
+  .pagination .page-link:hover {
+    background-color: #2952A1;
+    color: white;
+    border-color: #2952A1;
+  }
+  
+  .pagination .active .page-link {
+    background-color: #2952A1;
+    border-color: #2952A1;
+    color: white;
+  }
+
+  .form-control:focus,
+  .form-select:focus {
+    border-color: #2952A1;
+    box-shadow: 0 0 0 0.25rem rgba(41, 82, 161, 0.25); /* effet focus bleu clair */
+    outline: none;
+  }
+  
 
 
 

@@ -1,24 +1,15 @@
 <!-- ======= Hero Section Actualités ======= -->
-<section class="hero-section position-relative d-flex align-items-center justify-content-center text-white" style="background-image: url('assets/img/actualites-hero.jpg'); background-size: cover; background-position: center; height: 80vh;">
-  <!-- Overlay sombre -->
+<section class="hero-section position-relative d-flex align-items-center justify-content-center text-white" style="background-image: url('assets/img/actualités/act1.jpg'); background-size: cover; background-position: center; height: 80vh;">
   <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5);"></div>
 
   <!-- Contenu centré -->
   <div class="container position-relative z-2 text-center">
     <h1 class="display-4 fw-bold">Actualités</h1>
     <p class="lead">Restez informé des dernières nouvelles de l'ASUNICACO</p>
-
-    <!-- Mini Navigation (breadcrumb) -->
-    <nav aria-label="breadcrumb" class="d-flex justify-content-center mt-3">
-      <ol class="breadcrumb bg-transparent p-0 m-0">
-        <li class="breadcrumb-item"><a href="#" class="text-white-50 text-decoration-none">Accueil</a></li>
-        <li class="breadcrumb-item active text-white" aria-current="page">Actualités</li>
-      </ol>
-    </nav>
   </div>
 </section>
 
-<section class="*py-5">
+<section class="mb-4">
   <div class="container">
     <!-- Fil d'Ariane -->
     <div class="my-3">
@@ -55,7 +46,7 @@
             <label for="date_fin" class="form-label">Date fin</label>
             <input type="date" class="form-control" name="date_fin" id="date_fin">
           </div>
-          <button type="submit" class="btn btn-primary w-100">Appliquer</button>
+          <button type="submit" class="btn btn-custom w-100">Appliquer</button>
         </form>
       </div>
 
@@ -97,9 +88,9 @@
                 <img src="' . $actu['image'] . '" class="card-img-top" alt="...">
                 <div class="pt-4">
                   <h5 class="card-title">' . $actu['titre'] . '</h5>
-                  <p class="card-text"><small class="text-muted">' . $actu['date'] . '</small></p>
-                  <p class="card-text">' . $actu['resume'] . '</p>
-                  <a href="#" class="btn btn-sm btn-primary">Lire</a>
+                  <p class="py-2 m-0"><small class="text-muted">' . $actu['date'] . '</small></p>
+                  <p class="py-2 m-0">' . $actu['resume'] . '</p>
+                  <a href="#" class="btn btn-sm btn-custom">Lire</a>
                 </div>
               </div>
             </div>';
@@ -108,7 +99,7 @@
         </div>
 
         <!-- Pagination -->
-        <nav class="mt-4">
+        <nav class="mt-5">
           <ul class="pagination justify-content-center">
             <li class="page-item disabled"><a class="page-link" href="#">«</a></li>
             <li class="page-item active"><a class="page-link" href="#">1</a></li>
