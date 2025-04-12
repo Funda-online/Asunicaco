@@ -1,46 +1,8 @@
-<head>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    .hero-wrapper {
-      width: 100vw;
-      overflow-x: hidden;
-    }
-
-    .hero-image {
-      background: url('assets/img/1.jpg') center center / cover no-repeat;
-      width: 100vw;
-      height: 400px;
-    }
-
-    .section-title {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-
-    .apropos-p-size {
-      font-size: 24px;
-    }
-
-    .footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 30px 0;
-      margin-top: 60px;
-    }
-  </style>
-</head>
-
-<!-- Hero -->
-<div class="hero-wrapper">
-  <div class="hero-image d-flex align-items-center">
-    <!-- Tu peux ajouter un titre ici si tu veux -->
+<section class="hero-section position-relative d-flex align-items-center justify-content-center text-white" style="background-image: url('assets/img/1.jpg'); background-size: cover; background-position: center; height: 80vh;">
+  <div 
+    class="position-absolute top-0 start-0 w-100 h-100" 
   </div>
-</div>
+</section>
 
 <!-- Fil d'Ariane -->
 <div class="container my-3">

@@ -234,7 +234,14 @@ h6 {
     outline: none;
   }
   
+  .nav-link.active {
+    color: black !important;
+    /* font-weight: bold; */
+  }
 
+.apropos-p-size {
+  font-size: 24px;
+}
 
 
 
