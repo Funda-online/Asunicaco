@@ -3,7 +3,7 @@
   <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5);"></div>
 
   <div class="container position-relative z-2 text-center">
-    <h1 class="display-4 fw-bold">Contactez-nous</h1>
+    <h1 class="display-6 fw-bold">Contactez-nous</h1>
     <p class="lead">Nous sommes là pour répondre à toutes vos questions</p>
   </div>
 </section>

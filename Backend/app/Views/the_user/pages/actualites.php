@@ -1,18 +1,20 @@
 <!-- ======= Hero Section Actualités ======= -->
-<section class="hero-section position-relative d-flex align-items-center justify-content-center text-white" style="background-image: url('assets/img/actualités/act1.jpg'); background-size: cover; background-position: center; height: 80vh;">
-  <div 
-    class="position-absolute top-0 start-0 w-100 h-100" 
+<section class="hero-section position-relative d-flex align-items-center justify-content-center text-white"
+  style="background-image: url('assets/img/actualités/act1.jpg'); background-size: cover; background-position: center; height: 80vh;">
+
+  <div
+    class="position-absolute top-0 start-0 w-100 h-100"
     style="background-color: rgba(0,0,0,0.5);">
   </div>
 
   <!-- Contenu centré -->
   <div class="container position-relative z-2 text-center">
-    <h1 class="display-4 fw-bold">Actualités</h1>
+    <h1 class="display-6 fw-bold">Actualités</h1>
     <p class="lead">Restez informé des dernières nouvelles de l'ASUNICACO</p>
   </div>
 </section>
 
-<section class="mb-4">
+<section class="mb-4" data-aos="fade-up">
   <div class="container">
     <!-- Fil d'Ariane -->
     <div class="my-3">
@@ -99,20 +101,20 @@
             </div>';
           }
 
-        //   foreach ($actualites as $key => $actu) {
-        //     echo '
-        //     <div class="col g-4">
-        //       <div class="h-100">
-        //         <img src="' . $actu['image'] . '" class="card-img-top" alt="...">
-        //         <div class="pt-4">
-        //           <h5 class="card-title">' . $actu['titre'] . '</h5>
-        //           <p class="py-2 m-0"><small class="text-muted">' . $actu['date'] . '</small></p>
-        //           <p class="py-2 m-0">' . $actu['resume'] . '</p>
-        //           <a href="actualite-detail.php?id=' . $key . '" class="btn btn-sm btn-custom">Lire</a>
-        //         </div>
-        //       </div>
-        //     </div>';
-        // }        
+          //   foreach ($actualites as $key => $actu) {
+          //     echo '
+          //     <div class="col g-4">
+          //       <div class="h-100">
+          //         <img src="' . $actu['image'] . '" class="card-img-top" alt="...">
+          //         <div class="pt-4">
+          //           <h5 class="card-title">' . $actu['titre'] . '</h5>
+          //           <p class="py-2 m-0"><small class="text-muted">' . $actu['date'] . '</small></p>
+          //           <p class="py-2 m-0">' . $actu['resume'] . '</p>
+          //           <a href="actualite-detail.php?id=' . $key . '" class="btn btn-sm btn-custom">Lire</a>
+          //         </div>
+          //       </div>
+          //     </div>';
+          // }        
           ?>
         </div>
 

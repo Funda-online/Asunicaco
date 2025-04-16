@@ -6,7 +6,7 @@
   </div>
 
   <div class="container position-relative z-2 text-center">
-    <h1 class="display-4 fw-bold">Actualités</h1>
+    <h1 class="display-6 fw-bold">Actualités</h1>
     <p class="lead">Restez informé des dernières nouvelles de l'ASUNICACO</p>
   </div>
 </section>
