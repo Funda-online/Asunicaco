@@ -51,6 +51,19 @@
         <h3 class="section-title">A la une</h3>
       </header>
 
+      <p>
+<?php if (!empty($news)): ?>
+    <ul>
+        <?php foreach ($news as $item): ?>
+            <li><?= esc($item['title']) ?></li>
+        <?php endforeach; ?>
+    </ul>
+<?php else: ?>
+    <p>Aucune actualité disponible.</p>
+<?php endif; ?>
+
+      </p>
+
       <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
         <!-- Actualité 1 -->
         <div class="col-lg-4 col-md-6 portfolio-item filter-reseau">

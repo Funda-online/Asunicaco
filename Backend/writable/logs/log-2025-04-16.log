@@ -1,0 +1,330 @@
+CRITICAL - 2025-04-16 13:01:31 --> Error: Class "App\Controllers\NewsModel" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 20.
+ 1 APPPATH\Controllers\TheUserPageController.php(34): App\Controllers\TheUserPageController->getModel('news')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 13:02:28 --> Error: Class "App\Models\NewsModel" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 25.
+ 1 APPPATH\Controllers\TheUserPageController.php(39): App\Controllers\TheUserPageController->getModel('news')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 13:03:07 --> Error: Call to undefined method App\Controllers\TheUserPageController::respond()
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-16 13:04:19 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'asunicoco' in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'asunicoco', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(40): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'asunicoco' in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(40): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-16 13:04:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'asunicoco'
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\TheUserPageController.php(40): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 13:04:38 --> TypeError: App\Controllers\TheUserPageController::index(): Return value must be of type string, array returned
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 13:13:24 --> Error: Class "App\Controllers\ProvinceModel" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 25.
+ 1 APPPATH\Controllers\TheUserPageController.php(41): App\Controllers\TheUserPageController->getModel('province')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 13:16:55 --> Error: Class "App\Controllers\ProvinceModel" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 25.
+ 1 APPPATH\Controllers\TheUserPageController.php(41): App\Controllers\TheUserPageController->getModel('province')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 13:21:18 --> ErrorException: Undefined array key "title"
+[Method: GET, Route: /]
+in APPPATH\Views\the_user\pages\accueil.php on line 58.
+ 1 APPPATH\Views\the_user\pages\accueil.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Views\\the_user\\pages\\accueil.php', 58)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Views\\the_user\\pages\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('the_user/pages/accueil', [], true)
+ 5 APPPATH\Views\the_user\layout.php(57): view('the_user/pages/accueil')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Views\\the_user\\layout.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('the_user/layout', [], true)
+ 9 APPPATH\Controllers\TheUserPageController.php(31): view('the_user/layout', [...])
+10 APPPATH\Controllers\TheUserPageController.php(46): App\Controllers\TheUserPageController->render('accueil', 'Accueil | ASUNICACO', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 13:23:35 --> ErrorException: Undefined variable $universityModel
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 44.
+ 1 APPPATH\Controllers\TheUserPageController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $universityModel', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Controllers\\TheUserPageController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 13:23:53 --> ErrorException: Undefined variable $UniversityModel
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 44.
+ 1 APPPATH\Controllers\TheUserPageController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $UniversityModel', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Controllers\\TheUserPageController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 13:52:03 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\Data/News::getAll"
+[Method: GET, Route: api/news]
+in SYSTEMPATH\Router\Router.php on line 491.
+ 1 SYSTEMPATH\Router\Router.php(491): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Data/News::getAll')
+ 2 SYSTEMPATH\Router\Router.php(209): CodeIgniter\Router\Router->checkRoutes('api/news')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('api/news')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 13:55:40 --> ErrorException: Undefined variable $newsModel
+[Method: GET, Route: api/news]
+in APPPATH\Controllers\News.php on line 17.
+ 1 APPPATH\Controllers\News.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newsModel', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Controllers\\News.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\News->getAll()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 13:58:20 --> TypeError: json_decode(): Argument #1 ($json) must be of type string, array given
+[Method: GET, Route: api/news]
+in APPPATH\Controllers\News.php on line 18.
+ 1 APPPATH\Controllers\News.php(18): json_decode([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\News->getAll()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 14:04:46 --> Error: Class "App\Controllers\News" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 14:05:14 --> Error: Class "App\Controllers\News" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 14:05:26 --> Error: Class "App\Controllers\News" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 14:05:40 --> Error: Class "App\Controllers\DAO\News" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 14:08:18 --> Error: Class "App\Controllers\DAO\BaseController" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\DAO\News.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Controllers\\DAO\\News.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DAO\\News')
+ 4 APPPATH\Controllers\TheUserPageController.php(40): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DAO\\News')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 14:08:54 --> Error: Class "App\Controllers\DAO\BaseController" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\DAO\News.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Controllers\\DAO\\News.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DAO\\News')
+ 4 APPPATH\Controllers\TheUserPageController.php(40): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DAO\\News')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 14:18:08 --> ErrorException: foreach() argument must be of type array|object, bool given
+[Method: GET, Route: /]
+in APPPATH\Views\the_user\pages\accueil.php on line 57.
+ 1 APPPATH\Views\the_user\pages\accueil.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, bool given', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Views\\the_user\\pages\\accueil.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Views\\the_user\\pages\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('the_user/pages/accueil', [], true)
+ 5 APPPATH\Views\the_user\layout.php(57): view('the_user/pages/accueil')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Views\\the_user\\layout.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('the_user/layout', [], true)
+ 9 APPPATH\Controllers\TheUserPageController.php(15): view('the_user/layout', [...])
+10 APPPATH\Controllers\TheUserPageController.php(25): App\Controllers\TheUserPageController->render('accueil', 'Accueil | ASUNICACO', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 14:30:48 --> ErrorException: Declaration of App\Controllers\DAO\News::getInstance(): App\Controllers\DAO\News must be compatible with App\Controllers\DAO\DAO::getInstance(): CodeIgniter\Autoloader\Autoloader
+[Method: GET, Route: /]
+in APPPATH\Controllers\DAO\News.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-04-16 14:31:34 --> Error: Non-static method App\Controllers\DAO\DAO::getAll() cannot be called statically
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 14:33:17 --> Error: Non-static method App\Controllers\DAO\DAO::getAll() cannot be called statically
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 14:34:11 --> ErrorException: Declaration of App\Controllers\DAO\News::getInstance(): App\Controllers\DAO\News must be compatible with App\Controllers\DAO\DAO::getInstance(): CodeIgniter\Autoloader\Autoloader
+[Method: GET, Route: /]
+in APPPATH\Controllers\DAO\News.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-04-16 14:34:29 --> Error: Typed property App\Controllers\DAO\DAO::$model must not be accessed before initialization
+[Method: GET, Route: /]
+in APPPATH\Controllers\DAO\Dao.php on line 16.
+ 1 APPPATH\Controllers\TheUserPageController.php(24): App\Controllers\DAO\DAO::getAll()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 14:42:47 --> Error: Class "App\Controllers\Provinces" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 14:44:06 --> Error: Call to undefined method App\Controllers\DAO\Province::getProvincesWithUniversityCount()
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 14:44:42 --> Error: Call to undefined method App\Controllers\DAO\Province::getProvincesWithUniversityCount()
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 14:44:43 --> Error: Call to undefined method App\Controllers\DAO\Province::getProvincesWithUniversityCount()
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
