@@ -160,22 +160,25 @@ h6 {
 }
 #header .logo {
   margin: 0;
-  padding-left: 1%;
+  /* padding-left: 1%; */
   font-weight: 200;
   text-transform: uppercase;
   position: relative;
-  max-width: 20%;
-  margin-left: 40%;
+  /* max-width: 20%; */
+  /* margin-left: 40%; */
+  /* width: 15%;
+  height: 15%; */
 }
 
 #header .logo a {
   font-size: 24px;
   color: black;
+  /* display: flex; */
 }
 
-#header .logo img {
+/* #header .logo img {
   overflow: hidden;
-}
+} */
 
 @media (max-width: 992px) {
   #header .logo {
