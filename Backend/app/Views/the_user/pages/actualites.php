@@ -27,7 +27,7 @@
       <!-- Filtres -->
       <div class="col-md-3 mb-4">
         <h5>Filtrer les actualités</h5>
-        <form method="GET" action="Actualites.php">
+        <form method="GET" action="actualites.php">
           <div class="mb-3">
             <label for="motcle" class="form-label">Mot-clé</label>
             <input type="text" class="form-control" name="motcle" id="motcle">
@@ -93,11 +93,26 @@
                   <h5 class="card-title">' . $actu['titre'] . '</h5>
                   <p class="py-2 m-0"><small class="text-muted">' . $actu['date'] . '</small></p>
                   <p class="py-2 m-0">' . $actu['resume'] . '</p>
-                  <a href="#" class="btn btn-sm btn-custom">Lire</a>
+                  <a href="/Asunicaco/public/actualiteDetail/" class="btn btn-sm btn-custom">Lire</a>
                 </div>
               </div>
             </div>';
           }
+
+        //   foreach ($actualites as $key => $actu) {
+        //     echo '
+        //     <div class="col g-4">
+        //       <div class="h-100">
+        //         <img src="' . $actu['image'] . '" class="card-img-top" alt="...">
+        //         <div class="pt-4">
+        //           <h5 class="card-title">' . $actu['titre'] . '</h5>
+        //           <p class="py-2 m-0"><small class="text-muted">' . $actu['date'] . '</small></p>
+        //           <p class="py-2 m-0">' . $actu['resume'] . '</p>
+        //           <a href="actualite-detail.php?id=' . $key . '" class="btn btn-sm btn-custom">Lire</a>
+        //         </div>
+        //       </div>
+        //     </div>';
+        // }        
           ?>
         </div>
 

@@ -155,13 +155,15 @@ h6 {
 
 #header .entete{
   width: 100%;
+  border: 10px;
+  border-color: red;
 }
 #header .logo {
   margin: 0;
   padding-left: 1%;
   font-weight: 200;
   text-transform: uppercase;
-  /* position: relative; */
+  position: relative;
   max-width: 20%;
   margin-left: 40%;
 }
@@ -1394,4 +1396,13 @@ section {
   background: linear-gradient(145deg, #0056b3, #889cd2); /* Dégradé plus foncé */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   color: #fff;
+}
+
+/* .actualit-recent {
+  color: #2952A1;
+  background-color: #0e0e0e;
+} */
+
+.text-primary-app {
+  color: #2952A1 !important;
 }

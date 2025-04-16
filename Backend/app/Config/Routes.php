@@ -9,6 +9,7 @@ $routes->get('/', 'TheUserPageController::index');
 $routes->get('/apropos', 'TheUserPageController::apropos');
 $routes->get('/contact', 'TheUserPageController::contact');
 $routes->get('/actualites', 'TheUserPageController::actualites');
+$routes->get('/actualiteDetail', 'TheUserPageController::actualiteDetail');
 $routes->get('/provinces', 'TheUserPageController::provinces');
 
 $routes->get('/thebasecontroller', 'TheBaseController::index');

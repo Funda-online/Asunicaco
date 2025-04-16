@@ -1,0 +1,19 @@
+CRITICAL - 2025-04-16 14:22:54 --> ErrorException: Undefined variable $current_page
+[Method: GET, Route: apropos]
+in APPPATH\Views\the_user\components\header.php on line 17.
+ 1 APPPATH\Views\the_user\components\header.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $current_page', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Views\\the_user\\components\\header.php', 17)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Views\\the_user\\components\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('the_user/components/header', [], true)
+ 5 APPPATH\Views\the_user\layout.php(53): view('the_user/components/header')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Views\\the_user\\layout.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('the_user/layout', [], true)
+ 9 APPPATH\Controllers\TheUserPageController.php(9): view('the_user/layout', [...])
+10 APPPATH\Controllers\TheUserPageController.php(22): App\Controllers\TheUserPageController->render('apropos', 'À propos | ASUNICACO')
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->apropos()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

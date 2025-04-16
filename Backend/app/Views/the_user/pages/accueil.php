@@ -191,7 +191,7 @@
             <div class="swiper-wrapper align-items-center justify-content-center">
               <div class="universite-card ">
                 <a href="#" target="_blank">
-                  <img src="assets/img/logo-université/LOGO-UDBL1.webp" class="img-fluid" alt="Université UDBL" width="150" heigth="100">
+                  <img src="assets/img/logo-université/LOGO-UDBL2.jpg" class="img-fluid" alt="Université UDBL" width="80" heigth="30">
                 </a>
               </div>
               <!-- Université 2 -->
