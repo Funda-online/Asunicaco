@@ -21,8 +21,8 @@ class TheUserPageController extends BaseController
     {
         $data['news'] = News::getAll();
         $data['Provinces'] = Province::getProvincesWithUniversityCount();
-        var_dump ($data['Provinces']);
-        // return $this->render('accueil', 'Accueil | ASUNICACO', $data);
+        // var_dump ($data['Provinces']);
+        return $this->render('accueil', 'Accueil | ASUNICACO', $data);
     }
 
     public function apropos(): string

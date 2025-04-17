@@ -1,0 +1,11 @@
+CRITICAL - 2025-04-17 10:14:43 --> ErrorException: Undefined array key "news"
+[Method: GET, Route: provinces]
+in APPPATH\Controllers\TheUserPageController.php on line 16.
+ 1 APPPATH\Controllers\TheUserPageController.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "news"', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Controllers\\TheUserPageController.php', 16)
+ 2 APPPATH\Controllers\TheUserPageController.php(46): App\Controllers\TheUserPageController->render('provinces', 'Provinces | ASUNICACO')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->provinces()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
