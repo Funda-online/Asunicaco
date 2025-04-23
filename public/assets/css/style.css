@@ -1409,3 +1409,10 @@ section {
 .text-primary-app {
   color: #2952A1 !important;
 }
+
+.province-gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}

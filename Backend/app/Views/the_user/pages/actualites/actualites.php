@@ -14,7 +14,7 @@
   </div>
 </section>
 
-<section class="mb-4" data-aos="fade-up">
+<section class="mb-4">
   <div class="container">
     <!-- Fil d'Ariane -->
     <div class="my-3">
