@@ -11,6 +11,7 @@ $routes->get('/contact', 'TheUserPageController::contact');
 $routes->get('/actualites', 'TheUserPageController::actualites');
 $routes->get('/actualiteDetail', 'TheUserPageController::actualiteDetail');
 $routes->get('/provinces', 'TheUserPageController::provinces');
+$routes->get('/universite', 'TheUserPageController::universite');
 
 $routes->get('/thebasecontroller', 'TheBaseController::index');
 $routes->get('/dbtestcontroller', 'DbTestController::index');

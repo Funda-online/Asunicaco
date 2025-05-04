@@ -54,7 +54,7 @@ class TheUserPageController extends BaseController
     public function universite(): string
     {
         return view('the_user/layout', [
-            'title' =>  'UDBL | ASUNICACO',
+            'title' =>  'Universite | ASUNICACO',
             'content' => 'the_user/pages/provinces/universite',
         ]);
     }

@@ -1,87 +1,88 @@
-<!-- Contenu de la page Université -->
 <div class="container pt-5 mt-5">
-  <!-- Fil d’Ariane -->
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Accueil</a></li>
-      <li class="breadcrumb-item"><a href="#">Provinces</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Université</li>
-    </ol>
-  </nav>
+  <div class="mt-3">
+    <small><a href="index.php" style="color: #2952A1;">Accueil</a> / <a href="#" style="color: #2952A1">Provinces</a> / <span style="color: black;">Université</span></small>
 
-  <!-- Bannière avec image et informations à droite -->
+    <hr>
+  </div>
+
+  <!-- hero section-->
   <div class="row mb-4">
     <div class="col-md-8">
-      <img src="chemin/vers/image.jpg" class="img-fluid rounded" alt="Université Don Bosco">
+      <img src="assets/img/universite-page/1.jpg" class="*img-fluid" style="width: 100%; height: 400px; object-fit: cover;" alt="Université Don Bosco">
     </div>
+
     <div class="col-md-4">
-      <div class="card shadow-sm">
+      <div class="card border-0">
         <div class="card-body">
-          <div class="d-flex align-items-center mb-3">
-            <img src="chemin/vers/logo-udbl.png" alt="Logo UDBL" class="me-3" style="width: 40px;">
+          <div class="mb-3">
+            <img src="assets/img/logo-université/LOGO-UDBL2.jpg" alt="Logo UDBL" class="me-3 mb-2" style="width: 40px;">
             <div>
-              <h5 class="card-title mb-0">Université Don Bosco de Lubumbashi (UDBL)</h5>
+              <h5 class="card-title"><strong>Université Don Bosco de Lubumbashi (UDBL)</strong></h5>
             </div>
           </div>
-          <p><i class="bi bi-geo-alt"></i> 05, AV. FEMMES KATANGAISES, LUBUMBASHI – RDC</p>
-          <p><i class="bi bi-telephone"></i> +(243) 822 267 442</p>
-          <p><i class="bi bi-envelope"></i> info@udbl.ac.cd</p>
-          <p><i class="bi bi-globe"></i> <a href="https://udbl.ac.cd" target="_blank">https://udbl.ac.cd</a></p>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> 05, AV. FEMMES KATANGAISES, LUBUMBASHI – RDC</p>
+          <p class="mb-1"><i class="bi bi-telephone-fill"></i> +(243) 822 267 442</p>
+          <p class="mb-1"><i class="bi bi-envelope-fill"></i> infos@udbl.ac.cd</p>
+          <p><i class="bi bi-globe2"></i> <a href="https://udbl.ac.cd" target="_blank">https://udbl.ac.cd/</a></p>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Titre -->
-  <div class="text-center mb-4">
-    <img src="chemin/vers/logo-udbl.png" alt="Logo UDBL" style="width: 80px;">
-    <h2 class="mt-3 text-primary fw-bold">Université Don Bosco de Lubumbashi (UDBL)</h2>
+  <div class="d-flex align-items-center g-4 mb-4">
+    <img src="assets/img/logo-université/LOGO-UDBL2.jpg" alt="Logo UDBL" class="me-3" style="width: 80px;">
+    <div>
+      <h2 class="mt-3 fw-bold" style="color: #2952A1">Université Don Bosco de Lubumbashi (UDBL)</h2>
+    </div>
   </div>
 
   <!-- Informations générales -->
-  <h5 class="text-primary">Informations générales sur l’université</h5>
-  <p>
-    L’Université Don Bosco de Lubumbashi est un établissement d’enseignement supérieur et universitaire privé catholique...
-  </p>
-  <ul>
-    <li>École Supérieure d’Informatique Salama (ESIS)</li>
-    <li>École Supérieure de Gouvernance Politique et Économique (ECOPO)</li>
-    <li>Institut Supérieur de Philosophie Saint Jean Bosco (ISPh)</li>
-    <li>Institut de Théologie Saint François de Sales (ITSFS)</li>
-  </ul>
-  <p>
-    La vision de l’UDBL est de répondre aux enjeux de société, tant en formation qu’en recherche...
-  </p>
+  <div class="">
+    <h5 class="mb-3" style="color: #2952A1">Informations générales sur l’université</h5>
+    <p>L’Université Don Bosco de Lubumbashi est un établissement d’enseignement supérieur et universitaire privé catholique des salésiens de Don Bosco de la province Maria Assunta de l’Afrique Centrale ; née de la fusion des instituts et écoles supérieurs :</p>
+    <ul>
+      <li>École Supérieure d’Informatique Salama (ESIS)</li>
+      <li>École Supérieure de Gouvernance Politique et Économique (ECOPO)</li>
+      <li>Institut Supérieur de Philosophie Saint Jean Bosco (ISPh)</li>
+      <li>Institut de Théologie Saint François de Sales (ITSFS)</li>
+    </ul>
+    <p>La vision de l’UDBL est de répondre aux enjeux de société, tant en formation qu’en recherche, par la mise en commun des compétences de haut niveau et le rayonnement de l’excellence qu’elle propose.</p>
+  </div>
 
   <!-- Facultés -->
-  <h5 class="text-primary mt-4">Facultés organisées</h5>
-  <ul>
-    <li>Faculté des Sciences Informatiques</li>
-    <li>Faculté de Gestion et Ingénierie Financière</li>
-    <li>Faculté des Sciences de l’Homme et de la Société</li>
-    <li>Faculté de Théologie</li>
-  </ul>
+  <div class="mb-5">
+    <h5 class="mb-3" style="color: #2952A1">Facultés organisées</h5>
+    <ul>
+      <li>Faculté des Sciences Informatiques</li>
+      <li>Faculté de Gestion et Ingénierie Financière</li>
+      <li>Faculté des Sciences de l’Homme et de la Société</li>
+      <li>Faculté de Théologie</li>
+    </ul>
+  </div>
 
   <!-- Galerie -->
-  <h5 class="text-primary mt-4">Gallérie</h5>
-  <div class="row">
-    <div class="col-md-4 mb-3">
-      <img src="chemin/vers/image1.jpg" class="img-fluid rounded shadow-sm" alt="Image 1">
-    </div>
-    <div class="col-md-4 mb-3">
-      <img src="chemin/vers/image2.jpg" class="img-fluid rounded shadow-sm" alt="Image 2">
-    </div>
-    <div class="col-md-4 mb-3">
-      <img src="chemin/vers/image3.jpg" class="img-fluid rounded shadow-sm" alt="Image 3">
-    </div>
-    <div class="col-md-4 mb-3">
-      <img src="chemin/vers/image4.jpg" class="img-fluid rounded shadow-sm" alt="Image 4">
-    </div>
-    <div class="col-md-4 mb-3">
-      <img src="chemin/vers/image5.jpg" class="img-fluid rounded shadow-sm" alt="Image 5">
-    </div>
-    <div class="col-md-4 mb-3">
-      <img src="chemin/vers/image6.jpg" class="img-fluid rounded shadow-sm" alt="Image 6">
+  <div class="mb-5">
+    <h5 class="mb-3" style="color: #2952A1">Gallerie</h5>
+    <div class="row g-3">
+      <div class="col-6 col-md-4">
+        <img src="assets/img/1.jpg" class="img-fluid rounded" alt="Galerie 1">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="assets/img/1.jpg" class="img-fluid rounded" alt="Galerie 2">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="assets/img/1.jpg" class="img-fluid rounded" alt="Galerie 3">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="assets/img/1.jpg" class="img-fluid rounded" alt="Galerie 4">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="assets/img/1.jpg" class="img-fluid rounded" alt="Galerie 5">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="assets/img/1.jpg" class="img-fluid rounded" alt="Galerie 6">
+      </div>
     </div>
   </div>
 </div>
