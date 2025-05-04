@@ -1,13 +1,13 @@
 <!-- ======= Hero Section Actualités ======= -->
-<section class="hero-section position-relative d-flex align-items-center justify-content-center text-white" style="background-image: url('assets/img/actualités/act1.jpg'); background-size: cover; background-position: center; height: 80vh;">
+<section class="hero-section position-relative d-flex pt-5 align-items-center justify-content-center text-white" style="background-image: url('assets/img/actualités/act1.jpg'); background-size: cover; background-position: center; height: 80vh;">
   <div
     class="position-absolute top-0 start-0 w-100 h-100"
     style="background-color: rgba(0,0,0,0.5);">
   </div>
 
   <div class="container position-relative z-2 text-center">
-    <h1 class="display-6 fw-bold">Actualités</h1>
-    <p class="lead">Restez informé des dernières nouvelles de l'ASUNICACO</p>
+    <h1 class="*display-6 fw-bold">Rencontre Annuelle des Recteurs des Universités Catholiques</h1>
+    <!-- <p class="lead">Restez informé des dernières nouvelles de l'ASUNICACO</p> -->
   </div>
 </section>
 
@@ -15,7 +15,7 @@
   <div class="container">
     <!-- Fil d'Ariane -->
     <div class="my-3">
-      <small><a href="index.php">Accueil</a> / Actualités</small>
+      <small><a href="index.php" style="color: #2952A1;">Accueil</a> / <span style="color: black;">Actualités</span></small>
 
       <hr>
     </div>

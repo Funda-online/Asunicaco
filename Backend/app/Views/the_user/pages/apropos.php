@@ -1,4 +1,4 @@
-<section class="hero-section position-relative d-flex align-items-center justify-content-center text-white" style="background-image: url('assets/img/1.jpg'); background-size: cover; background-position: center; height: 80vh;">
+<section class="hero-section pt-5 position-relative d-flex align-items-center justify-content-center text-white" style="background-image: url('assets/img/apropos/1.jpg'); background-size: cover; background-position: center; height: 80vh;">
   <div 
     class="position-absolute top-0 start-0 w-100 h-100" 
   </div>
@@ -6,7 +6,8 @@
 
 <!-- Fil d'Ariane -->
 <div class="container my-3">
-  <small><a href="#">Accueil</a> / À propos</small>
+  <!-- <small><a href="#">Accueil</a> / À propos</small> -->
+  <small><a href="index.php" style="color: #2952A1;">Accueil</a> / <span style="color: black;">À propos</span></small>
 
   <hr>
 </div>

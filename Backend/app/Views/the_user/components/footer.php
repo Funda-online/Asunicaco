@@ -27,11 +27,11 @@
                 <h5 class="text-uppercase fw-bold mb-3">Nous contacter</h5>
                 <p class="text-light mb-1">
                     Centre Interdiocésain<br>
-                    Avenue Lumumba, n°59<br>
+                    Avenue Femmes Katangaises, N°05<br>
                     Haut katanga - Lubumbashi, RDC
                 </p>
-                <p class="text-light mb-1"><strong>Téléphone:</strong> +243 000 000 000</p>
-                <p class="text-light"><strong>Email:</strong> contact@asunicaco.com</p>
+                <p class="text-light mb-1"><strong>Téléphone:</strong> +243 854 122 221</p>
+                <p class="text-light"><strong>Email:</strong> jvande@udbl.ac.cd</p>
                 <div class="mt-3">
                     <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-5"></i></a>
                     <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-5"></i></a>

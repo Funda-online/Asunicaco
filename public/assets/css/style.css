@@ -1416,3 +1416,113 @@ section {
   object-fit: cover;
   border-radius: 0.5rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.province-page {
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.province-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.province-list {
+  min-width: 180px;
+  border-right: 1px solid #ccc;
+}
+
+.province-list h4 {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.province-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.province-list li {
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.province-list li.active {
+  color: #2764ac;
+  font-weight: bold;
+}
+
+.province-detail {
+  flex: 1;
+}
+
+.province-intro {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.province-intro img {
+  width: 250px;
+  object-fit: cover;
+}
+
+.infos-generales,
+.comite-gestion,
+.universites-membres {
+  margin-bottom: 2rem;
+}
+
+.info-images {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.info-images img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.universites-membres table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.universites-membres th,
+.universites-membres td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.universites-membres th {
+  background-color: #f9f9f9;
+}

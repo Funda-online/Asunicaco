@@ -1,16 +1,60 @@
 <!-- ======= Hero Section Actualités ======= -->
-<section class="hero-section position-relative d-flex align-items-center justify-content-center text-white"
-  style="background-image: url('assets/img/actualités/act1.jpg'); background-size: cover; background-position: center; height: 80vh;">
+<section id="heroCarousel" class="position-relative pt-5">
 
-  <div
-    class="position-absolute top-0 start-0 w-100 h-100"
-    style="background-color: rgba(0,0,0,0.5);">
-  </div>
+  <div class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
 
-  <!-- Contenu centré -->
-  <div class="container position-relative z-2 text-center">
-    <h1 class="display-6 fw-bold">Actualités</h1>
-    <p class="lead">Restez informé des dernières nouvelles de l'ASUNICACO</p>
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="hero-slide position-relative d-flex align-items-center justify-content-center text-white"
+          style="background-image: url('assets/img/actualités/act1.jpg'); background-size: cover; background-position: center; height: 80vh;">
+
+          <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5);"></div>
+
+          <div class="container position-relative z-2 text-center">
+            <h1 class="display-6">Rencontre annuelle des recteurs des universités catholiques</h1>
+            <a href="/Asunicaco/public/actualiteDetail/" class="btn btn-light mt-3">Lire plus...</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="hero-slide position-relative d-flex align-items-center justify-content-center text-white"
+          style="background-image: url('assets/img/actualités/act2.jpg'); background-size: cover; background-position: center; height: 80vh;">
+
+          <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5);"></div>
+
+          <div class="container position-relative z-2 text-center">
+            <h1 class="display-6 *fw-bold">Conférence sur l’enseignement catholique</h1>
+            <a href="/Asunicaco/public/actualiteDetail/" class="btn btn-light mt-3">Lire plus...</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="hero-slide position-relative d-flex align-items-center justify-content-center text-white"
+          style="background-image: url('assets/img/actualités/act3.jpg'); background-size: cover; background-position: center; height: 80vh;">
+
+          <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5);"></div>
+
+          <div class="container position-relative z-2 text-center">
+            <h1 class="display-6 *fw-bold">Programme d’échange interuniversitaire</h1>
+            <a href="/Asunicaco/public/actualiteDetail/" class="btn btn-light mt-3">Lire plus...</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Indicateurs (les 3 points) -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
   </div>
 </section>
 
@@ -18,7 +62,7 @@
   <div class="container">
     <!-- Fil d'Ariane -->
     <div class="my-3">
-      <small><a href="index.php">Accueil</a> / Actualités</small>
+      <small><a href="index.php" style="color: #2952A1;">Accueil</a> / <span style="color: black;">Actualités</span></small>
 
       <hr>
     </div>
