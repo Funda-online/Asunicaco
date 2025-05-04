@@ -66,22 +66,22 @@
     <h5 class="mb-3" style="color: #2952A1">Gallerie</h5>
     <div class="row g-3">
       <div class="col-6 col-md-4">
-        <img src="assets/img/1.jpg" class="img-fluid rounded" alt="Galerie 1">
+        <img src="assets/img/1.jpg" class="img-fluid" alt="Galerie 1">
       </div>
       <div class="col-6 col-md-4">
-        <img src="assets/img/1.jpg" class="img-fluid rounded" alt="Galerie 2">
+        <img src="assets/img/1.jpg" class="img-fluid" alt="Galerie 2">
       </div>
       <div class="col-6 col-md-4">
-        <img src="assets/img/1.jpg" class="img-fluid rounded" alt="Galerie 3">
+        <img src="assets/img/1.jpg" class="img-fluid" alt="Galerie 3">
       </div>
       <div class="col-6 col-md-4">
-        <img src="assets/img/1.jpg" class="img-fluid rounded" alt="Galerie 4">
+        <img src="assets/img/1.jpg" class="img-fluid" alt="Galerie 4">
       </div>
       <div class="col-6 col-md-4">
-        <img src="assets/img/1.jpg" class="img-fluid rounded" alt="Galerie 5">
+        <img src="assets/img/1.jpg" class="img-fluid" alt="Galerie 5">
       </div>
       <div class="col-6 col-md-4">
-        <img src="assets/img/1.jpg" class="img-fluid rounded" alt="Galerie 6">
+        <img src="assets/img/1.jpg" class="img-fluid" alt="Galerie 6">
       </div>
     </div>
   </div>
