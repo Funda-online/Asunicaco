@@ -25,7 +25,7 @@
     <div class="col-md-9">
       <!-- Intro Section -->
       <div class="d-md-flex mb-4 mt-4 mt-md-0">
-        <div class="border border-2 border-primary me-md-3">
+        <div class="me-md-4">
           <img src="assets/img/1.jpg" class="img-fluid me-3" alt="Kinshasa" style="min-width: 350px; object-fit: cover;">
         </div>
 
