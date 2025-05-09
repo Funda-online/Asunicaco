@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 CRITICAL - 2025-05-05 10:35:03 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "actualités"
+=======
+CRITICAL - 2025-05-05 10:23:16 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "actualités"
+>>>>>>> 710f446857b50d136dd2e31b010b63316092f2dd
 [Method: GET, Route: assets/img/actualit%C3%A9s/act2.jpg]
 in SYSTEMPATH\Router\Router.php on line 736.
  1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualités/act2.jpg')
@@ -8,6 +12,7 @@ in SYSTEMPATH\Router\Router.php on line 736.
  5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+<<<<<<< HEAD
 CRITICAL - 2025-05-05 10:35:07 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "actualités"
 [Method: GET, Route: assets/img/actualit%C3%A9s/act3.jpg]
 in SYSTEMPATH\Router\Router.php on line 736.
@@ -59,6 +64,9 @@ in SYSTEMPATH\Router\Router.php on line 736.
  6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 CRITICAL - 2025-05-05 19:56:12 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "actualités"
+=======
+CRITICAL - 2025-05-05 10:28:49 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "actualités"
+>>>>>>> 710f446857b50d136dd2e31b010b63316092f2dd
 [Method: GET, Route: assets/img/actualit%C3%A9s/act3.jpg]
 in SYSTEMPATH\Router\Router.php on line 736.
  1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualités/act3.jpg')
