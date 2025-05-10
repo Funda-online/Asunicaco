@@ -69,9 +69,25 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
+    <!-- <script>
+        const swiper = new Swiper('.universite-slider', {
+            slidesPerView: 'auto',
+            spaceBetween: 2,
+            loop: true,
+            speed: 3000, // plus la valeur est grande, plus le défilement est lent
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false
+            },
+            freeMode: true, // désactive les "snaps"
+            freeModeMomentum: false,
+            grabCursor: false
+        });
+    </script> -->
+
     <script>
         const swiper = new Swiper('.universite-slider', {
-            slidesPerView: 3,
+            slidesPerView: 5,
             loop: true,
             autoplay: {
                 delay: 2000,
@@ -79,13 +95,13 @@
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                 },
                 768: {
-                    slidesPerView: 3,
+                    slidesPerView: 5,
                 },
                 1024: {
-                    slidesPerView: 4,
+                    slidesPerView: 5,
                 }
             }
         });

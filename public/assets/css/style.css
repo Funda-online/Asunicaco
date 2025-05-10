@@ -305,7 +305,7 @@ h6 {
 
 .mobile-nav-toggle {
   color: #2952A1;
-  font-size: 3rem;
+  font-size: 1.9rem;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -323,7 +323,7 @@ h6 {
 
   .navbar a,
   .navbar a:focus {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: #2952A1;
     font-weight: 200;
     /* align-items: left; */
@@ -344,14 +344,14 @@ h6 {
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 15px;
+  top: 38px;
   right: 15px;
 }
 
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  padding-top: 30%;
+  padding-top: 22%;
   top: 0;
   left: 0;
   right: 0;
@@ -362,7 +362,7 @@ h6 {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   animation: slideDown 0.4s ease forwards;
 }
 
@@ -1126,9 +1126,9 @@ section {
 }
 
 .universite-card {
-  /* width: 50px; Uniform size for the icons */
+  /* width: 50px;  */
   height: auto;
-  margin: 0 15px;
+  /* margin: 0 15px; */
 }
 
 .universite-card img {

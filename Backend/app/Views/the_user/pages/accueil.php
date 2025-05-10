@@ -183,16 +183,17 @@
   <section id="universite">
     <div class="container" data-aos="zoom-in" id="Provinces">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 z-3 bg-white">
           <header class="section-header">
             <h3><span class="section-title">Universités<br> Membres</span></h3>
           </header>
         </div>
+
         <div class="col-lg-8">
           <div class="universite-slider">
-            <div class="swiper-wrapper align-items-center justify-content-center">
-              <div class="universite-card swiper-slide">
-                <a href="#"><img src="assets/img/logo-université/LOGO-UDBL2.jpg" class="img-fluid" alt="Université UDBL" width="80" height="30"></a>
+            <div class="swiper-wrapper align-items-center justify-content-center *border border-primary">
+              <div class="universite-card swiper-slide *border border-primary">
+                <a href="#"><img src="assets/img/logo-université/LOGO-UDBL2.jpg" class="img-fluid *border border-primary" alt="Université UDBL" width="80" height="30"></a>
               </div>
               <div class="universite-card swiper-slide">
                 <a href="#"><img src="assets/img/logo-université/Malkia.webp" class="img-fluid" alt="Université Malkia" width="80" height="30"></a>
@@ -205,6 +206,25 @@
               </div>
               <div class="universite-card swiper-slide">
                 <a href="#"><img src="assets/img/logo-université/ucb.webp" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+              </div>
+              <!-- added -->
+              <div class="universite-card swiper-slide">
+                <a href="#"><img src="assets/img/logo-université/UJKOL.webp" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+              </div>
+              <div class="universite-card swiper-slide">
+                <a href="#"><img src="assets/img/logo-université/IFTR.webp" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+              </div>
+              <div class="universite-card swiper-slide">
+                <a href="#"><img src="assets/img/logo-université/mulolwa.jpg" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+              </div>
+              <div class="universite-card swiper-slide">
+                <a href="#"><img src="assets/img/logo-université/universite catholique du congo.jpg" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+              </div>
+              <div class="universite-card swiper-slide">
+                <a href="#"><img src="assets/img/logo-université/IstemSJ.jpg" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+              </div>
+              <div class="universite-card swiper-slide">
+                <a href="#"><img src="assets/img/logo-université/Institut Supérieur d'Informatique Chaminade.jpg" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
               </div>
             </div>
 
