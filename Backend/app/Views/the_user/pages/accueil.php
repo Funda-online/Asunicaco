@@ -114,19 +114,19 @@
       </header>
 
       <div id="list-province" class="row  align-items-center" data-aos="fade-up" data-aos-delay="200">
-
-        <div class="col-lg-4 col-md-4 province-card">
+        <div class="col-lg-4 col-md-6 province-card ">
           <div class="card-content">
-            <h4>Kinshasa</h4>
-            <p>10 Institutions</p>
+            <h4>Haut-Katanga</h4>
+            <p>7 Institutions</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 province-card ">
+        
+        <div class="col-lg-4 col-md-4 province-card">
           <div class="card-content">
-            <h4>Katanga</h4>
+            <h4>Kinshasa</h4>
             <p>8 Institutions</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
@@ -134,11 +134,39 @@
           </div>
         </div>
 
-
+        <div class="col-lg-4 col-md-4 province-card">
+          <div class="card-content">
+            <h4>Haut-Uélé</h4>
+            <p>1 Institutions</p>
+            <div class="icon-box">
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+        </div>
 
         <div class="col-lg-4 col-md-4 province-card">
           <div class="card-content">
-            <h4>Kisangani</h4>
+            <h4>Kasaï Central</h4>
+            <p>1 Institutions</p>
+            <div class="icon-box">
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 province-card">
+          <div class="card-content">
+            <h4>Lomami</h4>
+            <p>1 Institutions</p>
+            <div class="icon-box">
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 province-card">
+          <div class="card-content">
+            <h4>Nord-Kivu</h4>
             <p>4 Institutions</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
@@ -148,8 +176,8 @@
 
         <div class="col-lg-4 col-md-4 province-card">
           <div class="card-content">
-            <h4>Tanganyika</h4>
-            <p>6 Institutions</p>
+            <h4>Sankuru</h4>
+            <p>1 Institutions</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
             </div>
@@ -158,18 +186,8 @@
 
         <div class="col-lg-4 col-md-4 province-card">
           <div class="card-content">
-            <h4>Sud kivu</h4>
-            <p>6 Institutions</p>
-            <div class="icon-box">
-              <i class="bi bi-arrow-right"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 province-card">
-          <div class="card-content">
-            <h4>Nord Kivu</h4>
-            <p>8 Institutions</p>
+            <h4>Sud-Kivu</h4>
+            <p>1 Institutions</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
             </div>
