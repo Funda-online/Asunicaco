@@ -16,7 +16,7 @@ body {
   color: #023642;
   font-family: "Poppins", sans-serif;
   font-size: 1em;
-  
+
 }
 
 a {
@@ -50,6 +50,7 @@ h6 {
   padding: 0;
   font-style: normal;
 }
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -77,10 +78,10 @@ h6 {
 .back-to-top:hover {
   background: #2952A1;
   color: #fff;
- 
+
 }
 
-.back-to-top:hover i{
+.back-to-top:hover i {
   color: #fff;
 }
 
@@ -133,7 +134,8 @@ h6 {
   background: #feffff;
   height: 100px;
   border: #0056b3 1px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);  /* Ombre légère */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  /* Ombre légère */
 }
 
 #header::before {
@@ -145,17 +147,18 @@ h6 {
   height: 100px;
 }
 
-#header.header-scrolled  .navbar a{
-  color: #2952A1 ;
+#header.header-scrolled .navbar a {
+  color: #2952A1;
   /* height: 40px; */
 }
 
 
-#header .entete{
+#header .entete {
   width: 100%;
   border: 10px;
   border-color: red;
 }
+
 #header .logo {
   margin: 0;
   /* padding-left: 1%; */
@@ -189,9 +192,11 @@ h6 {
 #actualites .card-title {
   font-size: 1.1rem;
 }
+
 #actualites .card-text {
   font-size: 0.9rem;
 }
+
 #actualites .btn {
   font-size: 0.8rem;
   padding: 0.3rem 0.8rem;
@@ -201,46 +206,49 @@ h6 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-  .btn-custom {
-    background-color: #2952A1;
-    border-color: #2952A1;
-    color: white;
-  }
+.btn-custom {
+  background-color: #2952A1;
+  border-color: #2952A1;
+  color: white;
+}
 
-  .btn-custom:hover {
-    background-color: #1f3f7d;
-    border-color: #1f3f7d;
-    color: white;
-  }
+.btn-custom:hover {
+  background-color: #1f3f7d;
+  border-color: #1f3f7d;
+  color: white;
+}
 
-  .pagination .page-link {
-    color: #2952A1; /* couleur du texte */
-    border: 1px solid #2952A1; /* bordures */
-  }
-  
-  .pagination .page-link:hover {
-    background-color: #2952A1;
-    color: white;
-    border-color: #2952A1;
-  }
-  
-  .pagination .active .page-link {
-    background-color: #2952A1;
-    border-color: #2952A1;
-    color: white;
-  }
+.pagination .page-link {
+  color: #2952A1;
+  /* couleur du texte */
+  border: 1px solid #2952A1;
+  /* bordures */
+}
 
-  .form-control:focus,
-  .form-select:focus {
-    border-color: #2952A1;
-    box-shadow: 0 0 0 0.25rem rgba(41, 82, 161, 0.25); /* effet focus bleu clair */
-    outline: none;
-  }
-  
-  .nav-link.active {
-    color: black !important;
-    /* font-weight: bold; */
-  }
+.pagination .page-link:hover {
+  background-color: #2952A1;
+  color: white;
+  border-color: #2952A1;
+}
+
+.pagination .active .page-link {
+  background-color: #2952A1;
+  border-color: #2952A1;
+  color: white;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #2952A1;
+  box-shadow: 0 0 0 0.25rem rgba(41, 82, 161, 0.25);
+  /* effet focus bleu clair */
+  outline: none;
+}
+
+.nav-link.active {
+  color: black !important;
+  /* font-weight: bold; */
+}
 
 .apropos-p-size {
   font-size: 24px;
@@ -294,7 +302,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
-  .mobile-flex-content{
+  .mobile-flex-content {
     display: flex;
   }
 }
@@ -377,19 +385,23 @@ h6 {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 /* ===== Hero Section ===== */
 #hero {
   width: 100%;
-  height: 100vh;  /* Toute la hauteur de l'écran */
-  background: linear-gradient(to bottom, #2952A1, #f9f9f9);  /* Dégradé bleu clair vers blanc */
+  height: 100vh;
+  /* Toute la hauteur de l'écran */
+  background: linear-gradient(to bottom, #2952A1, #f9f9f9);
+  /* Dégradé bleu clair vers blanc */
   display: flex;
   align-items: center;
 }
@@ -409,7 +421,8 @@ h6 {
 }
 
 .img-illustration {
-  margin-top: 20px; /* Décalage vertical sous le texte */
+  margin-top: 20px;
+  /* Décalage vertical sous le texte */
 }
 
 .hero-image {
@@ -425,16 +438,19 @@ h6 {
     font-size: 2rem;
     margin-top: 40%;
   }
+
   .img-illustration {
     margin-top: 30px;
   }
+
   .hero-image {
     width: 100%;
   }
 
   #hero {
-    height: 50vh;  /* Toute la hauteur de l'écran */
-    background: linear-gradient(to bottom, #2952A1 40%, #f9f9f9 100%); 
+    height: 50vh;
+    /* Toute la hauteur de l'écran */
+    background: linear-gradient(to bottom, #2952A1 40%, #f9f9f9 100%);
     /* background: linear-gradient(to bottom, #2952A1 50%, #f7f7f7 100%); */
     display: flex;
     align-items: center;
@@ -447,11 +463,12 @@ h6 {
     padding: 20px;
     text-align: center;
   }
-  
+
   .img-illustration {
-    margin-top: 0; /* Décalage vertical sous le texte */
+    margin-top: 0;
+    /* Décalage vertical sous le texte */
   }
-  
+
   .hero-image {
     display: none;
   }
@@ -473,7 +490,7 @@ section {
   text-align: center;
   font-weight: 400;
   position: relative;
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
 }
 
 .thecenter p {
@@ -489,8 +506,9 @@ section {
   .section-header h3 {
     font-size: 25px;
     font-weight: 300;
+    padding-bottom: 15px;
   }
-  
+
 }
 
 .section-header p {
@@ -509,6 +527,7 @@ section {
 .section-bg-funda {
   background: #9dceda;
 }
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -564,7 +583,7 @@ section {
 #featured-services {
   background: #fff;
   /* color: #fff; */
-  
+
 }
 
 #featured-services .box {
@@ -573,7 +592,7 @@ section {
 
 #featured-services .box-bg {
   background: #023642;
-  color : white;
+  color: white;
   /* background-image: linear-gradient(0deg, #023642 0%, #242323 50%, #023642 100%); */
 }
 
@@ -598,7 +617,7 @@ section {
   margin-bottom: 0;
 }
 
-#featured-services .box-bg   p {
+#featured-services .box-bg p {
   color: #fff;
 }
 
@@ -617,14 +636,16 @@ section {
     /* visibility: hidden; */
     /* line-height: 1; */
   }
-  
+
 }
+
 /* About Us Section
 --------------------------------*/
 /* ===== About Section ===== */
 #about {
   padding: 80px 0;
-  background-color: #f9f9f9; /* Couleur de fond douce */
+  background-color: #f9f9f9;
+  /* Couleur de fond douce */
   position: relative;
 }
 
@@ -635,7 +656,8 @@ section {
   padding: 30px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Ombre subtile */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Ombre subtile */
 }
 
 #about .about-title {
@@ -659,10 +681,11 @@ section {
 
 #about .about-img {
   /* width: 85%;  Taille réduite pour plus d'espace */
-  
-  border-radius: 10px;  /* Bords arrondis
+
+  border-radius: 10px;
+  /* Bords arrondis
   /* object-fit: cover;
-  height: 100%; */ 
+  height: 100%; */
   max-width: 100%;
 }
 
@@ -677,7 +700,7 @@ section {
     margin-top: 20px;
   }
 
-  
+
   #about .about-title {
     display: none;
     text-align: right;
@@ -816,7 +839,7 @@ section {
 }
 
 #portfolio .portfolio-wrap {
-  background:#ecebeb;
+  background: #ecebeb;
   border-radius: 12px;
   /* box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1); */
   /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
@@ -880,7 +903,7 @@ section {
   font-size: 0.7rem;
   display: inline-block;
   padding: 6px 15px;
-  background-color: #2952A1 ;
+  background-color: #2952A1;
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
@@ -888,7 +911,7 @@ section {
 }
 
 #portfolio .portfolio-info .btn-more:hover {
-  background-color: #2952A1 ;
+  background-color: #2952A1;
   transform: translateY(-10px);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
@@ -897,7 +920,7 @@ section {
   font-size: 0.8rem;
   display: inline-block;
   padding: 5px 5px;
-  background-color: #2952A1 ;
+  background-color: #2952A1;
   color: white;
   text-decoration: none;
   /* font-weight: bold; */
@@ -909,14 +932,14 @@ section {
 }
 
 #portfolio .modal-btn:hover {
-  background-color: #2952A1 ;
+  background-color: #2952A1;
 }
 
 .btn-lire {
   font-size: 0.7rem;
   display: inline-block;
   padding: 6px 15px;
-  background-color: #2952A1 ;
+  background-color: #2952A1;
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
@@ -924,7 +947,7 @@ section {
 }
 
 .btn-lire:hover {
-  background-color: #2952A1 ;
+  background-color: #2952A1;
   transform: translateY(-10px);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
@@ -936,28 +959,33 @@ section {
 /* ===== Provinces Section ===== */
 #province {
   padding: 60px 0;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);  /* Ombre légère */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  /* Ombre légère */
 }
 
 #province .section-title {
-  font-size: 2,5rem;
+  font-size: 2, 5rem;
   margin-bottom: 40px;
 }
 
 /* ===== Grid Layout Responsive ===== */
 #list-province {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* 3 colonnes sur grand écran, adaptatif */
-  gap: 30px;  /* Espacement entre les éléments */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* 3 colonnes sur grand écran, adaptatif */
+  gap: 30px;
+  /* Espacement entre les éléments */
 }
 
 /* Province Cards - Style */
 .province-card {
-  background: #ecebeb;
+  /* background: #ecebeb;  */
+  background: #f7f7f7;
   padding: 20px;
   /* border-radius: 5px; */
   /* text-align: center; */
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);  /* Ombre légère */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  /* Ombre légère */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
   position: relative;
@@ -965,15 +993,17 @@ section {
 
 .province-card:hover {
 
-  transform: translateY(-8px);  /* Effet lift */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);  /* Ombre plus marquée */
+  transform: translateY(-8px);
+  /* Effet lift */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  /* Ombre plus marquée */
 }
 
 /* Titre des Provinces */
 .province-card h4 {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #000; 
+  color: #000;
   margin-bottom: 8px;
 }
 
@@ -987,22 +1017,26 @@ section {
 .icon-box {
   display: inline-block;
   background: #2952A1;
-  padding: 0  12px 0 12px ;
+  padding: 0 12px 0 12px;
   border-radius: 10%;
+  cursor: pointer;
+  justify-content: end;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   transition: background 0.3s ease;
   /* max-height: 10px; */
 }
 
 .icon-box:hover {
-  background: #025c70;  /* Bleu foncé au hover */
+  background: #025c70;
+  /* Bleu foncé au hover */
 }
 
 /* Breakpoint pour un meilleur rendu sur très petits écrans */
 @media (max-width: 768px) {
   #list-province {
     grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+
     /* grid-template-columns: 1fr;  1 colonne sur mobile */
     .province-card {
       width: 90%;
@@ -1017,7 +1051,8 @@ section {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   #list-province {
-    grid-template-columns: repeat(2, 1fr);  /* 2 colonnes sur tablette */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 colonnes sur tablette */
   }
 }
 
@@ -1093,7 +1128,7 @@ section {
 #universite {
   padding: 60px 0;
   width: 100%;
-  
+
 }
 
 /* Title Section */
@@ -1115,9 +1150,57 @@ section {
 }
 
 /* Université Cards and Swiper */
-.universite-slider {
+/* .universite-slider {
   padding: 0 1em;
+  overflow: scroll;
+} */
+
+
+
+
+.universite-slider {
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  padding: 10px 40px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
 }
+
+.universite-slider::-webkit-scrollbar {
+  display: none;            
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: white;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  opacity: 0.7;
+}
+
+.scroll-btn.left {
+  left: 0;
+  background: #2952A1;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.scroll-btn.right {
+  right: 0;
+  background: #2952A1;
+  color: #fff;
+  border-radius: 2px;
+}
+
+
+
 
 #universite .swiper-wrapper {
   display: flex;
@@ -1170,22 +1253,26 @@ section {
 /* Mobile Adjustments */
 @media (max-width: 768px) {
   #universite .universite-card {
-    width: 120px; /* Reduced size on small screens */
+    width: 120px;
+    /* Reduced size on small screens */
     margin: 0 10px;
   }
 
   #universite .swiper-wrapper {
-    justify-content: center; /* Centering the icons on smaller screens */
+    justify-content: center;
+    /* Centering the icons on smaller screens */
   }
 
   #universite .swiper-slide {
-    margin-bottom: 15px; /* Spacing between icons */
+    margin-bottom: 15px;
+    /* Spacing between icons */
   }
 }
 
 @media (max-width: 480px) {
   #universite .universite-card {
-    width: 100px; /* Further reduced size for very small screens */
+    width: 100px;
+    /* Further reduced size for very small screens */
     margin: 0 8px;
   }
 
@@ -1261,7 +1348,7 @@ section {
   background: #fff;
   color: #0799ba;
   border-radius: 50%;
-  border : 1px solid #0799ba;
+  border: 1px solid #0799ba;
 }
 
 #footer .footer-top h4 {
@@ -1272,11 +1359,11 @@ section {
 }
 
 #footer .footer-top h4::after {
-  background: #025c70; 
+  background: #025c70;
   width: 60px;
 }
 
-#footer .footer-top .div{
+#footer .footer-top .div {
   border-left: dotted 1px #FFFF;
   border-right: dotted 1px #FFFF;
 }
@@ -1300,6 +1387,7 @@ section {
   /* border-bottom: 1px solid #333; */
   padding: 3px 0;
 }
+
 #footer .footer-top .footer-links ul li a {
   /* border-bottom: 1px solid #333; */
   color: #FFFF;
@@ -1356,7 +1444,8 @@ section {
 /* Bouton */
 
 .modal-btn:hover {
-  background: linear-gradient(145deg, #0056b3, #889cd2); /* Dégradé plus foncé */
+  background: linear-gradient(145deg, #0056b3, #889cd2);
+  /* Dégradé plus foncé */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   color: #fff;
 }

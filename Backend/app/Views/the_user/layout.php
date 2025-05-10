@@ -86,6 +86,15 @@
     </script> -->
 
     <script>
+  function scrollLogos(direction) {
+    const container = document.getElementById('logoContainer');
+    const scrollAmount = 200;
+    container.scrollLeft += direction === 'left' ? -scrollAmount : scrollAmount;
+  }
+</script>
+
+
+    <!-- <script>
         const swiper = new Swiper('.universite-slider', {
             slidesPerView: 5,
             loop: true,
@@ -105,7 +114,7 @@
                 }
             }
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

@@ -2,7 +2,7 @@
     <div class="container text-md-left">
         <div class="row">
 
-            <!-- Colonne Logo & Description -->
+            <!-- Colonne Logo & Description #2952A1 -->
             <div class="col-md-6 col-lg-6 mb-4">
                 <h4 class="text-uppercase fw-bold mb-3">ASUNICACO</h4>
                 <p class="text-light">
