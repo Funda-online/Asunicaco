@@ -14,7 +14,7 @@
             <div class="col-md-3 col-lg-3 mb-4">
                 <h5 class="text-uppercase fw-bold mb-3">Navigation</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><i class="bi bi-chevron-right text-white"></i> <a href="#hero" class="text-light text-decoration-none">À propos</a></li>
+                    <li class="mb-2"><i class="bi bi-chevron-right text-white"></i> <a href="#main" class="text-light text-decoration-none">À propos</a></li>
                     <li class="mb-2"><i class="bi bi-chevron-right text-white"></i> <a href="#portfolio" class="text-light text-decoration-none">Actualités</a></li>
                     <li class="mb-2"><i class="bi bi-chevron-right text-white"></i> <a href="#province" class="text-light text-decoration-none">Provinces</a></li>
                     <li class="mb-2"><i class="bi bi-chevron-right text-white"></i> <a href="#footer" class="text-light text-decoration-none">Contact</a></li>

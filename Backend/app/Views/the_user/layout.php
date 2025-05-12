@@ -10,7 +10,7 @@
     <meta property="og:description" content="Association des Universités et Instituts Supérieurs Catholiques du Congo : L'Association des Universités et Instituts Supérieurs Catholiques du Congo (ASUNICACO) rassemble les établissements d'enseignement supérieur reconnus à la fois par le Ministère de l’Enseignement Supérieur et Universitaire (ESU) et par l’Église catholique en République Démocratique du Congo. Ses statuts sont officiellement validés par la Conférence Épiscopale du Congo ainsi que par l’État congolais.">
     <meta property="og:url" content="#">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/img/1.jpg">
+    <meta property="og:image" content="assets/img/2.jpg">
     <meta property="og:image:width" content="5373">
     <meta property="og:image:height" content="3582">
     <meta property="og:image:alt" content="Asunicaco background image">

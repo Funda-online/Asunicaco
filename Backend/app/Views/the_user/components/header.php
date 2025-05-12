@@ -17,8 +17,8 @@ $current_page = basename($_SERVER['REQUEST_URI']);
 
         <nav id="navbar" class="navbar">
           <ul class="justify-content-lg-center align-items-lg-center">
-            <li><a class="nav-link text-black" href="#acceuil">Accueil</a></li>
-            <li><a class="nav-link" href="#hero">Apropos</a></li>
+            <!-- <li><a class="nav-link text-black" href="#acceuil">Accueil</a></li> -->
+            <li><a class="nav-link" href="#main">Apropos</a></li>
             <li><a class="nav-link" href="#portfolio">Actualités</a></li>
             <li><a class="nav-link" href="#province">Provinces</a></li>
             <li><a class="nav-link" href="#footer">Contact</a></li>
