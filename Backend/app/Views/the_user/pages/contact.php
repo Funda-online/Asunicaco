@@ -40,7 +40,7 @@
 
     <!-- Colonne droite : Image -->
     <div class="col-md-6">
-      <img src="assets/img/contact/1.jpg" alt="Image contact" class="img-fluid w-100 h-100 object-fit-cover">
+      <img src="assets/img/contact/2.jpg" alt="Image contact" class="img-fluid w-100 h-100 object-fit-cover">
     </div>
   </div>
 </div>
