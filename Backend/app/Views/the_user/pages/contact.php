@@ -7,11 +7,11 @@
 
   <div class="row g-0">
     <!-- Colonne gauche : Texte -->
-    <div class="col-md-6 d-flex flex-column justify-content-center *p-4 *p-lg-5">
+    <div class="col-md-6 d-flex flex-column justify-content-center">
       <h1 class="display-6 fw-bold mb-4 mt-4">Contacter Asunicaco</h1>
       <p class="mb-4" style="color: #495057; font-size: 1.1rem;">Merci d'avoir visité notre site Web.</p>
 
-      <div class="mb-4">
+      <div class="mb-lg-4">
         <p style="color: #495057;">
           <i class="bi bi-telephone me-2" style="color: #2952A1;"></i>
           Pour toute demande générale, veuillez appeler le <br>
@@ -25,7 +25,7 @@
         </p>
       </div>
 
-      <div class="mt-3">
+      <div>
         <p style="color: #495057; font-weight: 500;">
           <i class="bi bi-geo-alt me-2" style="color: #2952A1;"></i>
           Notre Adresse physique :
