@@ -117,7 +117,7 @@
         <div class="col-lg-4 col-md-6 province-card ">
           <div class="card-content">
             <h4>Haut-Katanga</h4>
-            <p>7 Institutions</p>
+            <p>8 Institutions</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
             </div>
@@ -137,7 +137,7 @@
         <div class="col-lg-4 col-md-4 province-card">
           <div class="card-content">
             <h4>Haut-Uélé</h4>
-            <p>1 Institutions</p>
+            <p>1 Institution</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
             </div>
@@ -146,8 +146,20 @@
 
         <div class="col-lg-4 col-md-4 province-card">
           <div class="card-content">
+            <h4>Lualaba</h4>
+            <p>1 Institution</p>
+            <div class="icon-box">
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="col-lg-4 col-md-4 province-card">
+          <div class="card-content">
             <h4>Kasaï Central</h4>
-            <p>1 Institutions</p>
+            <p>1 Institution</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
             </div>
@@ -157,7 +169,7 @@
         <div class="col-lg-4 col-md-4 province-card">
           <div class="card-content">
             <h4>Lomami</h4>
-            <p>1 Institutions</p>
+            <p>1 Institution</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
             </div>
@@ -167,7 +179,7 @@
         <div class="col-lg-4 col-md-4 province-card">
           <div class="card-content">
             <h4>Nord-Kivu</h4>
-            <p>4 Institutions</p>
+            <p>5 Institutions</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
             </div>
@@ -177,7 +189,7 @@
         <div class="col-lg-4 col-md-4 province-card">
           <div class="card-content">
             <h4>Sankuru</h4>
-            <p>1 Institutions</p>
+            <p>1 Institution</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
             </div>
@@ -187,7 +199,7 @@
         <div class="col-lg-4 col-md-4 province-card">
           <div class="card-content">
             <h4>Sud-Kivu</h4>
-            <p>1 Institutions</p>
+            <p>1 Institution</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
             </div>
