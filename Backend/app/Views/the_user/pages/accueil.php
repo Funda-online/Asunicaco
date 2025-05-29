@@ -1,42 +1,39 @@
-<section id="hero">
+<!-- <section id="hero">
   <div class="hero-container">
     <div class="container">
       <div class="row align-items-center text-center text-md-start">
-        <!-- Bloc de texte centré -->
         <div class="col-md-6 hero-text">
           <h2>Ensemble, pour un savoir qui transforme</h2>
         </div>
-        <!-- Image positionnée légèrement en dessous à gauche -->
         <div class="col-md-6 text-center">
           <div class="img-illustration">
             <img src="assets/img/back.png" alt="img-illustration" class="hero-image">
           </div>
         </div>
-
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
-<main id="main">
+<main id="main" class="mt-5 pt-3">
   <section id="about" class="section-bg">
     <div class="container" data-aos="fade-up">
       <div class="row align-items-center about-col">
 
         <!-- Bloc de description avec espacement et marges -->
-        <div class="col-md-6 description text-center text-md-start">
-          <h4 class="about-title">
+        <div class="col-md-6 description text-md-start">
+          <h4 class="about-title association">
             Association des Universités et Instituts Supérieurs Catholiques du Congo.
           </h4>
           <p class="about-text">
-            L'Association des Universités et Instituts Supérieurs Catholiques du Congo (ASUNICACO) rassemble les établissements d'enseignement supérieur reconnus à la fois par le Ministère de l’Enseignement Supérieur et Universitaire (ESU) et par l’Église catholique en République Démocratique du Congo. Ses statuts sont officiellement validés par la Conférence Épiscopale du Congo ainsi que par l’État congolais.
+            <strong>L'Association des Universités et Instituts Supérieurs Catholiques du Congo (ASUNICACO)</strong> rassemble les établissements d'enseignement supérieur reconnus à la fois par le Ministère de l’Enseignement Supérieur et Universitaire (ESU) et par l’Église catholique en République Démocratique du Congo. Ses statuts sont officiellement validés par la Conférence Épiscopale du Congo ainsi que par l’État congolais.
           </p>
         </div>
 
         <!-- Bloc Image positionné avec centrage -->
         <div class="col-md-6 text-center">
           <div class="about-img-container">
-            <img src="assets/img/1.jpg" alt="about-img" class="about-img">
+            <img src="assets/img/2.jpg" alt="about-img" class="about-img">
           </div>
         </div>
 
@@ -51,8 +48,13 @@
         <h3 class="section-title">A la une</h3>
       </header>
 
-      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-        <!-- Actualité 1 -->
+      <div class="thecenter">
+        <p class="align-items-center  justify-content-center ">
+          Aucune actualité.
+        </p>
+      </div>
+
+      <!-- <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
         <div class="col-lg-4 col-md-6 portfolio-item filter-reseau">
           <div class="portfolio-wrap">
             <figure>
@@ -67,7 +69,6 @@
           </div>
         </div>
 
-        <!-- Actualité 2 -->
         <div class="col-lg-4 col-md-6 portfolio-item filter-reseau">
           <div class="portfolio-wrap">
             <figure>
@@ -82,7 +83,6 @@
           </div>
         </div>
 
-        <!-- Actualité 3 -->
         <div class="col-lg-4 col-md-6 portfolio-item filter-reseau">
           <div class="portfolio-wrap">
             <figure>
@@ -96,13 +96,13 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="row centre">
+      <!-- <div class="row centre">
         <div class="col-md-12 text-center">
-          <a href="#" class="modal-btn" id="modal-btn">Voir plus d'actualités</a>
+          <button type="button" disabled class="modal-btn" id="modal-btn">Voir plus d'actualités</button>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -113,17 +113,17 @@
         <h3 class="section-title">Différentes provinces</h3>
       </header>
 
-      <div id="list-province" class="row" data-aos="fade-up" data-aos-delay="200">
-        <div class="col-lg-4 col-md-6 province-card">
+      <div id="list-province" class="row  align-items-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-4 col-md-6 province-card ">
           <div class="card-content">
-            <h4>Katanga</h4>
-            <p>8 Institutions</p>
+            <h4>Haut-Katanga</h4>
+            <p>7 Institutions</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
             </div>
           </div>
         </div>
-
+        
         <div class="col-lg-4 col-md-4 province-card">
           <div class="card-content">
             <h4>Kinshasa</h4>
@@ -136,8 +136,8 @@
 
         <div class="col-lg-4 col-md-4 province-card">
           <div class="card-content">
-            <h4>Kisangani</h4>
-            <p>8 Institutions</p>
+            <h4>Haut-Uélé</h4>
+            <p>1 Institutions</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
             </div>
@@ -146,8 +146,8 @@
 
         <div class="col-lg-4 col-md-4 province-card">
           <div class="card-content">
-            <h4>Tanganyika</h4>
-            <p>8 Institutions</p>
+            <h4>Kasaï Central</h4>
+            <p>1 Institutions</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
             </div>
@@ -156,8 +156,8 @@
 
         <div class="col-lg-4 col-md-4 province-card">
           <div class="card-content">
-            <h4>Sud kivu</h4>
-            <p>8 Institutions</p>
+            <h4>Lomami</h4>
+            <p>1 Institutions</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
             </div>
@@ -166,8 +166,28 @@
 
         <div class="col-lg-4 col-md-4 province-card">
           <div class="card-content">
-            <h4>Nord Kivu</h4>
-            <p>8 Institutions</p>
+            <h4>Nord-Kivu</h4>
+            <p>4 Institutions</p>
+            <div class="icon-box">
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 province-card">
+          <div class="card-content">
+            <h4>Sankuru</h4>
+            <p>1 Institutions</p>
+            <div class="icon-box">
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 province-card">
+          <div class="card-content">
+            <h4>Sud-Kivu</h4>
+            <p>1 Institutions</p>
             <div class="icon-box">
               <i class="bi bi-arrow-right"></i>
             </div>
@@ -177,52 +197,106 @@
     </div>
   </section>
 
-  <!-- ======= Our Clients Section ======= -->
+  <!-- ======= Universite Section ======= -->
   <section id="universite">
     <div class="container" data-aos="zoom-in" id="Provinces">
       <div class="row">
-        <div class="col-lg-4">
-          <header class="section-header">
+        <div class="col-lg-4 z-3 align-items-center justify-content-center bg-white">
+          <header class="section-header text-center">
             <h3><span class="section-title">Universités<br> Membres</span></h3>
           </header>
         </div>
-        <div class="col-lg-8">
-          <div class="universite-slider">
-            <div class="swiper-wrapper align-items-center justify-content-center">
-              <div class="universite-card ">
-                <a href="#" target="_blank">
-                  <img src="assets/img/logo-université/LOGO-UDBL2.jpg" class="img-fluid" alt="Université UDBL" width="80" heigth="30">
-                </a>
+
+        <!-- <div class="col-lg-8">
+          <div class="swiper universite-slider">
+            <div class="swiper-wrapper align-items-center justify-content-center *border border-primary">
+              <div class="universite-card swiper-slide *border border-primary">
+                <a href="#"><img src="assets/img/logo-université/LOGO-UDBL2.jpg" class="img-fluid *border border-primary" alt="Université UDBL" width="80" height="30"></a>
               </div>
-              <!-- Université 2 -->
-              <div class="universite-card ">
-                <a href="#" target="_blank">
-                  <img src="assets/img/logo-université/Malkia.webp" class="img-fluid" alt="Université Malkia" width="80" heigth="30">
-                </a>
+              <div class="universite-card swiper-slide">
+                <a href="#"><img src="assets/img/logo-université/Malkia.webp" class="img-fluid" alt="Université Malkia" width="80" height="30"></a>
               </div>
-              <!-- Université 3 -->
-              <div class="universite-card ">
-                <a href="#" target="_blank">
-                  <img src="assets/img/logo-université/ISAM.webp" class="img-fluid" alt="Université ISAM" width="50" heigth="30">
-                </a>
+              <div class="universite-card swiper-slide">
+                <a href="#"><img src="assets/img/logo-université/ISAM.webp" class="img-fluid" alt="Université ISAM" width="50" height="30"></a>
               </div>
-              <!-- Université 4 -->
-              <div class="universite-card ">
-                <a href="#" target="_blank">
-                  <img src="assets/img/logo-université/Istm.webp" class="img-fluid" alt="Université Zawadi" width="80" heigth="50">
-                </a>
+              <div class="universite-card swiper-slide">
+                <a href="#"><img src="assets/img/logo-université/Istm.webp" class="img-fluid" alt="Université Zawadi" width="80" height="50"></a>
               </div>
-              <!-- Université 5 -->
-              <div class="universite-card ">
-                <a href="#" target="_blank">
-                  <img src="assets/img/logo-université/ucb.webp" class="img-fluid" alt="Université UCB" width="60" heigth="50">
-                </a>
+              <div class="universite-card swiper-slide">
+                <a href="#"><img src="assets/img/logo-université/ucb.webp" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+              </div>
+              
+              <div class="universite-card swiper-slide">
+                <a href="#"><img src="assets/img/logo-université/UJKOL.webp" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+              </div>
+              <div class="universite-card swiper-slide">
+                <a href="#"><img src="assets/img/logo-université/IFTR.webp" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+              </div>
+              <div class="universite-card swiper-slide">
+                <a href="#"><img src="assets/img/logo-université/mulolwa.jpg" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+              </div>
+              <div class="universite-card swiper-slide">
+                <a href="#"><img src="assets/img/logo-université/universite catholique du congo.jpg" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+              </div>
+              <div class="universite-card swiper-slide">
+                <a href="#"><img src="assets/img/logo-université/IstemSJ.jpg" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+              </div>
+              <div class="universite-card swiper-slide">
+                <a href="#"><img src="assets/img/logo-université/Institut Supérieur d'Informatique Chaminade.jpg" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
+
+            
           </div>
+        </div> -->
+
+        <div class="col-lg-8 position-relative">
+          <!-- Boutons gauche/droite -->
+          <button class="scroll-btn left" onclick="scrollLogos('left')">&#10094;</button>
+
+          <!-- Liste des logos défilables -->
+          <div class="universite-slider d-flex align-items-center overflow-auto" id="logoContainer">
+            <div class="universite-card flex-shrink-0 mr-2">
+              <a href="#"><img src="assets/img/logo-université/LOGO-UDBL2.jpg" class="img-fluid" alt="Université UDBL" width="80" height="30"></a>
+            </div>
+            <div class="universite-card flex-shrink-0 mx-2">
+              <a href="#"><img src="assets/img/logo-université/Malkia.webp" class="img-fluid" alt="Université Malkia" width="80" height="30"></a>
+            </div>
+            <div class="universite-card flex-shrink-0 mx-2">
+              <a href="#"><img src="assets/img/logo-université/ISAM.webp" class="img-fluid" alt="Université ISAM" width="50" height="30"></a>
+            </div>
+            <div class="universite-card flex-shrink-0 mx-2">
+              <a href="#"><img src="assets/img/logo-université/Istm.webp" class="img-fluid" alt="Université Zawadi" width="80" height="50"></a>
+            </div>
+            <div class="universite-card flex-shrink-0 mx-2">
+              <a href="#"><img src="assets/img/logo-université/ucb.webp" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+            </div>
+            <div class="universite-card flex-shrink-0 mx-2">
+              <a href="#"><img src="assets/img/logo-université/UJKOL.webp" class="img-fluid" alt="Université UJKOL" width="60" height="50"></a>
+            </div>
+            <div class="universite-card flex-shrink-0 mx-2">
+              <a href="#"><img src="assets/img/logo-université/IFTR.webp" class="img-fluid" alt="Université IFTR" width="60" height="50"></a>
+            </div>
+            <div class="universite-card flex-shrink-0 mx-2">
+              <a href="#"><img src="assets/img/logo-université/mulolwa.jpg" class="img-fluid" alt="Université Mulolwa" width="60" height="50"></a>
+            </div>
+            <div class="universite-card flex-shrink-0 mx-2">
+              <a href="#"><img src="assets/img/logo-université/universite catholique du congo.jpg" class="img-fluid" alt="Université Catholique du Congo" width="60" height="50"></a>
+            </div>
+            <div class="universite-card flex-shrink-0 mx-2">
+              <a href="#"><img src="assets/img/logo-université/IstemSJ.jpg" class="img-fluid" alt="Université IstemSJ" width="60" height="50"></a>
+            </div>
+            <div class="universite-card flex-shrink-0 ml-2">
+              <a href="#"><img src="assets/img/logo-université/Institut Supérieur d'Informatique Chaminade.jpg" class="img-fluid" alt="Université Chaminade" width="60" height="50"></a>
+            </div>
+          </div>
+
+          <button class="scroll-btn right" onclick="scrollLogos('right')">&#10095;</button>
         </div>
+
       </div>
     </div>
   </section>
+
+
 </main>
