@@ -21,8 +21,8 @@
     <meta name="description" content="Association des Universités et Instituts Supérieurs Catholiques du Congo : L'Association des Universités et Instituts Supérieurs Catholiques du Congo (ASUNICACO) rassemble les établissements d'enseignement supérieur reconnus à la fois par le Ministère de l’Enseignement Supérieur et Universitaire (ESU) et par l’Église catholique en République Démocratique du Congo. Ses statuts sont officiellement validés par la Conférence Épiscopale du Congo ainsi que par l’État congolais.">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon_io/favicon.ico" rel="icon">
-    <link href="assets/img/favicon_io/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="<?= base_url()?>/assets/img/favicon_io/favicon.ico" rel="icon">
+    <link href="<?= base_url()?>/assets/img/favicon_io/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
 
@@ -30,15 +30,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="<?= base_url()?>/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="<?= base_url()?>/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="<?= base_url()?>/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= base_url()?>/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="<?= base_url()?>/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="<?= base_url()?>/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="<?= base_url()?>/assets/css/style.css" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: BizPage
@@ -66,17 +66,17 @@
     <!-- <div id="preloader"></div> -->
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="<?= base_url()?>/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="<?= base_url()?>/assets/vendor/aos/aos.js"></script>
+    <script src="<?= base_url()?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= base_url()?>/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="<?= base_url()?>/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="<?= base_url()?>/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="<?= base_url()?>/assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="<?= base_url()?>/assets/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="<?= base_url()?>/assets/js/main.js"></script>
 </body>
 
 </html>

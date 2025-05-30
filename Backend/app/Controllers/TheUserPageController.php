@@ -54,17 +54,25 @@ class TheUserPageController extends BaseController
 
     public function provinces(): string
     {
+        // $data['news'] = News::getAll();
+        $data['provinces'] = Province::getAll();
+        $data['universites'] = University::getAll();
+
         return view('the_user/layout', [
             'title' =>  'Provinces | ASUNICACO',
             'content' => 'the_user/pages/provinces/provinces',
+            'data'=>$data
         ]);
     }
 
-    public function universite(): string
+    public function universite($id): string
     {
+        $data ['universite']= University::getById($id);
+
         return view('the_user/layout', [
             'title' =>  'Universite | ASUNICACO',
             'content' => 'the_user/pages/provinces/universite',
+            'data'=>$data,
         ]);
     }
 }

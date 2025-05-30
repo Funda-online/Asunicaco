@@ -9,7 +9,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
         <div class="w-100 justify-content-lg-center align-items-center">
           <h1 class="logo">
             <a href="#" class="d-flex justify-content-start justify-content-lg-center align-items-center">
-              <img src="assets/img/favicon_io/logo-asunicaco.png" width="53" heigth="53" alt="Funda">
+              <img src="<?= base_url()?>/assets/img/favicon_io/logo-asunicaco.png" width="53" heigth="53" alt="Funda">
               <span>ASUNICACO</span>
             </a>
           </h1>
