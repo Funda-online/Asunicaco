@@ -1,21 +1,30 @@
 <?php
 
 namespace App\Controllers;
+use App\Controllers\DAO\News;
+use App\Controllers\DAO\Province;
+use App\Controllers\DAO\University;
+use App\Controllers\DAO\User;
 
 class TheUserPageController extends BaseController
 {
-    private function render(string $page, string $title): string
+    private function render(string $page, string $title, array $data = []): string
     {
         return view('the_user/layout', [
             'title' => $title,
-            'content' => 'the_user/pages/' . $page
+            'content' => 'the_user/pages/' . $page,
+            'data'=> $data,
         ]);
     }
 
-    public function index(): string
+    public function index() 
     {
-        return $this->render('accueil', 'Accueil | ASUNICACO');
+        $data['news'] = News::getAll();
+        $data['provinces'] = Province::getProvincesWithUniversityCount();
+        // var_dump ($data['Provinces']);
+        return $this->render('accueil', 'Accueil | ASUNICACO', $data);
     }
+
 
     public function apropos(): string
     {

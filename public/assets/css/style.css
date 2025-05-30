@@ -13,8 +13,8 @@
 body {
   font-size: 1rem;
   background: #fff;
-  color: #023642;
-  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-family: 'Nunito', sans-serif;
   font-size: 1em;
 
 }
@@ -44,7 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Nunito', sans-serif;
   /* font-weight: 400; */
   margin: 0 0 20px 0;
   padding: 0;
@@ -250,13 +250,6 @@ h6 {
   /* font-weight: bold; */
 }
 
-.apropos-p-size {
-  font-size: 24px;
-}
-
-
-
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -286,7 +279,7 @@ h6 {
   /* align-items: center; */
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   /* font-weight: 500; */
   color: #2952A1;
   white-space: nowrap;
@@ -1464,4 +1457,114 @@ section {
   height: 250px;
   object-fit: cover;
   border-radius: 0.5rem;
+}
+
+
+/* Onglet contact */
+
+#contact .about-title {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #000;
+  margin-top: 20px;
+}
+
+a {
+  color: #007ACC;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #005A99;
+}
+
+
+.contact-block {
+  background: #ffffff;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  padding: 1rem;
+  /* margin-bottom: 1rem; */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.contact-section
+{
+  background-color: #fdfcfc;
+  margin-bottom: 2rem;
+}
+
+.contact-image{
+  background-image: url(../img/contact/2.jpg);
+  background-size: cover;
+  border-radius: 0 5px 5px 0;
+}
+
+
+
+
+/* Onglet Aprops */
+
+#Apropos .about-title{
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #000;
+  /* margin-bottom: 20px; */
+}
+
+#Apropos .sous-section
+{
+  padding-top: 20px;
+}
+
+#Apropos .sous-section .fw-bold
+{
+  text-align: right;
+  border-right: 1px solid #000;
+}
+
+
+@media (max-width: 767px) {
+
+  #Apropos .about-title{
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #000;
+    /* margin-bottom: 20px; */
+  }
+
+  #Apropos .sous-section .fw-bold
+  {
+    text-align: left;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    margin: 10px;
+    border-right: 0;
+    width: 80%;
+  }
+
+}
+
+#Apropos li::before {
+  content: "– ";
+  color: #333; /* couleur du tiret */
+
+   /* content: "–"; */
+  position: absolute;
+  left: 0;
+  /* color: #007ACC; couleur personnalisée */
+  font-weight: bold;
+}
+
+#Apropos  ul{
+  list-style: none;
+  /* padding-left: 1rem; */
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#Apropos li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
 }

@@ -112,101 +112,23 @@
       <header class="section-header" id="prov">
         <h3 class="section-title">Différentes provinces</h3>
       </header>
-
-      <div id="list-province" class="row  align-items-center" data-aos="fade-up" data-aos-delay="200">
-        <div class="col-lg-4 col-md-6 province-card ">
-          <div class="card-content">
-            <h4>Haut-Katanga</h4>
-            <p>8 Institutions</p>
-            <div class="icon-box">
-              <i class="bi bi-arrow-right"></i>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-4 province-card">
-          <div class="card-content">
-            <h4>Kinshasa</h4>
-            <p>8 Institutions</p>
-            <div class="icon-box">
-              <i class="bi bi-arrow-right"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 province-card">
-          <div class="card-content">
-            <h4>Haut-Uélé</h4>
-            <p>1 Institution</p>
-            <div class="icon-box">
-              <i class="bi bi-arrow-right"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 province-card">
-          <div class="card-content">
-            <h4>Lualaba</h4>
-            <p>1 Institution</p>
-            <div class="icon-box">
-              <i class="bi bi-arrow-right"></i>
-            </div>
-          </div>
-        </div>
-
-        
-
-        <div class="col-lg-4 col-md-4 province-card">
-          <div class="card-content">
-            <h4>Kasaï Central</h4>
-            <p>1 Institution</p>
-            <div class="icon-box">
-              <i class="bi bi-arrow-right"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 province-card">
-          <div class="card-content">
-            <h4>Lomami</h4>
-            <p>1 Institution</p>
-            <div class="icon-box">
-              <i class="bi bi-arrow-right"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 province-card">
-          <div class="card-content">
-            <h4>Nord-Kivu</h4>
-            <p>5 Institutions</p>
-            <div class="icon-box">
-              <i class="bi bi-arrow-right"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 province-card">
-          <div class="card-content">
-            <h4>Sankuru</h4>
-            <p>1 Institution</p>
-            <div class="icon-box">
-              <i class="bi bi-arrow-right"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 province-card">
-          <div class="card-content">
-            <h4>Sud-Kivu</h4>
-            <p>1 Institution</p>
-            <div class="icon-box">
-              <i class="bi bi-arrow-right"></i>
-            </div>
-          </div>
-        </div>
+      <div id="list-province" class="row align-items-center" data-aos="fade-up" data-aos-delay="200">
+          <?php if (isset($data['provinces']) && !empty($data['provinces'])) : ?>
+              <?php foreach ($data['provinces'] as $province) : ?>
+                  <div class="col-lg-4 col-md-6 province-card">
+                      <div class="card-content">
+                          <h4><?= esc($province['name']) ?></h4>
+                          <p><?= (int)$province['university_count'] ?> Institution<?= ((int)$province['university_count'] > 1) ? 's' : '' ?></p>
+                          <div class="icon-box">
+                              <i class="bi bi-arrow-right"></i>
+                          </div>
+                      </div>
+                  </div>
+              <?php endforeach; ?>
+          <?php else: ?>
+              <p>Aucune province disponible.</p>
+          <?php endif; ?>
       </div>
-    </div>
   </section>
 
   <!-- ======= Universite Section ======= -->
