@@ -85,9 +85,13 @@
                                   ?>
                                   <tr>
                                     <td>
-                                      <a href="/Asunicaco/public/universite/<?= esc($universite['id_university']) ?>">
+                                      <?php if (!empty($universite['description'])) :  ?>
+                                        <a href="/Asunicaco/public/universite/<?= esc($universite['id_university']) ?>">
+                                          <?= esc($universite['name']) ?>
+                                        </a>
+                                      <?php else : ?>
                                         <?= esc($universite['name']) ?>
-                                      </a>
+                                      <?php endif; ?>
                                     </td>
                                     <!-- <td>Kinshasa</td> -->
                                   </tr>
