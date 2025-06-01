@@ -19,10 +19,10 @@ $current_page = basename($_SERVER['REQUEST_URI']);
           <ul class="justify-content-lg-center align-items-lg-center">
             <li><a class="nav-link <?= $current_page == 'accueil' ? 'active' : '' ?>" href="/Asunicaco/public/">Accueil</a></li>
             <!-- <li><a class="nav-link <?= $current_page == 'actualites | actualiteDetail' ? 'active' : '' ?>" href="/Asunicaco/public/actualites">Actualités</a></li> -->
-            <li><a class="nav-link <?= ($current_page == 'actualites' || $current_page == 'actualiteDetail') ? 'active' : '' ?>" href="/Asunicaco/public/actualites">Actualités</a></li>
-            <li><a class="nav-link <?= $current_page == 'provinces' ? 'active' : '' ?>" href="/Asunicaco/public/provinces">Provinces</a></li>
-            <li><a class="nav-link <?= $current_page == 'apropos' ? 'active' : '' ?>" href="/Asunicaco/public/apropos">Apropos</a></li>
-            <li><a class="nav-link <?= $current_page == 'contact' ? 'active' : '' ?>" href="/Asunicaco/public/contact">Contact</a></li>
+            <li><a class="nav-link <?= ($current_page == 'actualites' || $current_page == 'actualiteDetail') ? 'active' : '' ?>" href="<?= base_url('actualites') ?>">Actualités</a></li>
+            <li><a class="nav-link <?= $current_page == 'provinces' ? 'active' : '' ?>" href="<?= base_url('provinces') ?>">Provinces</a></li>
+            <li><a class="nav-link <?= $current_page == 'apropos' ? 'active' : '' ?>" href="<?= base_url('apropos') ?>">Apropos</a></li>
+            <li><a class="nav-link <?= $current_page == 'contact' ? 'active' : '' ?>" href="<?= base_url('contact') ?>">Contact</a></li>
           </ul>
 
           <div class="d-block d-lg-none justify-content-end">

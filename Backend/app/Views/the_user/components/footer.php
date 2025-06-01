@@ -39,9 +39,16 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="text-center pt-4 mt-4 border-top border-black-50 text-white-80">
-        &copy; 2025 <strong>ASUNICACO</strong> — Tous droits réservés
+
+        <div class="text-center *pt-4 mt-4 border-top" style="border-color: rgba(255,255,255,0.2) !important; padding-top: 1.8rem;">
+            <div class="container">
+                <p class="mb-0 small opacity-85">
+                    &copy; 2025 <strong>ASUNICACO</strong> — Tous droits réservés |
+                    <a href="#" class="text-white text-decoration-none hover-underline">Mentions légales</a> |
+                    <a href="#" class="text-white text-decoration-none hover-underline">Politique de confidentialité</a>
+                </p>
+            </div>
+        </div>
     </div>
 </footer>

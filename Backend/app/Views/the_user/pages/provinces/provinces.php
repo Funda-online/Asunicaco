@@ -13,21 +13,21 @@
   <div class="row mt-4">
     <!-- Sidebar -->
     <div class="col-md-3">
-          
-        <!-- <h5 class="fst-italic pb-2">Provinces couvertes</h5> -->
-          <div class="list-group" id="list-tab" role="tablist">
-            <?php if (isset($data['provinces']) && !empty($data['provinces'])) : ?>
-                  <?php 
-                    $i = 0;
-                    foreach ($data['provinces'] as $province) : ?>
-                    <a class="list-group-item list-group-item-action <?= $i==0 ?'active' :'' ?>" id="province-<?= esc($province['id_province']) ?>-list" data-bs-toggle="list" href="#province-<?= esc($province['id_province']) ?>" role="tab" aria-controls="province-<?= esc($province['id_province']) ?>"><?= esc($province['name']) ?></a>
-                    <?php
-                      $i++;
-                    endforeach; ?>
-            <?php else: ?>
-                <p>Aucune province disponible.</p>
-            <?php endif; ?>
-          </div>
+
+      <!-- <h5 class="fst-italic pb-2">Provinces couvertes</h5> -->
+      <div class="list-group" id="list-tab" role="tablist">
+        <?php if (isset($data['provinces']) && !empty($data['provinces'])) : ?>
+          <?php
+          $i = 0;
+          foreach ($data['provinces'] as $province) : ?>
+            <a class="list-group-item list-group-item-action <?= $i == 0 ? 'active' : '' ?>" id="province-<?= esc($province['id_province']) ?>-list" data-bs-toggle="list" href="#province-<?= esc($province['id_province']) ?>" role="tab" aria-controls="province-<?= esc($province['id_province']) ?>"><?= esc($province['name']) ?></a>
+          <?php
+            $i++;
+          endforeach; ?>
+        <?php else: ?>
+          <p>Aucune province disponible.</p>
+        <?php endif; ?>
+      </div>
     </div>
 
     <!-- Main content -->
@@ -35,87 +35,131 @@
       <!-- Intro Section -->
       <div class="tab-content" id="nav-tabContent-province">
 
-         <?php if (isset($data['provinces']) && !empty($data['provinces'])) : ?>
-            <?php
-              $j = 0;
-              foreach ($data['provinces'] as $province) : ?>
-          
-              <div class="tab-pane fade show <?= $j==0 ?'active' :'' ?>" id="province-<?= esc($province['id_province']) ?>" role="tabpanel" aria-labelledby="province-<?= esc($province['id_province']) ?>-list">
-                    <div class="d-md-flex mb-4 mt-4 mt-md-0">
-                      <div class="mt-4 mt-md-0">
-                        <h4>
-                          <?= esc($province['name']) ?>
-                        </h4>
-                      </div>
-                    </div>
+        <?php if (isset($data['provinces']) && !empty($data['provinces'])) : ?>
+          <?php
+          $j = 0;
+          foreach ($data['provinces'] as $province) : ?>
 
-                    <!-- Informations générales -->
-                       <!-- Informations générales -->
-                    <div class="mb-4">
-                      <h5 style="color: #2952A1;">Informations générales</h5>
-                      <p><strong>Siège provincial :</strong><?= esc($province['address']) ?> <br>
-                      <strong>Téléphone :</strong> <?= esc($province['phone']) ?></p>
-                      <!-- <p><strong>Adresse e-mail :</strong> <a href="mailto:kin@asunicaco.cd">kin@asunicaco.cd</a></p> -->
-                    </div>
-
-                    <!-- Comité de gestion -->
-                    <?php if (!empty($province['description'])) :?>
-                      <div class="mb-4">
-                        <h5 style="color: #2952A1;">Présentation</h5>
-                        <?= esc($province['description']) ?>
-                      </div>
-                    <?php endif; ?>
-
-                    <!-- Universités membres -->
-                    <div>
-                      <h5 style="color: #2952A1;">Universités membres</h5>
-                      <div class="table-responsive mt-3">
-                         <?php if (isset($data['universites']) && !empty($data['universites'])) : ?>
-                              <table class="table table-bordered">
-                                <thead class="table-light">
-                                  <tr>
-                                    <th>Nom de l’établissement</th>
-                                  </tr>
-                                </thead>
-                                 <tbody>
-                                <?php 
-                                  $i = 0;
-                                  foreach ($data['universites'] as $universite) :
-                                    if ($universite['id_province']== $province['id_province']) :
-                                  ?>
-                                  <tr>
-                                    <td>
-                                      <?php if (!empty($universite['description'])) :  ?>
-                                        <a href="/Asunicaco/public/universite/<?= esc($universite['id_university']) ?>">
-                                          <?= esc($universite['name']) ?>
-                                        </a>
-                                      <?php else : ?>
-                                        <?= esc($universite['name']) ?>
-                                      <?php endif; ?>
-                                    </td>
-                                    <!-- <td>Kinshasa</td> -->
-                                  </tr>
-                                  <?php endif; ?>
-                                  <?php
-                                    $i++;
-                                  endforeach; ?>
-                              </tbody>
-                            </table>
-                          <?php else: ?>
-                              <p>Aucune université disponible.</p>
-                          <?php endif; ?>
-                      </div>
-                    </div>
+            <div class="tab-pane fade show <?= $j == 0 ? 'active' : '' ?>" id="province-<?= esc($province['id_province']) ?>" role="tabpanel" aria-labelledby="province-<?= esc($province['id_province']) ?>-list">
+              <div class="d-md-flex mb-4 mt-4 mt-md-0">
+                <div class="mt-4 mt-md-0">
+                  <h4>
+                    <?= esc($province['name']) ?>
+                  </h4>
+                </div>
               </div>
 
-           <?php
+              <!-- Informations générales -->
+              <!-- Informations générales -->
+              <div class="mb-4">
+                <h5 style="color: #2952A1;">Informations générales</h5>
+                <p><strong>Siège provincial :</strong><?= esc($province['address']) ?> <br>
+                  <strong>Téléphone :</strong> <?= esc($province['phone']) ?>
+                </p>
+                <!-- <p><strong>Adresse e-mail :</strong> <a href="mailto:kin@asunicaco.cd">kin@asunicaco.cd</a></p> -->
+              </div>
+
+              <!-- Comité de gestion -->
+              <?php if (!empty($province['description'])) : ?>
+                <div class="mb-4">
+                  <h5 style="color: #2952A1;">Présentation</h5>
+                  <?= esc($province['description']) ?>
+                </div>
+              <?php endif; ?>
+
+              <!-- Universités membres -->
+              <div class="mb-4">
+                <h5 style="color: #2952A1;">Universités membres</h5>
+                <div class="table-responsive mt-3">
+                  <?php if (isset($data['universites']) && !empty($data['universites'])) : ?>
+                    <table class="table table-bordered">
+                      <thead class="table-light">
+                        <tr>
+                          <th>Nom de l’établissement</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <?php
+                        $i = 0;
+                        foreach ($data['universites'] as $universite) :
+                          if ($universite['id_province'] == $province['id_province']) :
+                        ?>
+                            <tr>
+                              <td>
+                                <?php if (!empty($universite['description'])) :  ?>
+                                  <a href="/Asunicaco/public/universite/<?= esc($universite['id_university']) ?>">
+                                    <?= esc($universite['name']) ?>
+                                  </a>
+                                <?php else : ?>
+                                  <?= esc($universite['name']) ?>
+                                <?php endif; ?>
+                              </td>
+                              <!-- <td>Kinshasa</td> -->
+                            </tr>
+                          <?php endif; ?>
+                        <?php
+                          $i++;
+                        endforeach; ?>
+                      </tbody>
+                    </table>
+                  <?php else: ?>
+                    <p>Aucune université disponible.</p>
+                  <?php endif; ?>
+                </div>
+              </div>
+
+              <!-- derniere actualites -->
+              <div class="col-md-12">
+                <h5 style="color: #2952A1;">Actualités Récentes</h5>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                  <?php
+                  $actualites = [
+                    [
+                      "image" => "assets/img/1.jpg",
+                      "titre" => "Conférence sur l’enseignement catholique et les enjeux contemporains",
+                      "date" => "11 Avril 2025",
+                      "resume" => "Des experts se sont penchés sur les défis éthiques, sociaux et technologiques...",
+                    ],
+                    [
+                      "image" => "assets/img/1.jpg",
+                      "titre" => "Lancement d’un programme d’échange interuniversitaire",
+                      "date" => "10 Avril 2025",
+                      "resume" => "Un nouveau programme d’échange permet aux étudiants de circuler entre les établissements membres...",
+                    ],
+                    [
+                      "image" => "assets/img/1.jpg",
+                      "titre" => "Lancement d’un programme d’échange interuniversitaire",
+                      "date" => "10 Avril 2025",
+                      "resume" => "Un nouveau programme d’échange permet aux étudiants de circuler entre les établissements membres...",
+                    ],
+                  ];
+
+                  foreach ($actualites as $actu) {
+                    echo '
+            <div class="col g-4">
+              <div class="h-100">
+                <img src="' . $actu['image'] . '" class="card-img-top" alt="...">
+                <div class="pt-4">
+                  <h5 class="card-title">' . $actu['titre'] . '</h5>
+                  <p class="py-2 m-0"><small class="text-muted">' . $actu['date'] . '</small></p>
+                  <p class="py-2 m-0">' . $actu['resume'] . '</p>
+                  <a href="/Asunicaco/public/actualiteDetail/" class="btn btn-sm btn-custom">Lire</a>
+                </div>
+              </div>
+            </div>';
+                  }
+                  ?>
+                </div>
+              </div>
+            </div>
+
+          <?php
             $j++;
           endforeach; ?>
-          <?php else: ?>
-              <p>Aucune province disponible.</p>
-          <?php endif; ?>
+        <?php else: ?>
+          <p>Aucune province disponible.</p>
+        <?php endif; ?>
       </div>
     </div>
   </div>
 </section>
- 
