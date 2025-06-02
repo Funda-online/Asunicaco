@@ -1,5 +1,7 @@
 <?php
-$current_page = basename($_SERVER['REQUEST_URI']);
+$uri = uri_string(); // Retourne "actualiteDetail/8"
+$segments = explode('/', $uri);
+$current_page = $segments[0]; // "actualiteDetail"
 ?>
 
 <header id="header" class="fixed-top d-flex align-items-center header-transparent entete">
@@ -18,7 +20,7 @@ $current_page = basename($_SERVER['REQUEST_URI']);
         <nav id="navbar" class="navbar">
           <ul class="justify-content-lg-center align-items-lg-center">
             <li><a class="nav-link <?= $current_page == 'accueil' ? 'active' : '' ?>" href="/Asunicaco/public/">Accueil</a></li>
-            <!-- <li><a class="nav-link <?= $current_page == 'actualites | actualiteDetail' ? 'active' : '' ?>" href="/Asunicaco/public/actualites">Actualités</a></li> -->
+            <!-- <li><a class="nav-link <?= $current_page == 'actualites || actualiteDetail' ? 'active' : '' ?>" href="/Asunicaco/public/actualites">Actualités</a></li> -->
             <li><a class="nav-link <?= ($current_page == 'actualites' || $current_page == 'actualiteDetail') ? 'active' : '' ?>" href="<?= base_url('actualites') ?>">Actualités</a></li>
             <li><a class="nav-link <?= $current_page == 'provinces' ? 'active' : '' ?>" href="<?= base_url('provinces') ?>">Provinces</a></li>
             <li><a class="nav-link <?= $current_page == 'apropos' ? 'active' : '' ?>" href="<?= base_url('apropos') ?>">Apropos</a></li>

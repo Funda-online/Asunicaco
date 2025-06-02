@@ -112,48 +112,28 @@
               </div>
 
               <!-- derniere actualites -->
-              <div class="col-md-12">
-                <h5 style="color: #2952A1;">Actualités Récentes</h5>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                  <?php
-                  $actualites = [
-                    [
-                      "image" => "assets/img/1.jpg",
-                      "titre" => "Conférence sur l’enseignement catholique et les enjeux contemporains",
-                      "date" => "11 Avril 2025",
-                      "resume" => "Des experts se sont penchés sur les défis éthiques, sociaux et technologiques...",
-                    ],
-                    [
-                      "image" => "assets/img/1.jpg",
-                      "titre" => "Lancement d’un programme d’échange interuniversitaire",
-                      "date" => "10 Avril 2025",
-                      "resume" => "Un nouveau programme d’échange permet aux étudiants de circuler entre les établissements membres...",
-                    ],
-                    [
-                      "image" => "assets/img/1.jpg",
-                      "titre" => "Lancement d’un programme d’échange interuniversitaire",
-                      "date" => "10 Avril 2025",
-                      "resume" => "Un nouveau programme d’échange permet aux étudiants de circuler entre les établissements membres...",
-                    ],
-                  ];
-
-                  foreach ($actualites as $actu) {
-                    echo '
-            <div class="col g-4">
-              <div class="h-100">
-                <img src="' . $actu['image'] . '" class="card-img-top" alt="...">
-                <div class="pt-4">
-                  <h5 class="card-title">' . $actu['titre'] . '</h5>
-                  <p class="py-2 m-0"><small class="text-muted">' . $actu['date'] . '</small></p>
-                  <p class="py-2 m-0">' . $actu['resume'] . '</p>
-                  <a href="/Asunicaco/public/actualiteDetail/" class="btn btn-sm btn-custom">Lire</a>
+               <?php if (isset($actualites)):?>
+                <div class="col-md-12">
+                  <h5 style="color: #2952A1;">Actualités Récentes</h5>
+                  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <?php
+                    extract($data);
+                    foreach ($actualites as $actu) : ?>
+                      <div class="col g-4">
+                        <div class="h-100">
+                          <img src="<?= base_url('assets/img/actualités/' . esc($actu['image'])) ?>" class="card-img-top" alt="...">
+                          <div class="pt-4">
+                            <h5 class="card-title"><?= esc($actu['title']) ?></h5>
+                            <p class="py-2 m-0"><small class="text-muted"><?= date('d M Y', strtotime($actu['publish_date'])) ?></small></p>
+                            <a href="/Asunicaco/public/actualiteDetail/<?= esc($actu['id_news']) ?>" class="btn btn-sm btn-custom">Lire</a>
+                          </div>
+                        </div>
+                      </div>
+                  <?php endforeach; ?>
+                
                 </div>
               </div>
-            </div>';
-                  }
-                  ?>
-                </div>
-              </div>
+              <?php endif; ?>
             </div>
 
           <?php

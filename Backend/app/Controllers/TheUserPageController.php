@@ -56,7 +56,7 @@ class TheUserPageController extends BaseController
 
     public function actualites(): string
     {
-        $allNews = \App\Controllers\DAO\News::getAll();
+        $allNews = News::getAll();
 
         // 3 dernières actu
         usort($allNews, function ($a, $b) {
@@ -73,11 +73,17 @@ class TheUserPageController extends BaseController
     }
 
 
-    public function actualiteDetail(): string
+    public function actualiteDetail($item)
     {
+        $data['actu'] = News::getById($item);
+        $data['othersnews'] = News::getRecentsAll($item,10);
+
+        // 3 dernières actu
+         
         return view('the_user/layout', [
             'title' =>  'Actualites Detail | ASUNICACO',
             'content' => 'the_user/pages/actualites/actualiteDetail',
+            'data'=>$data
         ]);
     }
 
@@ -86,6 +92,7 @@ class TheUserPageController extends BaseController
         // $data['news'] = News::getAll();
         $data['provinces'] = Province::getAll();
         $data['universites'] = University::getAll();
+        $data['actualites'] = News::getAll(1,2);
 
         return view('the_user/layout', [
             'title' =>  'Provinces | ASUNICACO',

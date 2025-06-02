@@ -58,7 +58,7 @@
 
             <div class="container position-relative z-2 text-center">
               <h1 class="display-6"><?= esc($news['title']) ?></h1>
-              <a href="/Asunicaco/public/actualiteDetail/" class="btn btn-light mt-3">Lire plus...</a>
+              <a href="/Asunicaco/public/actualiteDetail/<?= esc($news['id_news']) ?>" class="btn btn-light mt-3">Lire plus...</a>
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@
                     <h5 class="card-title"><?= esc($actu['title']) ?></h5>
                     <p class="py-2 m-0"><small class="text-muted"><?= date('d M Y', strtotime($actu['publish_date'])) ?></small></p>
                     <p class="py-2 m-0"><?= esc($actu['summary']) ?></p>
-                    <a href="/Asunicaco/public/actualiteDetail/" class="btn btn-sm btn-custom">Lire</a>
+                    <a href="/Asunicaco/public/actualiteDetail/<?= esc($actu['id_news']) ?>" class="btn btn-sm btn-custom">Lire</a>
                   </div>
                 </div>
               </div>
@@ -152,16 +152,75 @@
 
         <!-- Pagination -->
         <nav class="mt-5">
-          <ul class="pagination justify-content-center">
-            <li class="page-item disabled"><a class="page-link" href="#">«</a></li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">...</a></li>
-            <li class="page-item"><a class="page-link" href="#">10</a></li>
-            <li class="page-item"><a class="page-link" href="#">»</a></li>
-          </ul>
+          <ul class="pagination justify-content-center" id="pagination"></ul>
         </nav>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const itemsPerPage = 2;
+    const items = document.querySelectorAll(".news-item");
+    const paginationContainer = document.querySelector(".pagination");
+    const totalPages = Math.ceil(items.length / itemsPerPage);
+
+    let currentPage = 1;
+
+    function showPage(page) {
+      const start = (page - 1) * itemsPerPage;
+      const end = page * itemsPerPage;
+
+      items.forEach((item, index) => {
+        item.style.display = (index >= start && index < end) ? "block" : "none";
+      });
+
+      renderPagination(page);
+    }
+
+    function renderPagination(activePage) {
+      paginationContainer.innerHTML = ""; // reset
+
+      const createPageItem = (label, page, disabled = false, active = false) => {
+        const li = document.createElement("li");
+        li.className = "page-item" + (disabled ? " disabled" : "") + (active ? " active" : "");
+
+        const a = document.createElement("a");
+        a.className = "page-link";
+        a.href = "#";
+        a.innerText = label;
+        if (!disabled) {
+          a.addEventListener("click", function (e) {
+            e.preventDefault();
+            showPage(page);
+          });
+        }
+
+        li.appendChild(a);
+        return li;
+      };
+
+      // Previous
+      paginationContainer.appendChild(createPageItem("«", activePage - 1, activePage === 1));
+
+      // Page numbers
+      for (let i = 1; i <= totalPages; i++) {
+        paginationContainer.appendChild(createPageItem(i, i, false, i === activePage));
+      }
+
+      // Next
+      paginationContainer.appendChild(createPageItem("»", activePage + 1, activePage === totalPages));
+    }
+
+    // Initial call
+    if (items.length > 0) {
+      showPage(currentPage);
+    } else {
+      paginationContainer.style.display = "none";
+    }
+  });
+</script>
+
+</script>

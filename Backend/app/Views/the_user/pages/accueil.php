@@ -143,15 +143,10 @@
         <?php if (isset($provinces) && !empty($provinces)) : ?>
           <?php foreach ($provinces as $province) : ?>
             <div class="col-lg-4 col-md-6 province-card">
-              <div class="card-content">
+              <a href="/Asunicaco/public/provinces/#province-<?= esc($province['id_province']) ?>-list" class="card-content">
                 <h4><?= esc($province['name']) ?></h4>
                 <p><?= (int)$province['university_count'] ?> Institution<?= ((int)$province['university_count'] > 1) ? 's' : '' ?></p>
-                <div class="icon-box">
-                  <a href="/Asunicaco/public/provinces/#province-<?= esc($province['id_province']) ?>-list">
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
+              </a>
             </div>
           <?php endforeach; ?>
         <?php else: ?>
