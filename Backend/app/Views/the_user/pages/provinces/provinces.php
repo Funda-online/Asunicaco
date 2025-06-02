@@ -51,11 +51,14 @@
 
               <!-- Informations générales -->
               <!-- Informations générales -->
+
               <div class="mb-4">
+                <?php if (!empty($province['phone']) || !empty($province['address'])) : ?>
                 <h5 style="color: #2952A1;">Informations générales</h5>
                 <p><strong>Siège provincial :</strong><?= esc($province['address']) ?> <br>
                   <strong>Téléphone :</strong> <?= esc($province['phone']) ?>
                 </p>
+                <?php endif;?>
                 <!-- <p><strong>Adresse e-mail :</strong> <a href="mailto:kin@asunicaco.cd">kin@asunicaco.cd</a></p> -->
               </div>
 
@@ -86,8 +89,8 @@
                         ?>
                             <tr>
                               <td>
-                                <?php if (!empty($universite['description'])) :  ?>
-                                  <a href="/Asunicaco/public/universite/<?= esc($universite['id_university']) ?>">
+                                <?php if (!empty($universite['website'])) :  ?>
+                                  <a href="<?= esc($universite['website']) ?>" target="_blank">
                                     <?= esc($universite['name']) ?>
                                   </a>
                                 <?php else : ?>

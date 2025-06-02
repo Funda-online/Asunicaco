@@ -78,6 +78,23 @@
 
     <!-- Template Main JS File -->
     <script src="<?= base_url()?>/assets/js/main.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hash = window.location.hash;
+        if (hash) {
+          const tryClick = () => {
+            const item = document.querySelector(`.list-group-item${hash}`);
+            if (item) {
+              item.click(); // Simule le clic sur l'élément ciblé
+            } else {
+              setTimeout(tryClick, 100); // Attend que le DOM soit prêt
+            }
+          };
+          tryClick();
+        }
+      });
+</script>
 </body>
 
 </html>

@@ -144,7 +144,7 @@
                 <h4><?= esc($province['name']) ?></h4>
                 <p><?= (int)$province['university_count'] ?> Institution<?= ((int)$province['university_count'] > 1) ? 's' : '' ?></p>
                 <div class="icon-box">
-                  <a href="/Asunicaco/public/provinces/#province-<?= esc($province['id_province']) ?>">
+                  <a href="/Asunicaco/public/provinces/#province-<?= esc($province['id_province']) ?>-list">
                     <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
