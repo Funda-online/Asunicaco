@@ -23,16 +23,16 @@ class TheUserPageController extends BaseController
     {
         $data['news'] = News::getAll();
         $data['provinces'] = Province::getProvincesWithUniversityCount();
-        $allNews = \App\Controllers\DAO\News::getAll();
+        $allNews = News::getAllWithUniversity();
 
         // 3 dernières actu a modifier pour ne pas tous recuperer avant
         usort($allNews, function ($a, $b) {
             return strtotime($b['publish_date']) - strtotime($a['publish_date']);
         });
-        $lastThree = array_slice($allNews, 0, 3);
+        
+        $data['lastThree'] = array_slice($allNews, 0, 3);
 
-        // var_dump ($data['Provinces']);
-        return $this->render('accueil', 'Accueil | ASUNICACO', $data, $lastThree);
+        return $this->render('accueil', 'Accueil | ASUNICACO', $data);
     }
 
 

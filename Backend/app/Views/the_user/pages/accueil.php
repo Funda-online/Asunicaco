@@ -53,22 +53,25 @@
           Aucune actualité.
         </p>
       </div> -->
+      <?php 
+      extract($data);
 
+      if (!empty($lastThree)): ?>     
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        <?php if (!empty($lastThree)): ?>
-          <?php foreach ($lastThree as $actu): ?>
+        <?php foreach ($lastThree as $actu): ?>
             <div class="col g-4">
               <div class="h-100">
                 <img src="<?= base_url('assets/img/actualités/' . esc($actu['image'])) ?>" class="card-img-top" alt="..." style="height: 230px; object-fit:cover">
                 <div class="pt-4">
                   <h5 class="card-title"><?= esc($actu['title']) ?></h5>
-                  <p class="py-2 m-0"><small class="text-muted"><?= date('d M Y', strtotime($actu['publish_date'])) ?></small></p>
-                  <p class="py-2 m-0"><?= esc($actu['summary']) ?></p>
-                  <a href="/Asunicaco/public/actualiteDetail/" class="btn btn-sm btn-custom">Lire</a>
+                  <p class="py-2 m-0"><small class="text-muted"><?= date('d M Y', strtotime($actu['publish_date'])) ?></small> <br> <small class="text-muted"><?= $actu['university'] ?></small></p>
+                  <!-- <p class="py-2 m-0"></p> -->
+                  <a href="/Asunicaco/public/actualiteDetail/<?= esc($actu['id_news']) ?>" class="btn btn-sm btn-custom">Lire</a>
                 </div>
               </div>
             </div>
           <?php endforeach; ?>
+         </div>
         <?php else: ?>
           <div class="thecenter">
             <p class="align-items-center  justify-content-center">
@@ -76,7 +79,7 @@
             </p>
           </div>
         <?php endif; ?>
-      </div>
+     
 
       <!-- <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
         <div class="col-lg-4 col-md-6 portfolio-item filter-reseau">
@@ -137,8 +140,8 @@
         <h3 class="section-title">Différentes provinces</h3>
       </header>
       <div id="list-province" class="row align-items-center" data-aos="fade-up" data-aos-delay="200">
-        <?php if (isset($data['provinces']) && !empty($data['provinces'])) : ?>
-          <?php foreach ($data['provinces'] as $province) : ?>
+        <?php if (isset($provinces) && !empty($provinces)) : ?>
+          <?php foreach ($provinces as $province) : ?>
             <div class="col-lg-4 col-md-6 province-card">
               <div class="card-content">
                 <h4><?= esc($province['name']) ?></h4>

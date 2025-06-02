@@ -47,4 +47,11 @@ class News extends BaseController
     {
         return self::getInstance()->newsModel->delete($id);
     }
+
+    public static function getAllWithUniversity(): array
+    {
+        return self::getInstance()->newsModel->select('news.*, university.name as university')
+                    ->join('university', 'university.id_university = news.university')
+                    ->findAll();
+    }
 }

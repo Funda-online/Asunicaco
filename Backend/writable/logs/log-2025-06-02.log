@@ -30,3 +30,165 @@ in APPPATH\Views\the_user\pages\provinces\provinces.php on line 161.
 11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
 12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-02 07:34:11 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Controllers\\TheUserPageController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TheUserPageController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TheUserPageController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\TheUserPageController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-02 07:43:03 --> Error: Class "App\Controllers\getPostsWithUsers" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-02 07:43:32 --> Error: Call to undefined method App\Controllers\DAO\News::getPostsWithUniversity()
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-02 07:43:50 --> Error: Non-static method App\Controllers\DAO\News::getAllWithUniversity() cannot be called statically
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-02 07:44:54 --> Error: Non-static method App\Controllers\DAO\News::getAllWithUniversity() cannot be called statically
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-02 07:45:26 --> Error: Non-static method App\Controllers\DAO\News::getAllWithUniversity() cannot be called statically
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-02 07:45:56 --> mysqli_sql_exception: Unknown column 'university.id' in 'on clause' in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `news`.*...', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*...')
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*...')
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-02 07:45:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'university.id' in 'on clause'
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DAO\News.php(55): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-02 07:45:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'university.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\DAO\News.php(55): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-02 07:45:56 --> [Caused by] mysqli_sql_exception: Unknown column 'university.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `news`.*, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DAO\News.php(55): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-02 07:49:28 --> ErrorException: Undefined array key "news_id"
+[Method: GET, Route: /]
+in APPPATH\Views\the_user\pages\accueil.php on line 69.
+ 1 APPPATH\Views\the_user\pages\accueil.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "news_id"', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Views\\the_user\\pages\\accueil.php', 69)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Views\\the_user\\pages\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('the_user/pages/accueil', [], true)
+ 5 APPPATH\Views\the_user\layout.php(58): view('the_user/pages/accueil')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Views\\the_user\\layout.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('the_user/layout', [], true)
+ 9 APPPATH\Controllers\TheUserPageController.php(15): view('the_user/layout', [...])
+10 APPPATH\Controllers\TheUserPageController.php(35): App\Controllers\TheUserPageController->render('accueil', 'Accueil | ASUNICACO', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
