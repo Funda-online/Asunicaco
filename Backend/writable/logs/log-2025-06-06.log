@@ -1,0 +1,266 @@
+ERROR - 2025-06-06 18:27:55 --> mysqli_sql_exception: Unknown column 'news.university' in 'on clause' in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `news`.*...', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*...')
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*...')
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-06 18:27:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'news.university' in 'on clause'
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 18:27:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'news.university' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 18:27:55 --> [Caused by] mysqli_sql_exception: Unknown column 'news.university' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-06 18:33:12 --> mysqli_sql_exception: Unknown column 'news.university' in 'on clause' in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `news`.*...', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*...')
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*...')
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\Backend\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Asunicaco\Backend\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-06-06 18:33:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'news.university' in 'on clause'
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Asunicaco\\Backend\\public\\index.php')
+CRITICAL - 2025-06-06 18:33:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'news.university' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Asunicaco\\Backend\\public\\index.php')
+CRITICAL - 2025-06-06 18:33:13 --> [Caused by] mysqli_sql_exception: Unknown column 'news.university' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Asunicaco\\Backend\\public\\index.php')
+ERROR - 2025-06-06 19:54:38 --> mysqli_sql_exception: Unknown column 'news.university' in 'on clause' in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `news`.*...', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*...')
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*...')
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\Backend\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Asunicaco\Backend\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-06-06 19:54:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'news.university' in 'on clause'
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Asunicaco\\Backend\\public\\index.php')
+CRITICAL - 2025-06-06 19:54:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'news.university' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Asunicaco\\Backend\\public\\index.php')
+CRITICAL - 2025-06-06 19:54:39 --> [Caused by] mysqli_sql_exception: Unknown column 'news.university' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Asunicaco\\Backend\\public\\index.php')

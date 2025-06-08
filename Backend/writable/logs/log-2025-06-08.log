@@ -1,0 +1,151 @@
+CRITICAL - 2025-06-08 12:16:51 --> Error: Call to undefined method App\Controllers\DAO\News::getAllWithUniversity()
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Asunicaco\\Backend\\public\\index.php')
+CRITICAL - 2025-06-08 12:16:59 --> ErrorException: Maximum execution time of 60 seconds exceeded
+【Previous Exception】
+Error
+Call to undefined method App\Controllers\DAO\News::getAllWithUniversity()
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#5 C:\xampp\htdocs\Asunicaco\Backend\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#6 C:\xampp\htdocs\Asunicaco\Backend\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+[Method: GET, Route: /]
+in VENDORPATH\composer\ClassLoader.php on line 429.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-06-08 12:18:40 --> TypeError: usort(): Argument #1 ($array) must be of type array, null given
+[Method: GET, Route: /]
+in APPPATH\Controllers\TheUserPageController.php on line 29.
+ 1 APPPATH\Controllers\TheUserPageController.php(29): usort(null, Object(Closure))
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Asunicaco\\Backend\\public\\index.php')
+CRITICAL - 2025-06-08 12:21:50 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: GET, Route: /]
+in APPPATH\Views\the_user\layout.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-06-08 12:23:07 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: GET, Route: /]
+in VENDORPATH\kint-php\kint\src\Renderer\RichRenderer.php on line 661.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2025-06-08 12:24:59 --> mysqli_sql_exception: Unknown column 'news.university' in 'on clause' in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `news`.*...', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*...')
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*...')
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\Backend\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Asunicaco\Backend\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-06-08 12:24:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'news.university' in 'on clause'
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Asunicaco\\Backend\\public\\index.php')
+CRITICAL - 2025-06-08 12:24:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'news.university' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Asunicaco\\Backend\\public\\index.php')
+CRITICAL - 2025-06-08 12:24:59 --> [Caused by] mysqli_sql_exception: Unknown column 'news.university' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\TheUserPageController.php(26): App\Controllers\DAO\News::getAllWithUniversity()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\Asunicaco\\Backend\\public\\index.php')
+CRITICAL - 2025-06-08 18:21:03 --> CodeIgniter\View\Exceptions\ViewException: Fichier non valide : the_admin/components/slider.php
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('the_admin/components/slider.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('the_admin/components/slider', [], true)
+ 3 APPPATH\Views\the_admin\layout.php(30): view('the_admin/components/slider')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Views\\the_admin\\layout.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('the_admin/layout', [], true)
+ 7 APPPATH\Controllers\TheAdminPageController.php(11): view('the_admin/layout', [...])
+ 8 APPPATH\Controllers\TheAdminPageController.php(20): App\Controllers\TheAdminPageController->render('dashboard', 'À propos | ASUNICACO')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

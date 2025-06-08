@@ -86,7 +86,8 @@ class News extends BaseController
     public static function getAllWithUniversity(): array
     {
         return self::getInstance()->newsModel->select('news.*, university.website as website, university.name as university')
-                    ->join('university', 'university.id_university = news.university')
+                    // ->join('university', 'university.id_university = news.university')
+                    ->join('university', 'university.id_university = news.entity')
                     ->findAll();
     }
 }

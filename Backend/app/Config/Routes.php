@@ -13,6 +13,11 @@ $routes->get('/actualiteDetail/(:num)', 'TheUserPageController::actualiteDetail/
 $routes->get('/provinces', 'TheUserPageController::provinces');
 $routes->get('/universite/(:num)', 'TheUserPageController::universite/$1');
 
+// admin route
+$routes->get('/dashboard', 'TheAdminPageController::dashboard');
+// $routes->get('/dashboard', 'TheUserPageController::dashboard');
+
+
 $routes->get('/thebasecontroller', 'TheBaseController::index');
 $routes->get('/dbtestcontroller', 'DbTestController::index');
 $routes->get('/thebasecontroller/showUsers', 'TheBaseController::showUsers');
