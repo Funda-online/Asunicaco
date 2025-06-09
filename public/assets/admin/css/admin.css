@@ -4721,6 +4721,20 @@ input[type="button"].btn-block {
   margin-bottom: -1px;
 }
 
+
+
+#accordionSidebar {
+  position: fixed;
+  top: 56px; /* hauteur typique de la navbar Bootstrap */
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  z-index: 1020;
+  background-color: #2952A1 !important;
+  overflow-y: auto;
+}
+
+
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;

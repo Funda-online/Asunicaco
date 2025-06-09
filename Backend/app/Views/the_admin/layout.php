@@ -2,13 +2,33 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+   <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><?= esc($title) ?></title>
+    <!-- <link href="<?= base_url('assets/vendor/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
+  <link href="<?= base_url('assets/vendor/bootstrap-icons/bootstrap-icons.css') ?>" rel="stylesheet">
+  <link href="<?= base_url('assets/css/style.css') ?>" rel="stylesheet"> -->
 
-  <title>SB Admin 2 - Dashboard</title>
+    <meta name="keywords" content="Association des Universités et Instituts Supérieurs Catholiques du Congo, ASUNICACO, établissements d'enseignement supérieur, enseignement supérieur catholique, République Démocratique du Congo, Ministère de l’Enseignement Supérieur et Universitaire, ESU, Église catholique, Conférence Épiscopale du Congo, universités catholiques, instituts supérieurs, congo, RDC">
+    <meta property="og:title" content="Asunicaco">
+    <meta property="og:description" content="Association des Universités et Instituts Supérieurs Catholiques du Congo : L'Association des Universités et Instituts Supérieurs Catholiques du Congo (ASUNICACO) rassemble les établissements d'enseignement supérieur reconnus à la fois par le Ministère de l’Enseignement Supérieur et Universitaire (ESU) et par l’Église catholique en République Démocratique du Congo. Ses statuts sont officiellement validés par la Conférence Épiscopale du Congo ainsi que par l’État congolais.">
+    <meta property="og:url" content="#">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/1.jpg">
+    <meta property="og:image:width" content="5373">
+    <meta property="og:image:height" content="3582">
+    <meta property="og:image:alt" content="Asunicaco background image">
+    <meta name="description" content="Association des Universités et Instituts Supérieurs Catholiques du Congo : L'Association des Universités et Instituts Supérieurs Catholiques du Congo (ASUNICACO) rassemble les établissements d'enseignement supérieur reconnus à la fois par le Ministère de l’Enseignement Supérieur et Universitaire (ESU) et par l’Église catholique en République Démocratique du Congo. Ses statuts sont officiellement validés par la Conférence Épiscopale du Congo ainsi que par l’État congolais.">
+
+    <!-- Favicons -->
+    <link href="<?= base_url()?>/assets/img/favicon_io/favicon.ico" rel="icon">
+    <link href="<?= base_url()?>/assets/img/favicon_io/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+
 
   <!-- Custom fonts for this template-->
   <link href="assets/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

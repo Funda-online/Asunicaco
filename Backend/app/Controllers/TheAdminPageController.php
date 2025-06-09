@@ -17,11 +17,24 @@ class TheAdminPageController extends BaseController
 
     public function dashboard(): string
     {
-        return $this->render('dashboard', 'À propos | ASUNICACO');
+        return $this->render('dashboard', 'Dashboard | ASUNICACO');
     }
 
-    // public function dashboard()
-    // {
-    //     return view('the_admin/pages/dashboard');
-    // }
+    public function admin_actualites(): string
+    {
+
+        return view('the_admin/layout', [
+            'title' => 'Actualites | ASUNICACO',
+            'content' => 'the_admin/pages/admin_actualites/all_actualites',
+        ]);
+    }
+
+    public function adminProvinces(): string
+    {
+
+        return view('the_admin/layout', [
+            'title' => 'Provinces | ASUNICACO',
+            'content' => 'the_admin/pages/adminProvinces/provinces',
+        ]);
+    }
 }
