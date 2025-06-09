@@ -20,12 +20,12 @@ class TheAdminPageController extends BaseController
         return $this->render('dashboard', 'Dashboard | ASUNICACO');
     }
 
-    public function admin_actualites(): string
+    public function adminActualites(): string
     {
 
         return view('the_admin/layout', [
             'title' => 'Actualites | ASUNICACO',
-            'content' => 'the_admin/pages/admin_actualites/all_actualites',
+            'content' => 'the_admin/pages/adminActualites/actualites',
         ]);
     }
 
