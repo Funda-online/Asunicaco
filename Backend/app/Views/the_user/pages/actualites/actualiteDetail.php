@@ -3,7 +3,7 @@
 <?php
   extract($data)
 ?>
-  <section class="hero-section position-relative d-flex pt-5 align-items-center justify-content-center text-white" style="background-image: url('<?= base_url()?>/assets/img/actualités/<?= esc($actu['image']) ?>'); background-size: cover; background-position: center; height: 80vh;">
+  <section class="hero-section position-relative d-flex pt-5 align-items-center justify-content-center text-white" style="background-image: url('<?= base_url()?>/assets/img/actualites/<?= esc($actu['image']) ?>'); background-size: cover; background-position: center; height: 80vh;">
   <div
     class="position-absolute top-0 start-0 w-100 h-100"
     style="background-color: rgba(0,0,0,0.5);">
@@ -34,7 +34,7 @@
         <a href="<?= esc($actu['website']) ?>" target="_blank"> <?= esc($actu['university']) ?></a>
       </p>
 
-        <img src="<?= base_url()?>/assets/img/actualités/<?= esc($actu['image']) ?>" alt="<?= esc($actu['title']) ?>" class="img-fluid rounded my-4">
+        <img src="<?= base_url()?>/assets/img/actualites/<?= esc($actu['image']) ?>" alt="<?= esc($actu['title']) ?>" class="img-fluid rounded my-4">
 
         <div class="row">
           <div class="w-100">

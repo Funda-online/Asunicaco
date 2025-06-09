@@ -21,3 +21,8 @@ $routes->get('/thebasecontroller/showEvents', 'TheBaseController::showEvents');
 $routes->get('/thebasecontroller/showEvent/(:num)', 'TheBaseController::showEvent/$1');
 $routes->get('/thebasecontroller/showVideos', 'TheBaseController::showVideos');
 $routes->get('/thebasecontroller/showVideo/(:num)', 'TheBaseController::showVideo/$1');
+
+$routes->get('/dashboard', 'Dashboard::actualites');
+$routes->post('/dashboard/ajouter', 'Dashboard::ajouter');
+$routes->get('/dashboard/ajouter', 'Dashboard::ajouter');
+$routes->get('/dashboard/actualitesAdd', 'Dashboard::actualitesAdd');
