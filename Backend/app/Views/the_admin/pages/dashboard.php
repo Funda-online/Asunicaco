@@ -26,7 +26,7 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-uppercase mb-1" style="color: #2952A1;">
                                 Universités</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">47</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">12</div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-university fa-2x text-gray-300"></i>
@@ -34,13 +34,14 @@
                     </div>
                 </div>
 
-                <div class="card-footer border-none p-0 px-3 pt-1 bg-white d-flex align-items-center">
-                        <a
-                            href="#"
-                            class="text-xs text-gray-900 link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                            Gestion des provinces <i class="bi bi-chevron-right"></i>
-                        </a>
-                    </div>
+                <div class="card-footer border-none p-0 px-3 pt-2 bg-white d-flex align-items-center justify-content-center">
+                    <a
+                        href="#"
+                        style="font-size: 13px;"
+                        class="text-gray-900 link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                        Gestion des Universités <i style="font-size: 9px;" class="fas fa-chevron-right text-gray-800"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -59,6 +60,15 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="card-footer border-none p-0 px-3 pt-2 bg-white d-flex align-items-center justify-content-center">
+                    <a
+                        href="#"
+                        style="font-size: 13px;"
+                        class="text-gray-900 link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                        Gestion des Provinces <i style="font-size: 9px;" class="fas fa-chevron-right text-gray-800"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -73,7 +83,7 @@
                             </div>
                             <div class="row no-gutters align-items-center">
                                 <div class="col-auto">
-                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">150</div>
+                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">100</div>
                                 </div>
                             </div>
                         </div>
@@ -81,6 +91,15 @@
                             <i class="fas fa-newspaper fa-2x text-gray-300"></i>
                         </div>
                     </div>
+                </div>
+
+                <div class="card-footer border-none p-0 px-3 pt-2 bg-white d-flex align-items-center justify-content-center">
+                    <a
+                        href="#"
+                        style="font-size: 13px;"
+                        class="text-gray-900 link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                        Gestion des Actualités <i style="font-size: 9px;" class="fas fa-chevron-right text-gray-800"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -99,6 +118,15 @@
                             <i class="fas fa-users fa-2x text-gray-300"></i>
                         </div>
                     </div>
+                </div>
+
+                <div class="card-footer border-none p-0 px-3 pt-2 bg-white d-flex align-items-center justify-content-center">
+                    <a
+                        href="#"
+                        style="font-size: 13px;"
+                        class="text-gray-900 link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                        Gestion des Admins <i style="font-size: 9px;" class="fas fa-chevron-right text-gray-800"></i>
+                    </a>
                 </div>
             </div>
         </div>
