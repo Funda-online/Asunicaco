@@ -121,7 +121,7 @@
                     foreach ($actualites as $actu) : ?>
                       <div class="col g-4">
                         <div class="h-100">
-                          <img src="<?= base_url('assets/img/actualités/' . esc($actu['image'])) ?>" class="card-img-top" alt="...">
+                          <img src="<?= base_url('assets/img/actualites/' . esc($actu['image'])) ?>" class="card-img-top" alt="...">
                           <div class="pt-4">
                             <h5 class="card-title"><?= esc($actu['title']) ?></h5>
                             <p class="py-2 m-0"><small class="text-muted"><?= date('d M Y', strtotime($actu['publish_date'])) ?></small></p>

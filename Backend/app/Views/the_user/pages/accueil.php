@@ -23,10 +23,10 @@
         <!-- Bloc de description avec espacement et marges -->
         <div class="col-md-6 description text-md-start">
           <h4 class="about-title association">
-            Association des Universités et Instituts Supérieurs Catholiques du Congo.
+            Association des universites et Instituts Supérieurs Catholiques du Congo.
           </h4>
           <p class="about-text">
-            <strong>L'Association des Universités et Instituts Supérieurs Catholiques du Congo (ASUNICACO)</strong> rassemble les établissements d'enseignement supérieur reconnus à la fois par le Ministère de l’Enseignement Supérieur et Universitaire (ESU) et par l’Église catholique en République Démocratique du Congo. Ses statuts sont officiellement validés par la Conférence Épiscopale du Congo ainsi que par l’État congolais.
+            <strong>L'Association des universites et Instituts Supérieurs Catholiques du Congo (ASUNICACO)</strong> rassemble les établissements d'enseignement supérieur reconnus à la fois par le Ministère de l’Enseignement Supérieur et Universitaire (ESU) et par l’Église catholique en République Démocratique du Congo. Ses statuts sont officiellement validés par la Conférence Épiscopale du Congo ainsi que par l’État congolais.
           </p>
         </div>
 
@@ -61,7 +61,7 @@
         <?php foreach ($lastThree as $actu): ?>
             <div class="col g-4">
               <div class="h-100">
-                <img src="<?= base_url('assets/img/actualités/' . esc($actu['image'])) ?>" class="card-img-top" alt="..." style="height: 230px; object-fit:cover">
+                <img src="<?= base_url('assets/img/actualites/' . esc($actu['image'])) ?>" class="card-img-top" alt="..." style="height: 230px; object-fit:cover">
                 <div class="pt-4">
                   <h5 class="card-title"><?= esc($actu['title']) ?></h5>
                   <p class="py-2 m-0"><small class="text-muted"><?= date('d M Y', strtotime($actu['publish_date'])) ?></small> <br> <small class="text-muted"><?= $actu['university'] ?></small></p>
@@ -161,7 +161,7 @@
       <div class="row">
         <div class="col-lg-4 z-3 align-items-center justify-content-center bg-white">
           <header class="section-header text-center">
-            <h3><span class="section-title">Universités<br> Membres</span></h3>
+            <h3><span class="section-title">universites<br> Membres</span></h3>
           </header>
         </div>
 
@@ -169,38 +169,38 @@
           <div class="swiper universite-slider">
             <div class="swiper-wrapper align-items-center justify-content-center *border border-primary">
               <div class="universite-card swiper-slide *border border-primary">
-                <a href="#"><img src="assets/img/logo-université/LOGO-UDBL2.jpg" class="img-fluid *border border-primary" alt="Université UDBL" width="80" height="30"></a>
+                <a href="#"><img src="assets/img/logo-universite/LOGO-UDBL2.jpg" class="img-fluid *border border-primary" alt="universite UDBL" width="80" height="30"></a>
               </div>
               <div class="universite-card swiper-slide">
-                <a href="#"><img src="assets/img/logo-université/Malkia.webp" class="img-fluid" alt="Université Malkia" width="80" height="30"></a>
+                <a href="#"><img src="assets/img/logo-universite/Malkia.webp" class="img-fluid" alt="universite Malkia" width="80" height="30"></a>
               </div>
               <div class="universite-card swiper-slide">
-                <a href="#"><img src="assets/img/logo-université/ISAM.webp" class="img-fluid" alt="Université ISAM" width="50" height="30"></a>
+                <a href="#"><img src="assets/img/logo-universite/ISAM.webp" class="img-fluid" alt="universite ISAM" width="50" height="30"></a>
               </div>
               <div class="universite-card swiper-slide">
-                <a href="#"><img src="assets/img/logo-université/Istm.webp" class="img-fluid" alt="Université Zawadi" width="80" height="50"></a>
+                <a href="#"><img src="assets/img/logo-universite/Istm.webp" class="img-fluid" alt="universite Zawadi" width="80" height="50"></a>
               </div>
               <div class="universite-card swiper-slide">
-                <a href="#"><img src="assets/img/logo-université/ucb.webp" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+                <a href="#"><img src="assets/img/logo-universite/ucb.webp" class="img-fluid" alt="universite UCB" width="60" height="50"></a>
               </div>
               
               <div class="universite-card swiper-slide">
-                <a href="#"><img src="assets/img/logo-université/UJKOL.webp" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+                <a href="#"><img src="assets/img/logo-universite/UJKOL.webp" class="img-fluid" alt="universite UCB" width="60" height="50"></a>
               </div>
               <div class="universite-card swiper-slide">
-                <a href="#"><img src="assets/img/logo-université/IFTR.webp" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+                <a href="#"><img src="assets/img/logo-universite/IFTR.webp" class="img-fluid" alt="universite UCB" width="60" height="50"></a>
               </div>
               <div class="universite-card swiper-slide">
-                <a href="#"><img src="assets/img/logo-université/mulolwa.jpg" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+                <a href="#"><img src="assets/img/logo-universite/mulolwa.jpg" class="img-fluid" alt="universite UCB" width="60" height="50"></a>
               </div>
               <div class="universite-card swiper-slide">
-                <a href="#"><img src="assets/img/logo-université/universite catholique du congo.jpg" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+                <a href="#"><img src="assets/img/logo-universite/universite catholique du congo.jpg" class="img-fluid" alt="universite UCB" width="60" height="50"></a>
               </div>
               <div class="universite-card swiper-slide">
-                <a href="#"><img src="assets/img/logo-université/IstemSJ.jpg" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+                <a href="#"><img src="assets/img/logo-universite/IstemSJ.jpg" class="img-fluid" alt="universite UCB" width="60" height="50"></a>
               </div>
               <div class="universite-card swiper-slide">
-                <a href="#"><img src="assets/img/logo-université/Institut Supérieur d'Informatique Chaminade.jpg" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+                <a href="#"><img src="assets/img/logo-universite/Institut Supérieur d'Informatique Chaminade.jpg" class="img-fluid" alt="universite UCB" width="60" height="50"></a>
               </div>
             </div>
 
@@ -215,37 +215,40 @@
           <!-- Liste des logos défilables -->
           <div class="universite-slider d-flex align-items-center overflow-auto" id="logoContainer">
             <div class="universite-card flex-shrink-0 mr-2">
-              <a href="#"><img src="assets/img/logo-université/LOGO-UDBL2.jpg" class="img-fluid" alt="Université UDBL" width="80" height="30"></a>
+              <a href="#"><img src="assets/img/logo-universite/LOGO-UDBL2.jpg" class="img-fluid" alt="universite UDBL" width="80" height="30"></a>
+            </div>
+            <div class="universite-card flex-shrink-0 mr-2">
+              <a href="#"><img src="assets/img/logo-universite/ucgb.avif" class="img-fluid" alt="universite UDBL" width="80" height="30"></a>
             </div>
             <div class="universite-card flex-shrink-0 mx-2">
-              <a href="#"><img src="assets/img/logo-université/Malkia.webp" class="img-fluid" alt="Université Malkia" width="80" height="30"></a>
+              <a href="#"><img src="assets/img/logo-universite/Malkia.webp" class="img-fluid" alt="universite Malkia" width="80" height="30"></a>
             </div>
             <div class="universite-card flex-shrink-0 mx-2">
-              <a href="#"><img src="assets/img/logo-université/ISAM.webp" class="img-fluid" alt="Université ISAM" width="50" height="30"></a>
+              <a href="#"><img src="assets/img/logo-universite/ISAM.webp" class="img-fluid" alt="universite ISAM" width="50" height="30"></a>
             </div>
             <div class="universite-card flex-shrink-0 mx-2">
-              <a href="#"><img src="assets/img/logo-université/Istm.webp" class="img-fluid" alt="Université Zawadi" width="80" height="50"></a>
+              <a href="#"><img src="assets/img/logo-universite/Istm.webp" class="img-fluid" alt="universite Zawadi" width="80" height="50"></a>
             </div>
             <div class="universite-card flex-shrink-0 mx-2">
-              <a href="#"><img src="assets/img/logo-université/ucb.webp" class="img-fluid" alt="Université UCB" width="60" height="50"></a>
+              <a href="#"><img src="assets/img/logo-universite/ucb.webp" class="img-fluid" alt="universite UCB" width="60" height="50"></a>
             </div>
             <div class="universite-card flex-shrink-0 mx-2">
-              <a href="#"><img src="assets/img/logo-université/UJKOL.webp" class="img-fluid" alt="Université UJKOL" width="60" height="50"></a>
+              <a href="#"><img src="assets/img/logo-universite/UJKOL.webp" class="img-fluid" alt="universite UJKOL" width="60" height="50"></a>
             </div>
             <div class="universite-card flex-shrink-0 mx-2">
-              <a href="#"><img src="assets/img/logo-université/IFTR.webp" class="img-fluid" alt="Université IFTR" width="60" height="50"></a>
+              <a href="#"><img src="assets/img/logo-universite/IFTR.webp" class="img-fluid" alt="universite IFTR" width="60" height="50"></a>
             </div>
             <div class="universite-card flex-shrink-0 mx-2">
-              <a href="#"><img src="assets/img/logo-université/mulolwa.jpg" class="img-fluid" alt="Université Mulolwa" width="60" height="50"></a>
+              <a href="#"><img src="assets/img/logo-universite/mulolwa.jpg" class="img-fluid" alt="universite Mulolwa" width="60" height="50"></a>
             </div>
             <div class="universite-card flex-shrink-0 mx-2">
-              <a href="#"><img src="assets/img/logo-université/universite catholique du congo.jpg" class="img-fluid" alt="Université Catholique du Congo" width="60" height="50"></a>
+              <a href="#"><img src="assets/img/logo-universite/universite catholique du congo.jpg" class="img-fluid" alt="universite Catholique du Congo" width="60" height="50"></a>
             </div>
             <div class="universite-card flex-shrink-0 mx-2">
-              <a href="#"><img src="assets/img/logo-université/IstemSJ.jpg" class="img-fluid" alt="Université IstemSJ" width="60" height="50"></a>
+              <a href="#"><img src="assets/img/logo-universite/IstemSJ.jpg" class="img-fluid" alt="universite IstemSJ" width="60" height="50"></a>
             </div>
             <div class="universite-card flex-shrink-0 ml-2">
-              <a href="#"><img src="assets/img/logo-université/Institut Supérieur d'Informatique Chaminade.jpg" class="img-fluid" alt="Université Chaminade" width="60" height="50"></a>
+              <a href="#"><img src="assets/img/logo-universite/Institut Supérieur d'Informatique Chaminade.jpg" class="img-fluid" alt="universite Chaminade" width="60" height="50"></a>
             </div>
           </div>
 

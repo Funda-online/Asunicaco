@@ -7,7 +7,7 @@
       
       <div class="carousel-item active">
         <div class="hero-slide position-relative d-flex align-items-center justify-content-center text-white"
-          style="background-image: url('assets/img/actualités/act1.jpg'); background-size: cover; background-position: center; height: 80vh;">
+          style="background-image: url('assets/img/actualites/act1.jpg'); background-size: cover; background-position: center; height: 80vh;">
 
           <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5);"></div>
 
@@ -21,7 +21,7 @@
       
       <div class="carousel-item">
         <div class="hero-slide position-relative d-flex align-items-center justify-content-center text-white"
-          style="background-image: url('assets/img/actualités/act2.jpg'); background-size: cover; background-position: center; height: 80vh;">
+          style="background-image: url('assets/img/actualites/act2.jpg'); background-size: cover; background-position: center; height: 80vh;">
 
           <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5);"></div>
 
@@ -35,7 +35,7 @@
       
       <div class="carousel-item">
         <div class="hero-slide position-relative d-flex align-items-center justify-content-center text-white"
-          style="background-image: url('assets/img/actualités/act3.jpg'); background-size: cover; background-position: center; height: 80vh;">
+          style="background-image: url('assets/img/actualites/act3.jpg'); background-size: cover; background-position: center; height: 80vh;">
 
           <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5);"></div>
 
@@ -52,7 +52,7 @@
       <?php foreach ($lastThree as $index => $news): ?>
         <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
           <div class="hero-slide position-relative d-flex align-items-center justify-content-center text-white"
-            style="background-image: url('assets/img/actualités/<?= esc($news['image']) ?>'); background-size: cover; background-position: center; height: 80vh;">
+            style="background-image: url('assets/img/actualites/<?= esc($news['image']) ?>'); background-size: cover; background-position: center; height: 80vh;">
 
             <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5);"></div>
 
@@ -135,7 +135,7 @@
             <?php foreach ($allNews as $actu): ?>
               <div class="col g-4">
                 <div class="h-100">
-                  <img src="<?= base_url('assets/img/actualités/' . esc($actu['image'])) ?>" class="card-img-top" alt="..." style="height: 230px; object-fit:cover">
+                  <img src="<?= base_url('assets/img/actualites/' . esc($actu['image'])) ?>" class="card-img-top" alt="..." style="height: 230px; object-fit:cover">
                   <div class="pt-4">
                     <h5 class="card-title"><?= esc($actu['title']) ?></h5>
                     <p class="py-2 m-0"><small class="text-muted"><?= date('d M Y', strtotime($actu['publish_date'])) ?></small></p>

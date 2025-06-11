@@ -7,7 +7,7 @@ $current_page = $segments[0];
 <ul class="navbar-nav sidebar sidebar-dark" id="accordionSidebar" style="background-color: #2952A1;">
 
   <!-- Sidebar - Brand -->
-  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
     <div class="sidebar-brand-icon">
       <img src="<?= base_url() ?>/assets/img/favicon_io/logo-asunicaco.png" width="48" heigth="48" alt="Funda">
     </div>

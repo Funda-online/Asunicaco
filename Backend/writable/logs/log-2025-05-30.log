@@ -1,8 +1,8 @@
 CRITICAL - 2025-05-30 08:15:30 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "actualités"
 [Method: GET, Route: assets/img/actualit%C3%A9s/act2.jpg]
 in SYSTEMPATH\Router\Router.php on line 736.
- 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualités/act2.jpg')
- 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualités/act2.jpg')
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualites/act2.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualites/act2.jpg')
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
@@ -267,8 +267,8 @@ in APPPATH\Views\the_user\pages\provinces\universite.php on line 93.
 CRITICAL - 2025-05-30 11:30:47 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "actualités"
 [Method: GET, Route: assets/img/actualit%C3%A9s/act2.jpg]
 in SYSTEMPATH\Router\Router.php on line 736.
- 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualités/act2.jpg')
- 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualités/act2.jpg')
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualites/act2.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualites/act2.jpg')
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
@@ -277,8 +277,8 @@ in SYSTEMPATH\Router\Router.php on line 736.
 CRITICAL - 2025-05-30 11:30:49 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "actualités"
 [Method: GET, Route: assets/img/actualit%C3%A9s/act3.jpg]
 in SYSTEMPATH\Router\Router.php on line 736.
- 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualités/act3.jpg')
- 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualités/act3.jpg')
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualites/act3.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualites/act3.jpg')
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
@@ -287,8 +287,8 @@ in SYSTEMPATH\Router\Router.php on line 736.
 CRITICAL - 2025-05-30 13:24:30 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "actualités"
 [Method: GET, Route: assets/img/actualit%C3%A9s/act2.jpg]
 in SYSTEMPATH\Router\Router.php on line 736.
- 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualités/act2.jpg')
- 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualités/act2.jpg')
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualites/act2.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualites/act2.jpg')
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
@@ -297,8 +297,8 @@ in SYSTEMPATH\Router\Router.php on line 736.
 CRITICAL - 2025-05-30 13:24:46 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "actualités"
 [Method: GET, Route: assets/img/actualit%C3%A9s/act2.jpg]
 in SYSTEMPATH\Router\Router.php on line 736.
- 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualités/act2.jpg')
- 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualités/act2.jpg')
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualites/act2.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualites/act2.jpg')
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
@@ -307,8 +307,8 @@ in SYSTEMPATH\Router\Router.php on line 736.
 CRITICAL - 2025-05-30 13:24:51 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "actualités"
 [Method: GET, Route: assets/img/actualit%C3%A9s/act3.jpg]
 in SYSTEMPATH\Router\Router.php on line 736.
- 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualités/act3.jpg')
- 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualités/act3.jpg')
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualites/act3.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualites/act3.jpg')
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
@@ -317,8 +317,8 @@ in SYSTEMPATH\Router\Router.php on line 736.
 CRITICAL - 2025-05-30 13:30:36 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "actualités"
 [Method: GET, Route: assets/img/actualit%C3%A9s/act2.jpg]
 in SYSTEMPATH\Router\Router.php on line 736.
- 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualités/act2.jpg')
- 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualités/act2.jpg')
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualites/act2.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualites/act2.jpg')
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
@@ -327,8 +327,8 @@ in SYSTEMPATH\Router\Router.php on line 736.
 CRITICAL - 2025-05-30 13:30:41 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "actualités"
 [Method: GET, Route: assets/img/actualit%C3%A9s/act3.jpg]
 in SYSTEMPATH\Router\Router.php on line 736.
- 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualités/act3.jpg')
- 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualités/act3.jpg')
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualites/act3.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualites/act3.jpg')
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
@@ -337,8 +337,8 @@ in SYSTEMPATH\Router\Router.php on line 736.
 CRITICAL - 2025-05-30 13:34:46 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "actualités"
 [Method: GET, Route: assets/img/actualit%C3%A9s/act2.jpg]
 in SYSTEMPATH\Router\Router.php on line 736.
- 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualités/act2.jpg')
- 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualités/act2.jpg')
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualites/act2.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualites/act2.jpg')
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
@@ -347,8 +347,8 @@ in SYSTEMPATH\Router\Router.php on line 736.
 CRITICAL - 2025-05-30 13:34:51 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "actualités"
 [Method: GET, Route: assets/img/actualit%C3%A9s/act3.jpg]
 in SYSTEMPATH\Router\Router.php on line 736.
- 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualités/act3.jpg')
- 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualités/act3.jpg')
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/actualites/act3.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/actualites/act3.jpg')
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()

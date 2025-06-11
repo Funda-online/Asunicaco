@@ -37,7 +37,7 @@
     rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link rel="stylesheet" href="<?= base_url('assets/admin/css/admin.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('assets/admin/css/sb-admin-2.css') ?>">
 </head>
 
 <body id="page-top">
