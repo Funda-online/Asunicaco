@@ -17,24 +17,24 @@
                     <div class="row g-4 mb-4">
                         <div class="col-md-6">
                             <!-- USERS LIST -->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">Représentation brillante de l'UCC à Lille en France</h3>
-                                    <div class="card-tools">
+                            <div class="card bg-white" style="color: black;">
+                                <div class="card-header bg-white">
+                                    <h3 class="card-title h5">Représentation brillante de l'UCC à Lille en France</h3>
+                                    <!-- <div class="card-tools">
                                         <button type="button" class="btn btn-tool" data-lte-toggle="card-collapse">
-                                            <i data-lte-icon="expand" class="bi bi-plus-lg"></i>
+                                            <i data-lte-icon="expand" class="fas fa-plus-lg"></i>
                                             <i data-lte-icon="collapse" class="bi bi-dash-lg"></i>
                                         </button>
                                         <button type="button" class="btn btn-tool" data-lte-toggle="card-remove">
-                                            <i class="bi bi-x-lg"></i>
+                                            <i class="fas fa-x-lg"></i>
                                         </button>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <!-- /.card-header -->
-                                <div class="card-body p-0">
-                                    <div class="row m-1 image-dashboard">
-                                        <img src="../assets/img/article.jpg" alt="" class="">
-                                        <p>
+                                <div class="card-body pt-1">
+                                    <div class="row m-1">
+                                        <img src="assets/img/actualites/1749021515_61516599c572a04c9dec.jpg" alt="" class="" style="height: 250px; width: 350px; object-fit: cover">
+                                        <p class="pt-1">
                                             Pascaline KABEMBA a présenté la palabre africaine comme modèle de communication à la
                                             Journée des jeunes chercheur·e·s en SIC. Elle critique les paradigmes occidentaux et
                                             plaide pour une valorisation des pratiques africaines face aux crises du continent.
