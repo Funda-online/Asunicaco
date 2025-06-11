@@ -2,17 +2,17 @@
 
     <!-- Page Heading -->
     <!-- <div class="d-flex align-items-center justify-content-between mb-4"> -->
-        <!-- <h1 class="h3 mb-0 text-gray-800">Dashboard</h1> -->
+    <!-- <h1 class="h3 mb-0 text-gray-800">Dashboard</h1> -->
 
-        <div class="d-flex align-items-center justify-content-between mb-4">
-              <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-              <div>
-                <ol class="breadcrumb float-sm-end">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-                </ol>
-              </div>
-            </div>
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+        <div>
+            <ol class="breadcrumb float-sm-end">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+            </ol>
+        </div>
+    </div>
     <!-- </div> -->
 
     <!-- Content Row -->
@@ -33,6 +33,14 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="card-footer border-none p-0 px-3 pt-1 bg-white d-flex align-items-center">
+                        <a
+                            href="#"
+                            class="text-xs text-gray-900 link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                            Gestion des provinces <i class="bi bi-chevron-right"></i>
+                        </a>
+                    </div>
             </div>
         </div>
 
