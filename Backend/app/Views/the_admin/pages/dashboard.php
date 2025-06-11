@@ -5,13 +5,14 @@
     <!-- <h1 class="h3 mb-0 text-gray-800">Dashboard</h1> -->
 
     <div class="d-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-        <div>
+        <h1 class="h4 mb-0 text-gray-800">Dashboard</h1>
+        
+        <!-- <div>
             <ol class="breadcrumb float-sm-end">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
             </ol>
-        </div>
+        </div> -->
     </div>
     <!-- </div> -->
 
