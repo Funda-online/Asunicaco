@@ -3,7 +3,7 @@
         <h1 class="h4 mb-0 text-gray-800">Gestion actualités</h1>
 
         <div>
-            <button class="btn btn-md text-white" style="background-color: #2952A1; font-size: 14px;">Nouvelle actualité</button>
+            <a href="<?= base_url('addActualite') ?>" class="btn btn-md text-white" style="background-color: #2952A1; font-size: 14px;">Nouvelle actualité</a>
         </div>
     </div>
 

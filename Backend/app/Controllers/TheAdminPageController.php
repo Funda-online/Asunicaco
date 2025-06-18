@@ -29,7 +29,16 @@ class TheAdminPageController extends BaseController
         ]);
     }
 
-    public function adminProvinces(): string
+    public function addActualite(): string
+    {
+
+        return view('the_admin/layout', [
+            'title' => 'Provinces | ASUNICACO',
+            'content' => 'the_admin/pages/adminActualites/addActualite',
+        ]);
+    }
+
+    public function adminProvinces(): string 
     {
 
         return view('the_admin/layout', [
@@ -61,7 +70,7 @@ class TheAdminPageController extends BaseController
 
         return view('the_admin/layout', [
             'title' => 'Universites | ASUNICACO',
-            'content' => 'the_admin/pages/adminUniversites/universites',
+            'content' => 'the_admin/pages/adminUniversites/addUniversite',
         ]);
     }
 }

@@ -19,6 +19,8 @@ $routes->get('/adminUniversites', 'TheAdminPageController::adminUniversites');
 $routes->get('/adminProvinces', 'TheAdminPageController::adminProvinces');
 $routes->get('/addProvince', 'TheAdminPageController::addProvince');
 $routes->get('/adminActualites', 'TheAdminPageController::adminActualites');
+$routes->get('/addActualite', 'TheAdminPageController::addActualite');
+$routes->get('/addUniversite', 'TheAdminPageController::addUniversite');
 
 $routes->get('/thebasecontroller', 'TheBaseController::index');
 $routes->get('/dbtestcontroller', 'DbTestController::index');
