@@ -8,7 +8,7 @@
         <h1 class="h4 mb-0 text-gray-800">Gestion Provinces</h1>
 
         <div>
-            <button class="btn btn-md text-white" style="background-color: #2952A1; font-size: 14px;">Nouvelle province</button>
+            <a href="<?= base_url('addProvince') ?>" class="btn btn-md text-white" style="background-color: #2952A1; font-size: 14px;">Nouvelle province</a>
         </div>
     </div>
 
