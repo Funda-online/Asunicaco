@@ -21,6 +21,15 @@ $routes->get('/addProvince', 'TheAdminPageController::addProvince');
 $routes->get('/adminActualites', 'TheAdminPageController::adminActualites');
 $routes->get('/addActualite', 'TheAdminPageController::addActualite');
 $routes->get('/addUniversite', 'TheAdminPageController::addUniversite');
+$routes->post('/saveNews', 'TheAdminPageController::saveNews');
+$routes->get('/saveNews', 'TheAdminPageController::saveNews');
+$routes->get('/updateActualite/(:num)', 'TheAdminPageController::updateActualite/$1');
+$routes->get('/deleteNews/(:num)', 'TheAdminPageController::deleteNews/$1');
+$routes->post('/updateNews', 'TheAdminPageController::updateNews');
+$routes->post('/saveUniversity', 'TheAdminPageController::saveUniversity');
+$routes->post('/saveUpdateUniversity', 'TheAdminPageController::saveUpdateUniversity');
+$routes->get('/updateUniversity/(:num)', 'TheAdminPageController::updateUniversity/$1');
+$routes->get('/deleteUniversity/(:num)', 'TheAdminPageController::deleteUniversity/$1');
 
 $routes->get('/thebasecontroller', 'TheBaseController::index');
 $routes->get('/dbtestcontroller', 'DbTestController::index');

@@ -47,4 +47,11 @@ class University extends BaseController
     {
         return self::getInstance()->model->delete($id);
     }
+
+    public static function getAllWithProvince(): array
+    {
+        return self::getInstance()->model->select('university.*, university.website as website, university.name as university, province.name as province')
+                    ->join('province', 'province.id_province = university.id_province')
+                    ->findAll();
+    }
 }

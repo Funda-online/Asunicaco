@@ -18,7 +18,7 @@
         <!-- <span class="mr-2 d-none d-lg-inline text-gray-600" style="font-size: 15px;">Douglas McGee</span> -->
         <span class="d-none d-md-inline text-gray-900 mr-2">Alexander Pierce</span>
         <img class="img-profile rounded-circle"
-          src="assets/img/1.jpg">
+          src="<?=base_url()?>/assets/img/1.jpg">
       </a>
       <!-- Dropdown - User Information -->
       <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

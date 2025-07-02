@@ -8,9 +8,15 @@
         <h1 class="h4 mb-0 text-gray-800">Gestion universités</h1>
 
         <div>
-            <a href="<?= base_url('addUniversite') ?>" class="btn btn-md text-white" style="background-color: #2952A1; font-size: 14px;">Nouvelle université</a>
+            <a href="<?= base_url('addUniversite') ?>" class="btn btn-md text-white"
+                style="background-color: #2952A1; font-size: 14px;">Nouvelle université</a>
         </div>
     </div>
+    <?php if (session()->getFlashdata('success')): ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <?= session()->getFlashdata('success') ?>
+        </div>
+    <?php endif; ?>
 
     <div class="card mb-4">
         <div class="card-header bg-white">
@@ -29,42 +35,30 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Université Maria Malkia (UMM)</td>
-                                <td>Haut-Katanga</td>
-                                <td>
-                                    <button class="btn btn-sm text-white" style="background-color: #2952A1;">Éditer</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Université Don Bosco de Lubumbashi (UDBL)</td>
-                                <td>Haut-Uélé</td>
-                                <td>
-                                    <button class="btn btn-sm text-white" style="background-color: #2952A1;">Éditer</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Institut Facultaire Théophile Reyn</td>
-                                <td>Lualaba</td>
-                                <td>
-                                    <button class="btn btn-sm text-white" style="background-color: #2952A1;">Éditer</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Institut Supérieur Interdiocésain Monseigneur Mulolwa (ISIM)</td>
-                                <td>Kasaï Central</td>
-                                <td>
-                                    <button class="btn btn-sm text-white" style="background-color: #2952A1;">Éditer</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Institut Supérieur des Arts et Métiers Marie Auxiliatrice (ISAMM)s</td>
-                                <td>Kinshasa</td>
-                                <td>
-                                    <button class="btn btn-sm text-white" style="background-color: #2952A1;">Éditer</button>
-                                </td>
-                            </tr>
-                            <!-- Continue avec les autres provinces si nécessaire -->
+                            <?php
+                            foreach ($universites as $item):
+                                ?>
+                                <tr>
+                                    <td>
+                                        <?= esc($item['name']) ?>
+                                    </td>
+                                    <td>
+                                        <?= esc($item['province']) ?>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="<?= base_url('updateUniversity/' . $item['id_university']) ?>"
+                                            class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-edit me-1"></i>
+                                        </a>
+
+                                        <a href="<?= base_url('/deleteUniversity/' . $item['id_university']) ?>"
+                                            class="btn btn-sm btn-outline-danger"
+                                            onclick="return confirm('Voulez-vous vraiment supprimer cette université ?')">
+                                            <i class="fas fa-trash-alt me-1"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>

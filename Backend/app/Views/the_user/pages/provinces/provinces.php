@@ -66,7 +66,7 @@
               <?php if (!empty($province['description'])) : ?>
                 <div class="mb-4">
                   <h5 style="color: #2952A1;">Présentation</h5>
-                  <?= esc($province['description']) ?>
+                  <?= $province['description'] ?>
                 </div>
               <?php endif; ?>
 
@@ -89,8 +89,8 @@
                         ?>
                             <tr>
                               <td>
-                                <?php if (!empty($universite['website'])) :  ?>
-                                  <a href="<?= esc($universite['website']) ?>" target="_blank">
+                                <?php if (!empty($universite['description'])) :  ?>
+                                  <a href="/Asunicaco/public/universite/<?= esc($universite['id_university']) ?>">
                                     <?= esc($universite['name']) ?>
                                   </a>
                                 <?php else : ?>

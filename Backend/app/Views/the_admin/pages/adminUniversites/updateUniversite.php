@@ -19,28 +19,29 @@
             <!--end::Header-->
 
             <!--begin::Form-->
-            <form action="<?= base_url('/saveUniversity') ?>" method="post" enctype="multipart/form-data">
+            <form action="<?= base_url('/saveUpdateUniversity') ?>" method="post" enctype="multipart/form-data">
                 <?= csrf_field() ?>
+                <input type="hidden" name="id_university" value="<?= esc($university['id_university']) ?>">
+
                 <div class="card-body">
                     <div class="row">
                         <div class="mb-3 col-md-6">
-                            <label for="name" class="form-label">Nom de l'université *</label>
-                            <input type="text" class="form-control" name="name" id="name" required />
+                            <label class="form-label">Nom de l'université *</label>
+                            <input type="text" name="name" class="form-control" required
+                                value="<?= esc($university['name']) ?>">
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label class="form-label">Ville</label>
+                            <input type="text" name="ville" class="form-control"
+                                value="<?= esc($university['ville']) ?>">
                         </div>
 
                         <div class="mb-3 col-md-6">
-                            <label for="ville" class="form-label">Ville</label>
-                            <input type="text" class="form-control" name="ville" id="ville" />
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="mb-3 col-md-6">
-                            <label for="id_province" class="form-label">Province</label>
-                            <select name="id_province" id="id_province" class="form-select form-control" required>
-                                <option value="">-- Sélectionnez --</option>
+                            <label class="form-label">Province</label>
+                            <select name="id_province" class="form-control" required>
                                 <?php foreach ($provinces as $province): ?>
-                                    <option value="<?= esc($province['id_province']) ?>">
+                                    <option value="<?= esc($province['id_province']) ?>"
+                                        <?= $province['id_province'] == $university['id_province'] ? 'selected' : '' ?>>
                                         <?= esc($province['name']) ?>
                                     </option>
                                 <?php endforeach; ?>
@@ -48,47 +49,51 @@
                         </div>
 
                         <div class="mb-3 col-md-6">
-                            <label for="address" class="form-label">Adresse</label>
-                            <input type="text" class="form-control" name="address" id="address" />
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="mb-3 col-md-6">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" name="email" id="email" />
+                            <label class="form-label">Adresse</label>
+                            <input type="text" name="address" class="form-control"
+                                value="<?= esc($university['address']) ?>">
                         </div>
 
                         <div class="mb-3 col-md-6">
-                            <label for="phone" class="form-label">Téléphone</label>
-                            <input type="text" class="form-control" name="phone" id="phone" />
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="mb-3 col-md-6">
-                            <label for="website" class="form-label">Site web</label>
-                            <input type="url" class="form-control" name="website" id="website" />
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control"
+                                value="<?= esc($university['email']) ?>">
                         </div>
 
                         <div class="mb-3 col-md-6">
-                            <label for="logo" class="form-label">Logo</label>
-                            <input type="file" class="form-control" name="logo" id="logo" accept="image/*" />
+                            <label class="form-label">Téléphone</label>
+                            <input type="text" name="phone" class="form-control"
+                                value="<?= esc($university['phone']) ?>">
+                        </div>
+
+                        <div class="mb-3 col-md-6">
+                            <label class="form-label">Site web</label>
+                            <input type="url" name="website" class="form-control"
+                                value="<?= esc($university['website']) ?>">
+                        </div>
+
+                        <div class="mb-3 col-md-6">
+                            <label class="form-label">Logo</label>
+                            <input type="file" name="logo" class="form-control" accept="image/*">
+                            <?php if (!empty($university['logo'])): ?>
+                                <div class="mt-2">
+                                    <img src="<?= base_url('assets/img/logo-universite/' . $university['logo']) ?>" alt="Logo"
+                                        height="60">
+                                </div>
+                            <?php endif; ?>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Description</label>
+                            <textarea name="description" id="description" rows="4"
+                                class="form-control"><?= esc($university['description']) ?></textarea>
                         </div>
                     </div>
-
-                    <div class="mb-3">
-                        <label for="description" class="form-label">Autres informations de l'université</label>
-                        <textarea name="description" id="description" rows="4" class="form-control"></textarea>
-                    </div>
-                    
                 </div>
-
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                    <button type="submit" class="btn btn-primary">Mettre à jour</button>
                 </div>
             </form>
-
             <!--end::Form-->
         </div>
     </div>

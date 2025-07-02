@@ -29,15 +29,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
 
   <!-- Custom fonts for this template-->
-  <link href="assets/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="<?= base_url()?>/assets/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link
     href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
     rel="stylesheet">
 
   <!-- Custom styles for this template-->
   <link rel="stylesheet" href="<?= base_url('assets/admin/css/sb-admin-2.css') ?>">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -95,21 +99,27 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="assets/admin/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?= base_url()?>assets/admin/vendor/jquery/jquery.min.js"></script>
+  <!-- <script src="<?= base_url()?>assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 
   <!-- Core plugin JavaScript-->
-  <script src="assets/admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="<?= base_url()?>assets/admin/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="assets/admin/js/sb-admin-2.min.js"></script>
+  <script src="<?= base_url()?>assets/admin/js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="assets/admin/vendor/chart.js/Chart.min.js"></script>
+  <!-- <script src="<?= base_url()?>assets/admin/vendor/chart.js/Chart.min.js"></script> -->
 
   <!-- Page level custom scripts -->
-  <script src="assets/admin/js/demo/chart-area-demo.js"></script>
-  <script src="assets/admin/js/demo/chart-pie-demo.js"></script>
+  <!-- <script src="<?= base_url()?>assets/admin/js/demo/chart-area-demo.js"></script>
+  <script src="<?= base_url()?>assets/admin/js/demo/chart-pie-demo.js"></script> -->
+
+  <!-- jQuery (requis par Select2) -->
+
+
+<!-- Select2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 </body>
 

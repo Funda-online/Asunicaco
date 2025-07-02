@@ -33,12 +33,13 @@ $current_page = $segments[0];
       </a>
     </li>
 
-    <li class="nav-item  <?= $current_page == 'adminProvinces' ? 'active' : '' ?>">
+    <!-- <li class="nav-item  <?= $current_page == 'adminProvinces' ? 'active' : '' ?>">
       <a class="nav-link" href=" <?= base_url('adminProvinces') ?>">
         <i class="fas fa-map"></i>
         <span>Provinces</span>
       </a>
-    </li>
+    </li> -->
+
 
     <li class="nav-item  <?= $current_page == 'adminActualites' ? 'active' : '' ?>">
       <a class="nav-link" href=" <?= base_url('adminActualites') ?>">
@@ -46,13 +47,13 @@ $current_page = $segments[0];
         <span>Actualités</span>
       </a>
     </li>
-
+<!-- 
     <li class="nav-item  <?= $current_page == 'adminUsers' ? 'active' : '' ?>">
       <a class="nav-link" href=" <?= base_url('adminUsers') ?>">
         <i class="fas fa-users"></i>
         <span>Admin</span>
       </a>
-    </li>
+    </li> -->
   </div>
 
   <!-- Sidebar Toggler (Sidebar) -->

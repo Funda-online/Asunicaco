@@ -10,67 +10,65 @@
         </div>
     <?php endif; ?>
 
-    <div class="card mb-4 p-4 bg-white">
-        <form method="post" enctype="multipart/form-data" action="<?= site_url('/saveNews') ?>">
-            <!--begin::Body-->
+    <?php if (!empty($news)): ?>
+        <div class="card mb-4 p-4 bg-white shadow rounded">
+            <form method="post" enctype="multipart/form-data" action="<?= site_url('/updateNews') ?>">
+                <!-- Champ caché pour l'ID de l'article -->
+                <input type="hidden" name="id" value="<?= esc($news['id_news']) ?>">
 
-            <div class="mb-3">
-                <label for="title" class="form-label">Titre</label>
-                <input type="text" class="form-control" name="title" id="title" required />
-            </div>
-
-
-            <div class="mb-3">
-                <label for="university" class="form-label">Université</label>
-                <select name="university" id="university" class="form-control" required>
-                    <?php if (!empty($allUniversity)): ?>
-                        <?php foreach ($allUniversity as $univ): ?>
-                            <option value="<?= esc($univ['id_university']) ?>"><?= esc($univ['name']) ?></option>
-                        <?php endforeach; ?>
-                    <?php else: ?>
-                        <!-- <option value="">Aucune université</option> -->
-                    <?php endif; ?>
-                </select>
-            </div>
-
-
-
-            <div class="mb-3">
-                <label for="image" class="form-label">Image d'illustration</label>
-
-                <!-- Zone Drag & Drop -->
-                <div id="drop-zone" class="border border-2 border-primary p-4 text-center" style="cursor: pointer;">
-                    <p id="drop-text">Glissez l'image ici ou cliquez pour choisir un fichier</p>
-                    <input type="file" name="image" id="image" accept="image/*" hidden required>
+                <div class="mb-3">
+                    <label for="title" class="form-label">Titre</label>
+                    <input type="text" value="<?= esc($news['title']) ?>" class="form-control" name="title" id="title" required />
                 </div>
 
-                <!-- Aperçu et bouton de suppression -->
-                <div id="previewImage" class="mt-3"></div>
-            </div>
+                <div class="mb-3">
+                    <label for="university" class="form-label">Université </label>
+                    <select name="university" id="university" class="form-control" required>
+                        <?php foreach ($allUniversity as $univ): ?>
+                            <option value="<?= esc($univ['id_university']) ?>" <?= $univ['name'] == $news['university'] ? 'selected' : '' ?>>
+                                <?= esc($univ['name']) ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
 
+                <div class="mb-3">
+                    <label class="form-label">Image d'illustration</label>
+                    <div id="drop-zone" class="border border-2 border-primary p-4 text-center" style="cursor: pointer;">
+                        <p id="drop-text">Glissez l'image ici ou cliquez pour choisir un fichier</p>
+                        <input type="file" name="image" id="image" accept="image/*" hidden>
+                    </div>
+                    <div id="previewImage" class="mt-3">
+                        <?php if (!empty($news['image'])): ?>
+                            <div class="text-center">
+                                <img src="<?= base_url('assets/img/actualites/' . esc($news['image'])) ?>" class="img-fluid rounded mb-2" style="max-height: 200px;">
+                                <br>
+                                <button type="button" class="btn btn-sm btn-danger mt-1" onclick="removeFile()">Supprimer l'image</button>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                </div>
 
-            <div class="mb-3">
-                <label for="content" class="form-label">Contenu de l'article</label>
-                <textarea name="content" id="content" rows="10" class="form-control"></textarea>
-            </div>
+                <div class="mb-3">
+                    <label for="content" class="form-label">Contenu de l'article</label>
+                    <textarea name="content" id="content" rows="10" class="form-control" required><?= esc($news['content']) ?></textarea>
+                </div>
 
-            <div class="card-footer px-0">
-                <button type="submit" class="btn" style="background-color: #2952A1; color: white">Sauvergarder</button>
-                <!-- <button type="button" class="btn" style="background-color: #2952A1; color: white"
-                    onclick="showPreview()">Prévisualiser</button> -->
-            </div>
-            <!--end::Footer-->
-        </form>
-
-        <!-- <div id="preview-container">
-            <h5>Aperçu du contenu</h5>
-            <div id="preview"></div>
-        </div> -->
-    </div>
+                <div class="card-footer px-0">
+                    <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                    <!-- <button type="button" class="btn btn-secondary" onclick="showPreview()">Prévisualiser</button> -->
+                </div>
+            </form>
+<!-- 
+            <div id="preview-container" class="mt-4">
+                <h5 class="mb-2">Aperçu du contenu</h5>
+                <div id="preview" class="border p-3 rounded bg-light"></div>
+            </div> -->
+        </div>
+    <?php endif; ?>
 </div>
 <script src="https://cdn.tiny.cloud/1/n4czdrn2msccuqoqsd4fjf2v2j0c3uwp8mhq2va5v77b87vs/tinymce/7/tinymce.min.js"
     referrerpolicy="origin"></script>
-
 <script>
     const dropZone = document.getElementById('drop-zone');
     const input = document.getElementById('image');
