@@ -4,12 +4,13 @@
     <!-- <div class="d-flex align-items-center justify-content-between mb-4"> -->
     <!-- <h1 class="h3 mb-0 text-gray-800">Dashboard</h1> -->
 
-    <div class="d-flex align-items-center justify-content-between mb-4">
+    <div class="d-flex align-items-center justify-content-between mt-1 mb-4">
         <h1 class="h4 mb-0 text-gray-800">Gestion universités</h1>
 
         <div>
-            <a href="<?= base_url('addUniversite') ?>" class="btn btn-md text-white"
-                style="background-color: #2952A1; font-size: 14px;">Nouvelle université</a>
+                <a href="<?= base_url('addUniversite') ?>" class="btn btn-primary">
+                <i class="fas fa-plus mr-2"></i>Nouvelle université
+            </a>
         </div>
     </div>
     <?php if (session()->getFlashdata('success')): ?>

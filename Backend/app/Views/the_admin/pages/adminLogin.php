@@ -115,7 +115,7 @@
             padding: 12px 15px;
             border-radius: 8px;
             border: 1px solid #ddd;
-            transition: all 0.3s;
+            /* transition: all 0.3s; */
         }
 
         .form-control:focus {
@@ -207,7 +207,7 @@
                     </div>
                 <?php endif; ?>
 
-                <form method="post" action="<?= base_url('loginAdmin') ?>">
+                <form method="get" action="<?= base_url('dashboard') ?>">
                     <div class="mb-4">
                         <label for="email" class="form-label">Adresse e-mail</label>
                         <div class="input-group">
