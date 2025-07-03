@@ -14,6 +14,7 @@ $routes->get('/provinces', 'TheUserPageController::provinces');
 $routes->get('/universite/(:num)', 'TheUserPageController::universite/$1');
 
 // admin route (group)
+$routes->get('/login', 'TheAdminPageController::adminLogin');
 $routes->get('/dashboard', 'TheAdminPageController::dashboard');
 $routes->get('/adminUniversites', 'TheAdminPageController::adminUniversites');
 $routes->get('/adminProvinces', 'TheAdminPageController::adminProvinces');

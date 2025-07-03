@@ -21,6 +21,10 @@ class TheAdminPageController extends BaseController
         ]);
     }
 
+    public function adminLogin(){
+        return view('the_admin/pages/adminLogin');
+    }
+
     public function dashboard(): string
     {
         $data['allNews'] = News::getAll();
