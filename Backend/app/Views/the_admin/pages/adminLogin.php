@@ -228,7 +228,7 @@
                     </div>
 
                     <div class="d-grid mb-3">
-                        <button type="submit" class="btn btn-login">
+                        <button type="submit" class="btn btn-login" style="background-color: var(--primary-color);">
                              Se connecter
                         </button>
                     </div>
