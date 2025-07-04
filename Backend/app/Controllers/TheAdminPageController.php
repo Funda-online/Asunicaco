@@ -12,8 +12,15 @@ use App\Controllers\DAO\News as NewsDAO;
 
 class TheAdminPageController extends BaseController
 {
+    
+
+    public function hash()
+    {
+            var_dump('mdp', PASSWORD_DEFAULT);
+    }
     private function render(string $page, string $title, array $data = []): string
     {
+
         return view('the_admin/layout', [
             'title' => $title,
             'content' => 'the_admin/pages/' . $page,
@@ -21,11 +28,16 @@ class TheAdminPageController extends BaseController
         ]);
     }
 
-    public function adminLogin(){
+    public function adminLogin()
+    {
         return view('the_admin/pages/adminLogin');
     }
 
-    public function dashboard(): string
+    private function check_connexion()
+    {
+
+    }
+    public function dashboard()
     {
         $data['allNews'] = News::getAll();
         $data['alluniversity'] = University::getAll();
@@ -34,6 +46,7 @@ class TheAdminPageController extends BaseController
 
     public function adminActualites(): string
     {
+        $this->check_connexion();
 
         $allNews = News::getAllWithUniversity();
 
@@ -158,6 +171,7 @@ class TheAdminPageController extends BaseController
 
     public function updateActualite($id)
     {
+        $this->check_connexion();
         $news = News::getById($id);
 
         if (!$news) {
@@ -175,6 +189,7 @@ class TheAdminPageController extends BaseController
 
     public function updateUniversity($id)
     {
+        $this->check_connexion();
         $university = University::getById($id);
         $provinces = Province::getAll();
 
@@ -193,6 +208,7 @@ class TheAdminPageController extends BaseController
 
     public function adminProvinces(): string
     {
+        $this->check_connexion();
 
         return view('the_admin/layout', [
             'title' => 'Provinces | ASUNICACO',
@@ -202,6 +218,7 @@ class TheAdminPageController extends BaseController
 
     public function addProvince(): string
     {
+        $this->check_connexion();
 
         return view('the_admin/layout', [
             'title' => 'Provinces | ASUNICACO',
@@ -211,6 +228,7 @@ class TheAdminPageController extends BaseController
 
     public function adminUniversites(): string
     {
+        $this->check_connexion();
         $allUniversity = University::getAllWithProvince();
         return view('the_admin/layout', [
             'title' => 'Universites | ASUNICACO',
@@ -221,6 +239,7 @@ class TheAdminPageController extends BaseController
 
     public function addUniversite(): string
     {
+        $this->check_connexion();
         $provinces = Province::getAll();
 
         return view('the_admin/layout', [
@@ -234,45 +253,72 @@ class TheAdminPageController extends BaseController
     {
         helper(['form', 'url']);
 
-        // $validation = \Config\Services::validation();
-
-        // $rules = [
-        //     'name' => 'required|max_length[128]',
-        //     'email' => 'permit_empty|valid_email',
-        //     'website' => 'permit_empty|valid_url',
-        //     'logo' => 'uploaded[logo]|is_image[logo]|max_size[logo,2048]' // max 2 Mo
+        // $validationRule = [
+        //     'images' => [
+        //         'label' => 'Images',
+        //         'rules' => 'uploaded[images.0]|is_image[images.*]|max_size[images,5000]|mime_in[images,image/jpg,image/jpeg,image/png]',
+        //         'errors' => [
+        //             'uploaded' => 'Veuillez sélectionner au moins une image.',
+        //             'is_image' => 'Le fichier doit être une image.',
+        //             'max_size' => 'Chaque image ne doit pas dépasser 5 Mo.',
+        //             'mime_in' => 'Format non autorisé. Seuls les JPG, JPEG, PNG sont acceptés.',
+        //         ]
+        //     ]
         // ];
 
-        // if (!$this->validate($rules)) {
-        //     return redirect()->back()->withInput()->with('errors', $validation->getErrors());
+        // if (!$this->validate($validationRule)) {
+        //     return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         // }
 
         $logoName = null;
         $file = $this->request->getFile('logo');
 
+        // Gestion du logo
         if ($file && $file->isValid() && !$file->hasMoved()) {
             $logoName = $file->getRandomName();
             $file->move('assets/img/logo-universite/', $logoName);
         }
 
+        // Création de l'université
         $data = [
             'name' => $this->request->getPost('name'),
             'ville' => $this->request->getPost('ville'),
-            'id_province' => $this->request->getPost(index: 'id_province'),
+            'id_province' => $this->request->getPost('id_province'),
             'description' => $this->request->getPost('description'),
             'address' => $this->request->getPost('address'),
             'email' => $this->request->getPost('email'),
             'phone' => $this->request->getPost('phone'),
             'website' => $this->request->getPost('website'),
-            // 'faculties' => $this->request->getPost('faculties'),
-            'logo' => $logoName
+            'logo' => $logoName,
+            // les images seront ajoutées après
         ];
 
+        $imagesList = [];
+        $imageFiles = $this->request->getFiles();
+
+        if (isset($imageFiles['images'])) {
+            foreach ($imageFiles['images'] as $imgFile) {
+                if ($imgFile->isValid() && !$imgFile->hasMoved()) {
+                    $imgName = $imgFile->getRandomName();
+                    $imgFile->move('assets/img/universites/', $imgName);
+                    $imagesList[] = $imgName;
+                }
+            }
+        }
+
+        // Ajouter les images encodées en JSON
+        if (!empty($imagesList)) {
+            $data['images'] = json_encode($imagesList);
+        }
+
         $isInserted = University::insert($data);
+
         if ($isInserted)
             return redirect()->to('/adminUniversites')->with('success', 'Université enregistrée avec succès');
-        return redirect()->to('/addUniversite')->with('error', 'Echec de l\'enregistrement de l\'université !');
+
+        return redirect()->to('/addUniversite')->with('error', 'Échec de l\'enregistrement de l\'université !');
     }
+
 
 
     public function saveUpdateUniversity()
@@ -286,18 +332,58 @@ class TheAdminPageController extends BaseController
             return redirect()->to('/admin/universities')->with('error', 'Université introuvable.');
         }
 
+        // ===== LOGO =====
         $logoFile = $this->request->getFile('logo');
         $logoName = $university['logo'];
 
         if ($logoFile && $logoFile->isValid() && !$logoFile->hasMoved()) {
             // Supprimer l'ancien logo s’il existe
-            if (!empty($logoName) && file_exists(FCPATH . 'assets/img/universities/' . $logoName)) {
+            if (!empty($logoName) && file_exists(FCPATH . 'assets/img/logo-universite/' . $logoName)) {
                 unlink(FCPATH . 'assets/img/logo-universite/' . $logoName);
             }
+
             $logoName = $logoFile->getRandomName();
             $logoFile->move('assets/img/logo-universite/', $logoName);
         }
 
+        // ===== IMAGES =====
+        // Images existantes
+        $existingImages = json_decode($university['images'] ?? '', true) ?? [];
+
+        // Récupération des images à supprimer
+        $imagesToDelete = $this->request->getPost('delete_images') ?? [];
+
+        // Suppression physique des images
+        foreach ($imagesToDelete as $imgName) {
+            $imgPath = FCPATH . 'assets/img/universites/' . $imgName;
+            if (file_exists($imgPath)) {
+                unlink($imgPath);
+            }
+        }
+
+        // Garder uniquement les images restantes
+        $remainingImages = array_filter($existingImages, function ($img) use ($imagesToDelete) {
+            return !in_array($img, $imagesToDelete);
+        });
+
+        // Traitement des nouvelles images uploadées
+        $newImages = [];
+        $imageFiles = $this->request->getFiles();
+
+        if (isset($imageFiles['images']) && is_array($imageFiles['images'])) {
+            foreach ($imageFiles['images'] as $img) {
+                if ($img->isValid() && !$img->hasMoved()) {
+                    $newImageName = $img->getRandomName();
+                    $img->move('assets/img/universites/', $newImageName);
+                    $newImages[] = $newImageName;
+                }
+            }
+        }
+
+        // Fusionner anciennes (non supprimées) + nouvelles
+        $mergedImages = array_merge($remainingImages, $newImages);
+
+        // ===== DATA UPDATE =====
         $data = [
             'name' => $this->request->getPost('name'),
             'ville' => $this->request->getPost('ville'),
@@ -307,16 +393,18 @@ class TheAdminPageController extends BaseController
             'email' => $this->request->getPost('email'),
             'phone' => $this->request->getPost('phone'),
             'website' => $this->request->getPost('website'),
-            // 'faculties' => $this->request->getPost('faculties'),
             'logo' => $logoName,
+            'images' => json_encode($mergedImages)
         ];
 
+        // ===== ENREGISTREMENT =====
         if (University::update($id, $data)) {
             return redirect()->to('/adminUniversites')->with('success', 'Université mise à jour avec succès.');
         } else {
             return redirect()->back()->with('error', 'Erreur lors de la mise à jour.');
         }
     }
+
 
     public function deleteUniversity($id = null)
     {
@@ -340,6 +428,20 @@ class TheAdminPageController extends BaseController
             }
         }
 
+        // Supprimer les images associées (champ 'images' sous forme de JSON)
+        if (!empty($university['images'])) {
+            $images = json_decode($university['images'], true);
+
+            if (is_array($images)) {
+                foreach ($images as $imageFile) {
+                    $imagePath = FCPATH . 'assets/img/universites/' . $imageFile;
+                    if (file_exists($imagePath)) {
+                        unlink($imagePath);
+                    }
+                }
+            }
+        }
+
         // Supprimer l’université de la base de données
         $deleted = University::delete($id);
 
@@ -350,5 +452,39 @@ class TheAdminPageController extends BaseController
         }
     }
 
+    public function auth()
+    {
+        $request = $this->request;
+
+        $email = $request->getPost('email');
+        $password = $request->getPost('password');
+
+        // On suppose ici que le login se fait par email
+        $user = User::loginUser( $email, $password);
+
+        if (!$user) {
+            return redirect()->back()->withInput()->with('error', 'Identifiants incorrects');
+        }
+
+        // Connexion réussie
+        session()->set([
+            'id_user' => $user['id_user'],
+            'username' => $user['username'],
+            'email' => $user['email'],
+            'access' => $user['access'],
+            'logged_in' => true
+        ]);
+
+        // Redirection vers la page précédemment demandée ou vers le dashboard
+        $redirectUrl = session()->get('redirect_url') ?? base_url('dashboard');
+        session()->remove('redirect_url');
+        return redirect()->to($redirectUrl);
+    }
+
+    public function logout()
+    {
+        session()->destroy();
+        return redirect()->to('/login');
+    }
 
 }

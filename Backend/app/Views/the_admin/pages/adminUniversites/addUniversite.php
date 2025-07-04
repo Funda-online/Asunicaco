@@ -19,7 +19,7 @@
             <!--end::Header-->
 
             <!--begin::Form-->
-            <form action="<?= base_url('/saveUniversity') ?>" method="post" enctype="multipart/form-data">
+            <form id="uploadForm" action="<?= base_url('/saveUniversity') ?>" method="post" enctype="multipart/form-data">
                 <?= csrf_field() ?>
                 <div class="card-body">
                     <div class="row">
@@ -75,17 +75,27 @@
                             <label for="logo" class="form-label">Logo</label>
                             <input type="file" class="form-control" name="logo" id="logo" accept="image/*" />
                         </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-md-6">
+                            <label for="images" class="form-label">Images de l'université</label>
+                            <input type="file" class="form-control" name="images[]" id="images" multiple
+                                accept="image/*" />
+                            <small class="text-muted">Vous pouvez sélectionner plusieurs images</small>
+                        </div>
                     </div>
 
                     <div class="mb-3">
                         <label for="description" class="form-label">Autres informations de l'université</label>
                         <textarea name="description" id="description" rows="4" class="form-control"></textarea>
                     </div>
-                    
+
                 </div>
 
                 <div class="card-footer">
                     <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                    <div id="error-message" style="color: red;"></div>
                 </div>
             </form>
 
@@ -117,4 +127,44 @@
         document.getElementById('preview').innerHTML = content;
         document.getElementById('preview-container').style.display = 'block';
     }    
+</script>
+
+<script>
+    document.getElementById('uploadForm').addEventListener('submit', function (e) {
+        const files = document.getElementById('images').files;
+        const maxFileSize = 5 * 1024 * 1024; // 5 Mo
+        const maxTotalSize = 40 * 1024 * 1024; // 40 Mo
+        const maxFiles = 20;
+
+        let totalSize = 0;
+        let error = '';
+
+        if (files.length > maxFiles) {
+            error = `Vous pouvez uploader au maximum ${maxFiles} fichiers.`;
+        } else {
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                totalSize += file.size;
+
+                if (!file.type.startsWith('image/')) {
+                    error = 'Seules les images sont autorisées.';
+                    break;
+                }
+
+                if (file.size > maxFileSize) {
+                    error = `Le fichier "${file.name}" dépasse la taille maximale de 5 Mo.`;
+                    break;
+                }
+            }
+
+            if (totalSize > maxTotalSize) {
+                error = 'La taille totale des fichiers dépasse 40 Mo.';
+            }
+        }
+
+        if (error !== '') {
+            e.preventDefault();
+            document.getElementById('error-message').textContent = error;
+        }
+    });
 </script>

@@ -8,7 +8,8 @@
 
     <link href="<?= base_url('assets/vendor/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
     <link href="<?= base_url('assets/css/sb-admin-2.min.css') ?>" rel="stylesheet">
-    <link href="<?= base_url() ?>/assets/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url() ?>/assets/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"
+        type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -207,12 +208,13 @@
                     </div>
                 <?php endif; ?>
 
-                <form method="get" action="<?= base_url('dashboard') ?>">
+                <form method="post" <form method="post" action="<?= base_url('dashboard/auth') ?>">
                     <div class="mb-4">
                         <label for="email" class="form-label">Adresse e-mail</label>
                         <div class="input-group">
                             <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                            <input type="email" name="email" class="form-control input-with-icon" id="email" required placeholder="admin@example.com">
+                            <input type="email" name="email" class="form-control input-with-icon" id="email" required
+                                placeholder="admin@example.com">
                         </div>
                     </div>
 
@@ -221,7 +223,8 @@
                         <div class="password-container">
                             <div class="input-group">
                                 <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                                <input type="password" name="password" class="form-control input-with-icon" id="password" required placeholder="••••••••">
+                                <input type="password" name="password" class="form-control input-with-icon"
+                                    id="password" required placeholder="••••••••">
                             </div>
                             <i class="fas fa-eye password-toggle" id="togglePassword"></i>
                         </div>
@@ -229,7 +232,7 @@
 
                     <div class="d-grid mb-3">
                         <button type="submit" class="btn btn-login" style="background-color: var(--primary-color);">
-                             Se connecter
+                            Se connecter
                         </button>
                     </div>
 
@@ -247,7 +250,7 @@
 
     <script>
         // Toggle password visibility
-        document.getElementById('togglePassword').addEventListener('click', function() {
+        document.getElementById('togglePassword').addEventListener('click', function () {
             const passwordInput = document.getElementById('password');
             const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
             passwordInput.setAttribute('type', type);
@@ -256,11 +259,11 @@
 
         // Add animation to form inputs when focused
         document.querySelectorAll('.form-control').forEach(input => {
-            input.addEventListener('focus', function() {
+            input.addEventListener('focus', function () {
                 this.parentElement.querySelector('.input-group-text').style.color = '#4e73df';
             });
 
-            input.addEventListener('blur', function() {
+            input.addEventListener('blur', function () {
                 this.parentElement.querySelector('.input-group-text').style.color = '';
             });
         });

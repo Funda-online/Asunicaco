@@ -19,7 +19,7 @@
             <!--end::Header-->
 
             <!--begin::Form-->
-            <form action="<?= base_url('/saveUpdateUniversity') ?>" method="post" enctype="multipart/form-data">
+            <form id="uploadForm" action="<?= base_url('/saveUpdateUniversity') ?>" method="post" enctype="multipart/form-data">
                 <?= csrf_field() ?>
                 <input type="hidden" name="id_university" value="<?= esc($university['id_university']) ?>">
 
@@ -77,8 +77,33 @@
                             <input type="file" name="logo" class="form-control" accept="image/*">
                             <?php if (!empty($university['logo'])): ?>
                                 <div class="mt-2">
-                                    <img src="<?= base_url('assets/img/logo-universite/' . $university['logo']) ?>" alt="Logo"
-                                        height="60">
+                                    <img src="<?= base_url('assets/img/logo-universite/' . $university['logo']) ?>"
+                                        alt="Logo" height="60">
+                                </div>
+                            <?php endif; ?>
+                        </div>
+
+                        <div class="mb-3 col-md-12">
+                            <label class="form-label">Images de l'université</label>
+                            <input type="file" name="images[]" class="form-control" accept="image/*" multiple>
+
+                            <?php
+                            $images = json_decode($university['images'] ?? '', true);
+                            if (!empty($images)):
+                                ?>
+                                <div class="mt-3 row">
+                                    <?php foreach ($images as $index => $img): ?>
+                                        <div class="col-md-3 mb-3 text-center">
+                                            <img src="<?= base_url('assets/img/universites/' . $img) ?>"
+                                                class="img-fluid rounded" style="max-height: 120px;">
+                                            <div class="form-check mt-1">
+                                                <input class="form-check-input" type="checkbox" name="delete_images[]"
+                                                    value="<?= esc($img) ?>" id="delete_<?= $index ?>">
+                                                <label class="form-check-label small"
+                                                    for="delete_<?= $index ?>">Supprimer</label>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
                                 </div>
                             <?php endif; ?>
                         </div>
@@ -122,4 +147,44 @@
         document.getElementById('preview').innerHTML = content;
         document.getElementById('preview-container').style.display = 'block';
     }    
+</script>
+
+<script>
+    document.getElementById('uploadForm').addEventListener('submit', function (e) {
+        const files = document.getElementById('images').files;
+        const maxFileSize = 5 * 1024 * 1024; // 5 Mo
+        const maxTotalSize = 40 * 1024 * 1024; // 40 Mo
+        const maxFiles = 20;
+
+        let totalSize = 0;
+        let error = '';
+
+        if (files.length > maxFiles) {
+            error = `Vous pouvez uploader au maximum ${maxFiles} fichiers.`;
+        } else {
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                totalSize += file.size;
+
+                if (!file.type.startsWith('image/')) {
+                    error = 'Seules les images sont autorisées.';
+                    break;
+                }
+
+                if (file.size > maxFileSize) {
+                    error = `Le fichier "${file.name}" dépasse la taille maximale de 5 Mo.`;
+                    break;
+                }
+            }
+
+            if (totalSize > maxTotalSize) {
+                error = 'La taille totale des fichiers dépasse 40 Mo.';
+            }
+        }
+
+        if (error !== '') {
+            e.preventDefault();
+            document.getElementById('error-message').textContent = error;
+        }
+    });
 </script>

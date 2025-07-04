@@ -51,7 +51,8 @@ class User extends BaseController
     public static function loginUser(string $username, string $password): ?array
     {
         $user = self::getInstance()->model
-            ->where('username', $username)
+            ->where('email', $username)
+            ->where('password', $password)
             ->first();
 
         if (!$user) {

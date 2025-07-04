@@ -1,0 +1,1670 @@
+ERROR - 2025-07-04 08:09:49 --> Error connecting to the database: mysqli_sql_exception: Host 'DESKTOP-7V22UU5' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('192.168.239.92', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(30): App\Controllers\DAO\News::getAll()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'DESKTOP-7V22UU5' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(30): App\Controllers\DAO\News::getAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-07-04 08:09:49 --> Error connecting to the database: mysqli_sql_exception: Host 'DESKTOP-7V22UU5' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('192.168.239.92', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(30): App\Controllers\DAO\News::getAll()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'DESKTOP-7V22UU5' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(30): App\Controllers\DAO\News::getAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 08:09:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Host 'DESKTOP-7V22UU5' is not allowed to connect to this MariaDB server
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheAdminPageController.php(30): App\Controllers\DAO\News::getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 08:09:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Host 'DESKTOP-7V22UU5' is not allowed to connect to this MariaDB server
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheAdminPageController.php(30): App\Controllers\DAO\News::getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-04 08:10:44 --> Error connecting to the database: mysqli_sql_exception: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('169.159.218.219', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(30): App\Controllers\DAO\News::getAll()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(30): App\Controllers\DAO\News::getAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 08:10:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheAdminPageController.php(30): App\Controllers\DAO\News::getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-04 08:11:38 --> Error connecting to the database: mysqli_sql_exception: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('169.159.218.219', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 08:11:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-04 08:14:25 --> Error connecting to the database: mysqli_sql_exception: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('169.159.218.219', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 08:14:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-04 08:19:33 --> Error connecting to the database: mysqli_sql_exception: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('169.159.218.219', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 08:19:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-04 08:26:27 --> Error connecting to the database: mysqli_sql_exception: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('169.159.218.2', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 08:26:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-04 08:26:46 --> Error connecting to the database: mysqli_sql_exception: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('169.159.218.2', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 08:26:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-04 08:30:13 --> Error connecting to the database: mysqli_sql_exception: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('169.159.218.219', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(30): App\Controllers\DAO\News::getAll()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(30): App\Controllers\DAO\News::getAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 08:30:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheAdminPageController.php(30): App\Controllers\DAO\News::getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-04 08:33:23 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for https failed: H�te inconnu.  in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('https://asunica...', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for https failed: H�te inconnu.  in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('https://asunica...', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for https failed: H�te inconnu.  in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 08:33:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for https failed: H�te inconnu. 
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-04 08:33:36 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'imthduqe'@'169.159.218.27' (using password: YES) in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('asunicaco.cd', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'169.159.218.27' (using password: YES) in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 08:33:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'169.159.218.27' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheUserPageController.php(24): App\Controllers\DAO\News::getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 08:38:32 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Institut Supérieur d'Informatique Chaminade.jpg"
+[Method: GET, Route: assets/img/logo-universite/Institut%20Sup%C3%A9rieur%20d%27Informatique%20Chaminade.jpg]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-04 08:39:31 --> Error connecting to the database: mysqli_sql_exception: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('asunicaco.cd', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(38): App\Controllers\DAO\News::getAllWithUniversity()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->adminActualites()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(38): App\Controllers\DAO\News::getAllWithUniversity()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->adminActualites()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 08:39:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu
+[Method: GET, Route: adminActualites]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `university`.`website` as `website`, `university`.`name` as `university`
+FROM `news`
+JOIN `university` ON `university`.`id_university` = `news`.`university`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\News.php(90): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheAdminPageController.php(38): App\Controllers\DAO\News::getAllWithUniversity()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->adminActualites()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 08:40:01 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Institut Supérieur d'Informatique Chaminade.jpg"
+[Method: GET, Route: assets/img/logo-universite/Institut%20Sup%C3%A9rieur%20d%27Informatique%20Chaminade.jpg]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 08:43:37 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: GET, Route: adminUniversites]
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2025-07-04 08:43:58 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'imthduqe'@'169.159.218.155' (using password: YES) in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('asunicaco.cd', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(59): App\Controllers\DAO\News::getAll()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->actualites()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'169.159.218.155' (using password: YES) in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheUserPageController.php(59): App\Controllers\DAO\News::getAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheUserPageController->actualites()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 08:43:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'169.159.218.155' (using password: YES)
+[Method: GET, Route: actualites]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheUserPageController.php(59): App\Controllers\DAO\News::getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->actualites()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 08:44:28 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Institut Supérieur d'Informatique Chaminade.jpg"
+[Method: GET, Route: assets/img/logo-universite/Institut%20Sup%C3%A9rieur%20d%27Informatique%20Chaminade.jpg]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-04 08:45:01 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'imthduqe'@'169.159.218.155' (using password: YES) in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('asunicaco.cd', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `univers...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\University.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(214): App\Controllers\DAO\University::getAllWithProvince()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->adminUniversites()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'169.159.218.155' (using password: YES) in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `univers...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\University.php(55): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(214): App\Controllers\DAO\University::getAllWithProvince()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->adminUniversites()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 08:45:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'169.159.218.155' (using password: YES)
+[Method: GET, Route: adminUniversites]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `university`.*, `university`.`website` as `website`, `university`.`name` as `university`, `province`.`name` as `province`
+FROM `university`
+JOIN `province` ON `province`.`id_province` = `university`.`id_province`
+WHERE `university`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\University.php(55): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheAdminPageController.php(214): App\Controllers\DAO\University::getAllWithProvince()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->adminUniversites()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 08:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 11:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 11:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 11:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 11:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 11:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-04 11:52:49 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'imthduqe'@'169.159.218.155' (using password: YES) in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('asunicaco.cd', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(207): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, 4)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\University.php(33): CodeIgniter\BaseModel->find(4)
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(283): App\Controllers\DAO\University::getById(4)
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUpdateUniversity()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'169.159.218.155' (using password: YES) in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(207): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, 4)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\University.php(33): CodeIgniter\BaseModel->find(4)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(283): App\Controllers\DAO\University::getById(4)
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUpdateUniversity()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 11:52:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'169.159.218.155' (using password: YES)
+[Method: POST, Route: saveUpdateUniversity]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `university`
+WHERE `university`.`date_deleted` IS NULL
+AND `university`.`id_university` = :university.id_university:', [...], false)
+ 3 SYSTEMPATH\Model.php(207): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, 4)
+ 5 APPPATH\Controllers\DAO\University.php(33): CodeIgniter\BaseModel->find(4)
+ 6 APPPATH\Controllers\TheAdminPageController.php(283): App\Controllers\DAO\University::getById(4)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUpdateUniversity()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 11:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-04 11:53:01 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'imthduqe'@'169.159.218.155' (using password: YES) in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('asunicaco.cd', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `univers...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\University.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(214): App\Controllers\DAO\University::getAllWithProvince()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->adminUniversites()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'169.159.218.155' (using password: YES) in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `univers...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\University.php(55): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(214): App\Controllers\DAO\University::getAllWithProvince()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->adminUniversites()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 11:53:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'169.159.218.155' (using password: YES)
+[Method: GET, Route: adminUniversites]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `university`.*, `university`.`website` as `website`, `university`.`name` as `university`, `province`.`name` as `province`
+FROM `university`
+JOIN `province` ON `province`.`id_province` = `university`.`id_province`
+WHERE `university`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\University.php(55): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheAdminPageController.php(214): App\Controllers\DAO\University::getAllWithProvince()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->adminUniversites()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 11:53:10 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Institut Supérieur d'Informatique Chaminade.jpg"
+[Method: GET, Route: assets/img/logo-universite/Institut%20Sup%C3%A9rieur%20d%27Informatique%20Chaminade.jpg]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-04 11:53:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'imthduqe'@'169.159.218.155' (using password: YES) in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('asunicaco.cd', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `univers...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\University.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(214): App\Controllers\DAO\University::getAllWithProvince()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->adminUniversites()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'169.159.218.155' (using password: YES) in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `univers...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\University.php(55): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(214): App\Controllers\DAO\University::getAllWithProvince()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->adminUniversites()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 11:53:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'169.159.218.155' (using password: YES)
+[Method: GET, Route: adminUniversites]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `university`.*, `university`.`website` as `website`, `university`.`name` as `university`, `province`.`name` as `province`
+FROM `university`
+JOIN `province` ON `province`.`id_province` = `university`.`id_province`
+WHERE `university`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\University.php(55): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheAdminPageController.php(214): App\Controllers\DAO\University::getAllWithProvince()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->adminUniversites()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-04 11:53:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'imthduqe'@'169.159.218.155' (using password: YES) in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('asunicaco.cd', 'imthduqe', Object(SensitiveParameterValue), 'imthduqe_asunic...', 3306, '', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(30): App\Controllers\DAO\News::getAll()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'169.159.218.155' (using password: YES) in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(30): App\Controllers\DAO\News::getAll()
+#7 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+#8 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-07-04 11:53:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'169.159.218.155' (using password: YES)
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`
+WHERE `news`.`date_deleted` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DAO\News.php(28): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TheAdminPageController.php(30): App\Controllers\DAO\News::getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 11:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 11:54:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 11:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 11:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-04 11:57:05 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Institut Supérieur d'Informatique Chaminade.jpg"
+[Method: GET, Route: assets/img/logo-universite/Institut%20Sup%C3%A9rieur%20d%27Informatique%20Chaminade.jpg]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 11:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-04 12:01:26 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Institut Supérieur d'Informatique Chaminade.jpg"
+[Method: GET, Route: assets/img/logo-universite/Institut%20Sup%C3%A9rieur%20d%27Informatique%20Chaminade.jpg]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 12:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-04 12:20:40 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Institut Supérieur d'Informatique Chaminade.jpg"
+[Method: GET, Route: assets/img/logo-universite/Institut%20Sup%C3%A9rieur%20d%27Informatique%20Chaminade.jpg]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 12:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 12:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:18:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-04 13:25:03 --> mysqli_sql_exception: Column 'name' cannot be null in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `un...', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `un...')
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `un...')
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `un...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\University.php(38): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(278): App\Controllers\DAO\University::insert(Array)
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-07-04 13:25:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'name' cannot be null
+[Method: POST, Route: saveUniversity]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (:name:, :ville:, :id_province:, :description:, :address:, :email:, :phone:, :website:, :logo:, :date_added:, :date_updated:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DAO\University.php(38): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\TheAdminPageController.php(278): App\Controllers\DAO\University::insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 13:25:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:25:01\', \'2025-07-04 13:25:01\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:25:01\', \'2025-07-04 13:25:01\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (:name:, :ville:, :id_province:, :description:, :address:, :email:, :phone:, :website:, :logo:, :date_added:, :date_updated:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\DAO\University.php(38): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\TheAdminPageController.php(278): App\Controllers\DAO\University::insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 13:25:03 --> [Caused by] mysqli_sql_exception: Column 'name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:25:01\', \'2025-07-04 13:25:01\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:25:01\', \'2025-07-04 13:25:01\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:25:01\', \'2025-07-04 13:25:01\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (:name:, :ville:, :id_province:, :description:, :address:, :email:, :phone:, :website:, :logo:, :date_added:, :date_updated:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DAO\University.php(38): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\TheAdminPageController.php(278): App\Controllers\DAO\University::insert([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 13:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-04 13:25:34 --> mysqli_sql_exception: Column 'name' cannot be null in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `un...', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `un...')
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `un...')
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `un...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\University.php(38): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(278): App\Controllers\DAO\University::insert(Array)
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-07-04 13:25:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'name' cannot be null
+[Method: POST, Route: saveUniversity]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (:name:, :ville:, :id_province:, :description:, :address:, :email:, :phone:, :website:, :logo:, :date_added:, :date_updated:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DAO\University.php(38): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\TheAdminPageController.php(278): App\Controllers\DAO\University::insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 13:25:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:25:33\', \'2025-07-04 13:25:33\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:25:33\', \'2025-07-04 13:25:33\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (:name:, :ville:, :id_province:, :description:, :address:, :email:, :phone:, :website:, :logo:, :date_added:, :date_updated:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\DAO\University.php(38): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\TheAdminPageController.php(278): App\Controllers\DAO\University::insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 13:25:34 --> [Caused by] mysqli_sql_exception: Column 'name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:25:33\', \'2025-07-04 13:25:33\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:25:33\', \'2025-07-04 13:25:33\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:25:33\', \'2025-07-04 13:25:33\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (:name:, :ville:, :id_province:, :description:, :address:, :email:, :phone:, :website:, :logo:, :date_added:, :date_updated:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DAO\University.php(38): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\TheAdminPageController.php(278): App\Controllers\DAO\University::insert([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 13:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-04 13:26:33 --> mysqli_sql_exception: Column 'name' cannot be null in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `un...', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `un...')
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `un...')
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `un...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\University.php(38): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(278): App\Controllers\DAO\University::insert(Array)
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-07-04 13:26:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'name' cannot be null
+[Method: POST, Route: saveUniversity]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (:name:, :ville:, :id_province:, :description:, :address:, :email:, :phone:, :website:, :logo:, :date_added:, :date_updated:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DAO\University.php(38): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\TheAdminPageController.php(278): App\Controllers\DAO\University::insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 13:26:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:26:31\', \'2025-07-04 13:26:31\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:26:31\', \'2025-07-04 13:26:31\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (:name:, :ville:, :id_province:, :description:, :address:, :email:, :phone:, :website:, :logo:, :date_added:, :date_updated:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\DAO\University.php(38): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\TheAdminPageController.php(278): App\Controllers\DAO\University::insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 13:26:33 --> [Caused by] mysqli_sql_exception: Column 'name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:26:31\', \'2025-07-04 13:26:31\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:26:31\', \'2025-07-04 13:26:31\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:26:31\', \'2025-07-04 13:26:31\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (:name:, :ville:, :id_province:, :description:, :address:, :email:, :phone:, :website:, :logo:, :date_added:, :date_updated:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DAO\University.php(38): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\TheAdminPageController.php(278): App\Controllers\DAO\University::insert([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-04 13:28:58 --> mysqli_sql_exception: Column 'name' cannot be null in C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\Asunicaco\Backend\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `un...', 0)
+#1 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `un...')
+#2 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `un...')
+#3 C:\xampp\htdocs\Asunicaco\Backend\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `un...', Array, false)
+#4 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Asunicaco\Backend\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Asunicaco\Backend\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\DAO\University.php(38): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Asunicaco\Backend\app\Controllers\TheAdminPageController.php(278): App\Controllers\DAO\University::insert(Array)
+#9 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+#10 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+#11 C:\xampp\htdocs\Asunicaco\Backend\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Asunicaco\Backend\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\Asunicaco\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-07-04 13:28:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'name' cannot be null
+[Method: POST, Route: saveUniversity]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (:name:, :ville:, :id_province:, :description:, :address:, :email:, :phone:, :website:, :logo:, :date_added:, :date_updated:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DAO\University.php(38): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\TheAdminPageController.php(278): App\Controllers\DAO\University::insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 13:28:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:28:56\', \'2025-07-04 13:28:56\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:28:56\', \'2025-07-04 13:28:56\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (:name:, :ville:, :id_province:, :description:, :address:, :email:, :phone:, :website:, :logo:, :date_added:, :date_updated:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\DAO\University.php(38): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\TheAdminPageController.php(278): App\Controllers\DAO\University::insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 13:28:58 --> [Caused by] mysqli_sql_exception: Column 'name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:28:56\', \'2025-07-04 13:28:56\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:28:56\', \'2025-07-04 13:28:56\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-07-04 13:28:56\', \'2025-07-04 13:28:56\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `university` (`name`, `ville`, `id_province`, `description`, `address`, `email`, `phone`, `website`, `logo`, `date_added`, `date_updated`) VALUES (:name:, :ville:, :id_province:, :description:, :address:, :email:, :phone:, :website:, :logo:, :date_added:, :date_updated:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DAO\University.php(38): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\TheAdminPageController.php(278): App\Controllers\DAO\University::insert([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 13:29:06 --> ErrorException: ini_set(): Session ini settings cannot be changed after headers have already been sent
+[Method: POST, Route: saveUniversity]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\system\\Session\\Handlers\\FileHandler.php', 74)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(74): ini_set('session.save_path', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(688): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(666): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Config\BaseService.php(201): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+10 SYSTEMPATH\HTTP\RedirectResponse.php(80): service('session')
+11 APPPATH\Controllers\TheAdminPageController.php(252): CodeIgniter\HTTP\RedirectResponse->back()
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 13:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-04 13:29:18 --> ErrorException: ini_set(): Session ini settings cannot be changed after headers have already been sent
+[Method: POST, Route: saveUniversity]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\system\\Session\\Handlers\\FileHandler.php', 74)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(74): ini_set('session.save_path', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(688): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(666): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Config\BaseService.php(201): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+10 SYSTEMPATH\HTTP\RedirectResponse.php(80): service('session')
+11 APPPATH\Controllers\TheAdminPageController.php(252): CodeIgniter\HTTP\RedirectResponse->back()
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 13:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-04 13:29:55 --> ErrorException: ini_set(): Session ini settings cannot be changed after headers have already been sent
+[Method: POST, Route: saveUniversity]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\system\\Session\\Handlers\\FileHandler.php', 74)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(74): ini_set('session.save_path', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(688): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(666): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Config\BaseService.php(201): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+10 SYSTEMPATH\HTTP\RedirectResponse.php(80): service('session')
+11 APPPATH\Controllers\TheAdminPageController.php(252): CodeIgniter\HTTP\RedirectResponse->back()
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 13:31:52 --> ErrorException: ini_set(): Session ini settings cannot be changed after headers have already been sent
+[Method: POST, Route: saveUniversity]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\system\\Session\\Handlers\\FileHandler.php', 74)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(74): ini_set('session.save_path', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(688): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(666): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Config\BaseService.php(201): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+10 SYSTEMPATH\HTTP\RedirectResponse.php(80): service('session')
+11 APPPATH\Controllers\TheAdminPageController.php(252): CodeIgniter\HTTP\RedirectResponse->back()
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 13:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-04 13:34:52 --> ErrorException: ini_set(): Session ini settings cannot be changed after headers have already been sent
+[Method: POST, Route: saveUniversity]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\system\\Session\\Handlers\\FileHandler.php', 74)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(74): ini_set('session.save_path', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(688): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(666): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Config\BaseService.php(201): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('session')
+10 SYSTEMPATH\HTTP\RedirectResponse.php(80): service('session')
+11 APPPATH\Controllers\TheAdminPageController.php(252): CodeIgniter\HTTP\RedirectResponse->back()
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->saveUniversity()
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 13:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-04 13:39:47 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Institut Supérieur d'Informatique Chaminade.jpg"
+[Method: GET, Route: assets/img/logo-universite/Institut%20Sup%C3%A9rieur%20d%27Informatique%20Chaminade.jpg]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 13:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 13:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-04 14:15:54 --> TypeError: App\Controllers\TheAdminPageController::dashboard(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\TheAdminPageController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheAdminPageController->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheAdminPageController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 14:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:16:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-04 14:43:45 --> CodeIgniter\Filters\Exceptions\FilterException: Le filtre auth doit avoir un alias correspondant défini.
+[Method: GET, Route: adminUniversites]
+in SYSTEMPATH\Filters\Filters.php on line 495.
+ 1 SYSTEMPATH\Filters\Filters.php(495): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\Filters\Filters.php(547): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 14:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-04 14:44:37 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: actualiteDetail/19]
+in APPPATH\Views\the_user\pages\actualites\actualiteDetail.php on line 6.
+ 1 APPPATH\Views\the_user\pages\actualites\actualiteDetail.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Views\\the_user\\pages\\actualites\\actualiteDetail.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Views\\the_user\\pages\\actualites\\actualiteDetail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('the_user/pages/actualites/actualiteDetail', [], true)
+ 5 APPPATH\Views\the_user\layout.php(58): view('the_user/pages/actualites/actualiteDetail')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Asunicaco\\Backend\\app\\Views\\the_user\\layout.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('the_user/layout', [], true)
+ 9 APPPATH\Controllers\TheUserPageController.php(83): view('the_user/layout', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TheUserPageController->actualiteDetail('19')
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TheUserPageController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 14:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-04 14:45:13 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Institut Supérieur d'Informatique Chaminade.jpg"
+[Method: GET, Route: assets/img/logo-universite/Institut%20Sup%C3%A9rieur%20d%27Informatique%20Chaminade.jpg]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/img/logo-universite/Institut Supérieur d\'Informatique Chaminade.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 14:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-04 14:53:51 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "gad@asunicaco.cd"
+[Method: GET, Route: gad@asunicaco.cd]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('gad@asunicaco.cd')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('gad@asunicaco.cd')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-04 14:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 14:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:08:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-04 15:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
